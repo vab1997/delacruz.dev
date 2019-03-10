@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "now-build": "next build && next export -o dist"
+    "now-build": "next build && next export -o dist",
+    "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
     "next": "latest",
