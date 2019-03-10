@@ -1,6 +1,7 @@
 {
   "scripts": {
     "now-build": "next build && next export -o dist",
+    "start": "hugo server -D",
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
