@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "danidelacruz.dev",
+  "name": "delacruz.dev",
   "builds": [
     {
       "src": "build.sh",
