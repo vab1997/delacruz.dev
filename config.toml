@@ -1,7 +1,7 @@
 baseURL = "https://delacruz.dev/"
 languageCode = "en-us"
 title = "Dani de la Cruz"
-theme = "minimal"
+theme = "delacruz"
 # disqusShortname = "username" # delete this to disable disqus comments
 # googleAnalytics = ""
 

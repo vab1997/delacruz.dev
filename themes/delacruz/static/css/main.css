@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+a,
+a:visited,
+a:active a:focus,
+a:focus-within {
+  color: #00d1b2;
+  text-decoration: none;
+  transition: color ease-in 0.2s;
+}
+
+a:hover {
+  color: #00c4a7;
+}
+
+.container {
+  padding: 0 200px;
+}
+
+.hero {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-title {
+  height: calc(100vh - 3.25rem);
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 200px;
+}
+
+.hero-title p {
+  margin: 0;
+}
+
+.hero-title h1 {
+  margin: 5px 0;
+  font-size: 3em;
+}
+
+.hero-title h3 {
+  margin: 5px 0 50px;
+  font-weight: 200;
+}
+
+.hero-picture {
+  background-image: url("/daniel-de-la-cruz.webp");
+  background-position: center 10%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: calc(100vh - 3.25rem);
+  width: 100%;
+  max-width: 50%;
+}
+
+.button {
+  -webkit-appearance: none;
+  align-items: center;
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  border-width: 1px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  text-align: center;
+  transition: background-color ease-in 0.2s;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button.is-primary {
+  background-color: #00d1b2;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-primary:hover {
+  background-color: #00c4a7;
+}
+
+.button.is-large {
+  font-size: 1.5rem;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  border-top: 6px solid #00d1b2;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 4.25rem !important;
+}
+
+.navbar .logo {
+  margin-left: -5px;
+}
+
+.navbar-brand {
+  align-items: stretch;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 3.25rem;
+}
+
+.navbar-item {
+  cursor: pointer;
+  color: #4a4a4a;
+  align-items: center;
+  display: flex;
+  line-height: 1.5;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+a.navbar-item {
+  color: #4a4a4a;
+}
+
+.blog {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 40px 40px;
+  margin-top: -200px;
+  position: relative;
+  padding-bottom: 0;
+  background: white;
+  border-radius: 5px;
+  padding: 40px 80px 60px 80px;
+  margin-bottom: 1.55rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+span.shadow {
+  box-shadow: inset 0 -6px 0 rgba(35, 209, 153, 0.2);
+}
+
+@media screen and (max-width: 1317px) {
+  .hero-picture {
+    background-size: cover;
+    height: auto;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-title,
+  .hero-picture {
+    width: 100%;
+    height: calc(50vh - 3.25rem);
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .hero-title {
+    justify-content: center;
+  }
+
+  .blog {
+    border-radius: 0;
+    margin-top: 0;
+    padding: 20px 40px 20px 20px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
