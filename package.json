@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build": "npx hugo-cli --minify",
+    "now-build": "npm run build",
     "start": "hugo server -D",
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
