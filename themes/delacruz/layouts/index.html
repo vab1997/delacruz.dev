@@ -11,14 +11,27 @@
         <button class="button is-primary is-large">Hire me!</button>
       </div>
     </div>
-    <div class="hero-picture"></div>
+    <div class="hero-picture">
+      <picture>
+        <img
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            daniel-de-la-cruz_e68nib_c_scale,w_200.webp   200w,
+            daniel-de-la-cruz_e68nib_c_scale,w_613.webp   613w,
+            daniel-de-la-cruz_e68nib_c_scale,w_946.webp   946w,
+            daniel-de-la-cruz_e68nib_c_scale,w_1213.webp 1213w,
+            daniel-de-la-cruz_e68nib_c_scale,w_1400.webp 1400w
+          "
+          src="daniel-de-la-cruz_e68nib_c_scale,w_1400.webp"
+          alt=""
+        />
+      </picture>
+    </div>
   </section>
 </header>
 
-<div class="blog">
-  <h2 class="title"><span class="shadow">Blog</span></h2>
-  {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
-  <a aria-label="Visit blog page" href="/blog">View all articles</a>
-</div>
+{{- partial "intro.html" . -}}
+
+{{- partial "blog.html" . -}}
 
 {{ end }}

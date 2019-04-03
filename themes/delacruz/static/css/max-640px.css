@@ -1,0 +1,25 @@
+.hero {
+  flex-direction: column-reverse;
+}
+
+.hero-title,
+.hero-picture {
+  width: 100%;
+  height: calc(50vh - 3.25rem);
+  max-width: 100%;
+}
+
+.hero-title {
+  padding: 20px;
+  justify-content: center;
+}
+
+.blog {
+  border-radius: 0;
+  margin-top: 0;
+  padding: 20px 40px 20px 20px;
+}
+
+.container {
+  padding: 0 20px;
+}

@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #00d1b2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +15,7 @@ a,
 a:visited,
 a:active a:focus,
 a:focus-within {
-  color: #00d1b2;
+  color: var(--primary-color);
   text-decoration: none;
   transition: color ease-in 0.2s;
 }
@@ -20,8 +24,45 @@ a:hover {
   color: #00c4a7;
 }
 
+.has-text-centered {
+  text-align: center !important;
+}
+
+.title {
+  color: #293347;
+  font-weight: 800;
+}
+
+.title {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.125;
+}
+.title,
+.subtitle {
+  word-break: break-word;
+}
+
+.section.is-primary .subtitle {
+  color: #fff;
+}
+
+.subtitle {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.subtitle {
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
 .container {
-  padding: 0 200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .hero {
@@ -57,10 +98,10 @@ a:hover {
 }
 
 .hero-picture {
-  background-image: url("/daniel-de-la-cruz.webp");
+  /* background-image: url("/daniel-de-la-cruz.webp");
   background-position: center 10%;
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: calc(100vh - 3.25rem);
   width: 100%;
   max-width: 50%;
@@ -94,7 +135,7 @@ a:hover {
 }
 
 .button.is-primary {
-  background-color: #00d1b2;
+  background-color: var(--primary-color);
   border-color: transparent;
   color: #fff;
 }
@@ -117,6 +158,13 @@ a:hover {
   border-top: 6px solid #00d1b2;
   border-bottom: 1px solid #e8e8e8;
   min-height: 4.25rem !important;
+}
+
+.navbar > .container {
+  align-items: stretch;
+  display: flex;
+  min-height: 3.25rem;
+  width: 100%;
 }
 
 .navbar .logo {
@@ -145,6 +193,29 @@ a.navbar-item {
   color: #4a4a4a;
 }
 
+.button.is-rounded {
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.navbar .navbar-menu a.button.is-primary.is-outlined {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 1.2rem;
+}
+
+.button.is-primary.is-outlined {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button.is-outlined {
+  border-width: 2px;
+}
+
 .blog {
   width: 100%;
   margin: 0 auto;
@@ -167,38 +238,42 @@ span.shadow {
   box-shadow: inset 0 -6px 0 rgba(35, 209, 153, 0.2);
 }
 
-@media screen and (max-width: 1317px) {
-  .hero-picture {
-    background-size: cover;
-    height: auto;
-    max-width: 1000px;
-  }
+section {
+  padding: 5rem 1.5rem;
 }
 
-@media screen and (max-width: 414px) {
-  .hero {
-    flex-direction: column-reverse;
-  }
+section.is-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-  .hero-title,
-  .hero-picture {
-    width: 100%;
-    height: calc(50vh - 3.25rem);
-    max-width: 100%;
-    padding: 20px;
-  }
+.section.is-primary .title,
+.section.is-primary .subtitle {
+  color: #fff;
+}
 
-  .hero-title {
-    justify-content: center;
-  }
+.section.is-long {
+  padding-bottom: 14rem;
+}
 
-  .blog {
-    border-radius: 0;
-    margin-top: 0;
-    padding: 20px 40px 20px 20px;
-  }
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+}
 
-  .container {
-    padding: 0 20px;
-  }
+.columns.is-centered {
+  justify-content: center;
+}
+
+.columns:last-child {
+  margin-bottom: -0.75rem;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
 }

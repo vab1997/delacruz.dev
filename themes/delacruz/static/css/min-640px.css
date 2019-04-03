@@ -1,0 +1,48 @@
+.container {
+  max-width: 1344px;
+  width: 1344px;
+}
+
+.hero-picture {
+  /* background-size: cover; */
+  height: auto;
+  max-width: 1000px;
+}
+
+.hero-picture img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.columns:not(.is-desktop) {
+  display: flex;
+}
+
+.column.is-three-fifths {
+  flex: none;
+  width: 60%;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-shadow: none;
+  padding: 0.5rem 0;
+}
+
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: stretch;
+  display: flex;
+}
+
+.navbar-item {
+  display: flex;
+}
+
+.navbar-item,
+.navbar-link {
+  align-items: center;
+  display: flex;
+}
