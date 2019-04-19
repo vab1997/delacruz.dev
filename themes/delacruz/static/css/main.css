@@ -13,13 +13,16 @@
   margin: 0 auto;
   max-width: 800px;
   padding: 40px 40px;
-  margin-top: -200px;
+  margin-top: -4rem;
   position: relative;
   padding-bottom: 0;
   background: white;
   border-radius: 5px;
   padding: 40px 80px 60px 80px;
   margin-bottom: 1.55rem;
+}
+.hero {
+  background-color: transparent;
 }
 
 span.shadow {
@@ -28,4 +31,22 @@ span.shadow {
 
 section.pricing {
   margin-top: -8rem;
+}
+
+.box {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.box:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(10, 10, 10, 0.1);
+  transform: translateY(-0.25rem);
+}
+
+.price {
+  font-weight: 800;
+}
+
+.is-spaced {
+  margin-bottom: 1.5rem !important;
 }
