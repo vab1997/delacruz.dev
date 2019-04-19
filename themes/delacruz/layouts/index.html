@@ -1,34 +1,6 @@
 {{ define "main" }}
-<header>
-  <section id="home" class="hero">
-    <div class="hero-title content is-medium">
-      <div>
-        <p>Hi! 👋</p>
-        <h1>I'm Dani</h1>
-        <h3>A JavaScript Engineer and Developer Mentor</h3>
-      </div>
-      <div>
-        <button class="button is-primary is-large">Hire me!</button>
-      </div>
-    </div>
-    <div class="hero-picture">
-      <picture>
-        <img
-          sizes="(max-width: 1400px) 100vw, 1400px"
-          srcset="
-            daniel-de-la-cruz_e68nib_c_scale,w_200.webp   200w,
-            daniel-de-la-cruz_e68nib_c_scale,w_613.webp   613w,
-            daniel-de-la-cruz_e68nib_c_scale,w_946.webp   946w,
-            daniel-de-la-cruz_e68nib_c_scale,w_1213.webp 1213w,
-            daniel-de-la-cruz_e68nib_c_scale,w_1400.webp 1400w
-          "
-          src="daniel-de-la-cruz_e68nib_c_scale,w_1400.webp"
-          alt=""
-        />
-      </picture>
-    </div>
-  </section>
-</header>
+
+{{- partial "hero.html" . -}}
 
 {{- partial "intro.html" . -}}
 

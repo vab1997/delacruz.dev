@@ -5,6 +5,9 @@ theme = "delacruz"
 # disqusShortname = "username" # delete this to disable disqus comments
 # googleAnalytics = ""
 
+[permalinks]
+	mentorship = "/:filename/"
+
 [params]
     author = "Daniel de la Cruz"
     description = "JavaScript Software Engineer and Developer Mentor"

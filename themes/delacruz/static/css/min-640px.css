@@ -1,8 +1,3 @@
-.container {
-  max-width: 1344px;
-  width: 1344px;
-}
-
 .hero-picture {
   /* background-size: cover; */
   height: auto;
@@ -14,35 +9,15 @@
   width: 100%;
 }
 
-.columns:not(.is-desktop) {
-  display: flex;
+.section.pricing .box {
+  padding: 60px 35px;
 }
 
-.column.is-three-fifths {
-  flex: none;
-  width: 60%;
+.pricing-grid {
+  margin-bottom: 6rem;
 }
 
-.navbar-menu {
-  flex-grow: 1;
-  flex-shrink: 0;
-  box-shadow: none;
-  padding: 0.5rem 0;
-}
-
-.navbar-end {
-  justify-content: flex-end;
-  margin-left: auto;
-  align-items: stretch;
-  display: flex;
-}
-
-.navbar-item {
-  display: flex;
-}
-
-.navbar-item,
-.navbar-link {
-  align-items: center;
-  display: flex;
+.container {
+  max-width: 1200px;
+  width: 1200px;
 }
