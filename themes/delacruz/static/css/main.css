@@ -21,13 +21,6 @@
   padding: 40px 80px 60px 80px;
   margin-bottom: 1.55rem;
 }
-.hero {
-  background-color: transparent;
-}
-
-span.shadow {
-  box-shadow: inset 0 -6px 0 rgba(35, 209, 153, 0.2);
-}
 
 section.pricing {
   margin-top: -8rem;
