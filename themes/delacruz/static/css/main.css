@@ -43,3 +43,10 @@ section.pricing {
 .is-spaced {
   margin-bottom: 1.5rem !important;
 }
+
+.footer-icon {
+  color: #959da5;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
