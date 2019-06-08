@@ -50,3 +50,11 @@ section.pricing {
   display: inline-block;
   vertical-align: middle;
 }
+
+.hero-image img {
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  width: 100vw;
+  height: 100vh;
+}

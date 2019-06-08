@@ -6,3 +6,9 @@
 .section.pricing {
   margin-top: -4rem;
 }
+
+
+.hero-image {
+  height: 50vh;
+  overflow: hidden;
+}

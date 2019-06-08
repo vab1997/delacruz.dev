@@ -5,3 +5,14 @@
 .pricing-grid {
   margin-bottom: 6rem;
 }
+
+.hero-body {
+  width: 50%;
+}
+
+.hero-image {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
