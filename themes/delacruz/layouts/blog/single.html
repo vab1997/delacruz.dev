@@ -1,13 +1,14 @@
 {{ define "main" }}
-<section id="main" class="container">
-  <h1 id="title">{{ .Title }}</h1>
-  <div>
-    <article id="content">
+<img src="{{ .Params.kk }}" />
+<section class="section">
+  <div class="container ">
+    <h1 class="title is-1 is-spaced">{{ .Title }}</h1>
+      <div class="content is-medium">
       {{ .Content }}
-    </article>
+    </div>
   </div>
 </section>
-<aside id="meta">
+<!-- <aside id="meta">
   <div>
     <section>
       <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
@@ -36,5 +37,5 @@
         <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
       {{ end }}
   </div>
-</aside>
+</aside> -->
 {{ end }}
