@@ -34,6 +34,10 @@
   transform: translateY(-0.25rem);
 }
 
+.timeline-content .box {
+  max-width: 400px;
+}
+
 .price {
   font-weight: 800;
 }

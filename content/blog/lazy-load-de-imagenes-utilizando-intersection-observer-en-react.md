@@ -2,9 +2,8 @@
 title: "Lazy load de imágenes utilizando Intersection Observer API en React"
 date: 2018-01-07
 draft: false
+frontImage: https://cdn-images-1.medium.com/max/2600/1*8sL3-kK9ti4uASw9cofewA.png
 ---
-
-![](https://cdn-images-1.medium.com/max/2600/1*8sL3-kK9ti4uASw9cofewA.png)
 
 Hace poco buscaba una forma de hacer carga perezosa ([lazy
 loading](https://en.wikipedia.org/wiki/Lazy_loading)) de imágenes en una

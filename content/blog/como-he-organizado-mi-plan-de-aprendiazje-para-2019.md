@@ -2,7 +2,7 @@
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
 date: 2019-01-20
 draft: false
-kk: 'https://cdn-images-1.medium.com/max/2600/1*uiuPchdXurPxy6A0P-SRXA.jpeg'
+frontImage: 'https://cdn-images-1.medium.com/max/2600/1*uiuPchdXurPxy6A0P-SRXA.jpeg'
 ---
 
 En el momento de escribir estas líneas [ya ha transcurrido el 5% del año

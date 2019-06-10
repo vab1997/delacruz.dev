@@ -2,9 +2,8 @@
 title: "Crea tu propio DOM Virtual"
 date: 2017-12-29
 draft: false
+frontImage: https://cdn-images-1.medium.com/max/2600/1*99CQo2N3CFPavP7EPibBig.jpeg
 ---
-
-![](https://cdn-images-1.medium.com/max/2600/1*99CQo2N3CFPavP7EPibBig.jpeg)
 
 Hace poco me pidieron en una entrevista que hiciese una prueba técnica
 aparentemente sencilla: apenas un par de páginas y una llamada a una API. La
@@ -136,8 +135,6 @@ Babel tampoco es trampa.
 Puedes probar el [siguiente código en JSFiddle](https://jsfiddle.net/58pmedyd/)
 para ver el resultado de aplicar los pasos realizados hasta ahora.
 
-<span class="figcaption_hack">Ejecuta el código tras transpilarlo y mira el resultado en la consola</span>
-
 #### Renderizando elementos en el DOM
 
 Ya hemos visto que representar elementos de DOM virtual en combinación con JSX
@@ -189,7 +186,7 @@ Y luego, añadimos un simple script que añada el componente al _root:_
     document.getElementById('root')
       .appendChild(createElement(helloWorld))
 
-A continuación tienes el ejemplo completo, funcionando en JSFiddle:
+Aquí tienes el enlace al ejemplo completo funcionando en [JSFiddle](https://jsfiddle.net/oL0bmwg7/).
 
 #### Conclusiones
 
@@ -215,7 +212,3 @@ implementar las _props_ y los eventos.
 - [Jsx](https://medium.com/tag/jsx?source=post)
 - [JavaScript](https://medium.com/tag/javascript?source=post)
 - [Reactjs](https://medium.com/tag/reactjs?source=post)
-
-### [danidev](https://medium.com/@danidev)
-
-Front End Engineer and problem solver.

@@ -3,9 +3,8 @@ title: "The change is in you"
 date: 2016-12-27
 draft: false
 summary: "kkkk k k k k"
+frontImage: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
 ---
-
-![](https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg)
 
 I’ve been working for years at different companies with [legacy
 products](http://dandel.es/journey/2015/10/22/por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya.html).
