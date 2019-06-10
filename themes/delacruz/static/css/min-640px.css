@@ -6,8 +6,9 @@
   margin-bottom: 6rem;
 }
 
-.hero-body {
+.hero-body .subtitle {
   width: 50%;
+  padding-right: 1em;
 }
 
 .hero-image {
