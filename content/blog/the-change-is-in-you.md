@@ -5,9 +5,8 @@ draft: false
 frontImage: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
 ---
 
-I’ve been working for years at different companies with [legacy
-products](http://dandel.es/journey/2015/10/22/por-que-no-puedes-librarte-del-legacy-code-y-por-que-no-solo-es-culpa-tuya.html).
-And I felt terribly frustrated because of that. Especially when I heard about
+I’ve been working for years at different companies with legacy
+products. And I felt terribly frustrated because of that. Especially when I heard about
 developers in the wild doing really cool things, working on greenfield projects
 or with the latest framework or library everyone’s talking about. At some point,
 I realiazed how slow we were adding value to our products, how difficult it was
