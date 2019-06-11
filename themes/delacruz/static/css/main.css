@@ -22,6 +22,10 @@
   margin-bottom: 1.55rem;
 }
 
+.blogFrontImage {
+  width: 100vw;
+}
+
 .box,
 .card {
   cursor: pointer;

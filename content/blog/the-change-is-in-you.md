@@ -2,7 +2,6 @@
 title: "The change is in you"
 date: 2016-12-27
 draft: false
-summary: "kkkk k k k k"
 frontImage: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
 ---
 
@@ -38,7 +37,7 @@ Otherwise, anyone could do it.
 Before we start, please remember one simple rule. You should follow this rule
 during the whole process and everything is going to be fine. Say with me:
 
-> **I won’t give up.**
+> "I won’t give up."
 
 #### Don’t fly solo
 
@@ -60,7 +59,7 @@ of time talking about those situations but when you try to fix them, you only
 cut the corners. After a while, you realize that the situation is happening
 again. Ask yourselves:
 
-> **Are we trying to solve the right problems or just the symptoms?**
+> "Are we trying to solve the right problems or just the symptoms?"
 
 There is a bunch of things you can do before start coding to refactor/rewrite
 something that you’re not comfortable working with. And the first one is to
@@ -155,7 +154,7 @@ While you’re talking, your managers might agree with you on the problems and
 also might trust you in the solution you’re presenting. But they most likely are
 going to be thinking about one single thing:
 
-> **How much do we need to invest on this?**
+> "How much do we need to invest on this?"
 
 And here’s when we come to the most important step of your speech
 
@@ -196,7 +195,7 @@ a good solution? Be ready to fail fast without burning yourself during the
 process, because the worst thing you could do is to make it personal. Remember
 what we said in the beginning:
 
-> **I won’t give up.**
+> "I won’t give up."
 
 I spent more than one year doing this process at my previous company before I
 found the right arguments to convince my managers. Be persistent and trust
@@ -224,7 +223,7 @@ direction.
 Now it’s time to be serious. You’ve got to **manage the expectations** and be
 realistic. After your proof of concept, the first question would probably be:
 
-> **“When is this going to be done?”**
+> “When is this going to be done?”
 
 Be careful before answering! You know, and so do I, that the change you’re
 trying to promote may take you _months_. There’s a huge risk on waiting months
@@ -242,7 +241,7 @@ take you months, right? Instead of rewriting everything, you should **think
 about the smallest possible change you could do to deliver something in
 production as soon as possible**. Ask yourselves:
 
-> What could I do in just a week?
+> "What could I do in just a week?"
 
 Maybe the solution is just to rewrite one of the pages, the simplest one. Or
 just one module of a single page. If you start with the smallest thing as
@@ -286,13 +285,3 @@ change with success, minifying the risk.
 
 And remember: If you don’t succeed, iterate and don’t make it personal. Don’t
 give up. You’re right. Just keep trying.
-
-- [Software Development](https://medium.com/tag/software-development?source=post)
-- [Startup](https://medium.com/tag/startup?source=post)
-- [Change](https://medium.com/tag/change?source=post)
-- [Leadership](https://medium.com/tag/leadership?source=post)
-- [Legacy](https://medium.com/tag/legacy?source=post)
-
-### [danidev](https://medium.com/@danidev)
-
-Front End Engineer and problem solver.
