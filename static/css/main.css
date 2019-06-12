@@ -81,3 +81,7 @@
 .pricing-grid > .columns {
   align-items: flex-start;
 }
+
+.tags {
+  padding-left: 1em;
+}
