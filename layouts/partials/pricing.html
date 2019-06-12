@@ -1,6 +1,6 @@
 <section class="section has-text-centered pricing">
   <div class="container">
-    <div class="pricing-grid is-spaced">
+    <div class="pricing-grid">
       <div class="columns is-centered level">
         <div class="column level-item">
           <div class="box">
@@ -80,16 +80,36 @@
       </div>
     </div>
     <div class="callout">
-      <div class="columns is-centered">
-        <div class="column">
-          <h1 class="title is-spaced">¿Te interesa subir de nivel? 🕹️</h1>
-          <h2 class="subtitle is-size-5-desktop">
-            Agenda una consultoría gratuita para hacerme preguntas, discutir
-            detalles y decidir si soy la persona que estás buscando.
-          </h2>
-          {{- partial "contact.html" . -}}
-        </div>
+      <div class="container is-narrow">
+        <h1 class="title is-spaced">¿No tienes claro qué opción escoger?</h1>
+        <h2 class="subtitle is-size-5-desktop">
+          Agenda una <u><strong>consultoría gratuita</strong></u> para hacerme
+          preguntas, discutir detalles y decidir si soy la persona que estás
+          buscando.
+        </h2>
+        <!-- Principio del widget de enlace de Calendly -->
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          type="text/javascript"
+        ></script>
+        <a
+          class="button is-primary is-large"
+          href=""
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danidelacruz/1hour-free'});return false;"
+          >Solicita una consultoría gratuita</a
+        >
+        <!-- Final del widget de enlace de Calendly -->
       </div>
     </div>
+  </div>
+</section>
+<section class="section has-background-light">
+  <div class="container is-narrow">
+    <h1 class="title is-spaced has-text-centered">Contacto</h1>
+    {{- partial "contact.html" . -}}
   </div>
 </section>

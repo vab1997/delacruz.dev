@@ -78,6 +78,10 @@
   display: flex;
 }
 
+.pricing-grid {
+  margin-bottom: 6em;
+}
+
 .pricing-grid > .columns {
   align-items: flex-start;
 }
