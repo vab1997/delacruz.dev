@@ -1,3 +1,12 @@
+/* Calendly widget fix */
+html {
+  height: auto !important; /* reset default to allow scroll navigation */
+}
+
+html.calendly-page-scroll-locked {
+  height: 100% !important;  /* set height when popup is active */
+}
+
 .hero-picture {
   /* background-image: url("/daniel-de-la-cruz.webp");
   background-position: center 10%;
