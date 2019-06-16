@@ -8,10 +8,6 @@ html.calendly-page-scroll-locked {
 }
 
 .hero-picture {
-  /* background-image: url("/daniel-de-la-cruz.webp");
-  background-position: center 10%;
-  background-size: 100% auto;
-  background-repeat: no-repeat; */
   height: calc(100vh - 3.25rem);
   width: 100%;
   max-width: 50%;
@@ -130,4 +126,19 @@ html.calendly-page-scroll-locked {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     width: 100%;
+}
+
+.section.mentorship-style .box {
+  padding: 0;
+}
+
+.section.mentorship-style .columns {
+  margin: 0;
+}
+
+.section.mentorship-style .column {
+  margin: 0;
+  padding: 60px;
+  border-right: 1px solid #E6ECF8;
+  border-bottom: 1px solid #E6ECF8;
 }

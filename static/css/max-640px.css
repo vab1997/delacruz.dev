@@ -3,7 +3,8 @@
   justify-content: space-between;
 }
 
-.section.pricing {
+.section.pricing,
+.section.mentorship-style {
   margin-top: -4rem;
 }
 
@@ -18,4 +19,9 @@
 
 .button.is-medium-mobile {
   font-size: 1rem;
+}
+
+
+.mentorship-style .column {
+  padding: 60px 35px;
 }
