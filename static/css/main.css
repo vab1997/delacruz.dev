@@ -39,6 +39,11 @@ html.calendly-page-scroll-locked {
   width: 100vw;
 }
 
+.box.item {
+  height: 100%;
+  text-align: left;
+}
+
 .box,
 .card {
   cursor: pointer;

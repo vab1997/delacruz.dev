@@ -1,90 +1,100 @@
-<form
-  id="form"
-  accept-charset="UTF-8"
-  action="https://www.usebasin.com/f/2e7223846893"
-  method="POST"
->
-
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label class="label">De</label>
-    </div>
-    <div class="field-body">
-      <div class="field">
-        <p class="control is-expanded has-icons-left">
-          <input
-            id="name"
-            name="name"
-            class="input"
-            type="text"
-            placeholder="Nombre"
-            required
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </p>
-      </div>
-      <div class="field">
-        <p class="control is-expanded has-icons-left has-icons-right">
-          <input id="email" class="input" type="email" name="email" placeholder="Email" />
-          <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label class="label">Asunto</label>
-    </div>
-    <div class="field-body">
-      <div class="field">
-        <div class="control">
-          <input
-            id="subject"
-            name="subject"
-            class="input"
-            type="text"
-            placeholder="ej. Mentoring puntual"
-          />
+<section class="section has-background-light">
+  <div class="container is-narrow">
+    <h1 class="title is-spaced has-text-centered">Contacto</h1>
+    <form
+      id="form"
+      accept-charset="UTF-8"
+      action="https://www.usebasin.com/f/2e7223846893"
+      method="POST"
+    >
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">De</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <p class="control is-expanded has-icons-left">
+              <input
+                id="name"
+                name="name"
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control is-expanded has-icons-left has-icons-right">
+              <input
+                id="email"
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="field is-horizontal">
-    <div class="field-label is-normal">
-      <label class="label">Mensaje</label>
-    </div>
-    <div class="field-body">
-      <div class="field">
-        <div class="control">
-          <textarea
-            id="body"
-            name="body"
-            class="textarea"
-            placeholder="Explícame cómo puedo empezar a ayudarte"
-          ></textarea>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Asunto</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <input
+                id="subject"
+                name="subject"
+                class="input"
+                type="text"
+                placeholder="ej. Mentoring puntual"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="field is-horizontal">
-    <div class="field-label">
-      <!-- Left empty for spacing -->
-    </div>
-    <div class="field-body">
-      <div class="field">
-        <div class="control">
-          <button id="submit" type="submit" class="button is-primary">
-            Enviar mensaje
-          </button>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Mensaje</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <textarea
+                id="body"
+                name="body"
+                class="textarea"
+                placeholder="Explícame cómo puedo empezar a ayudarte"
+              ></textarea>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="field is-horizontal">
+        <div class="field-label">
+          <!-- Left empty for spacing -->
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <button id="submit" type="submit" class="button is-primary">
+                Enviar mensaje
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
-</form>
+</section>
