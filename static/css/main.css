@@ -53,6 +53,18 @@ html.calendly-page-scroll-locked {
 
 .timeline-content .box {
   max-width: 400px;
+  padding: 0;
+}
+
+.timeline-content .experience-box {
+  max-width: 400px;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.responsibilities-list {
+  list-style-type: square;
+  padding: 1em 0 0 1.5em;
 }
 
 .price {
@@ -97,4 +109,11 @@ html.calendly-page-scroll-locked {
 
 .tags {
   padding-left: 1em;
+}
+
+.image-box img {
+    border-radius: .3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
 }
