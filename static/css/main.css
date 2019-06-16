@@ -112,6 +112,15 @@ html.calendly-page-scroll-locked {
   align-items: flex-start;
 }
 
+.benefits-grid {
+  padding-top: 4rem;
+}
+
+.benefits-grid .icon {
+    height: auto;
+    margin: 0px auto 1.5em;
+}
+
 .tags {
   padding-left: 1em;
 }
