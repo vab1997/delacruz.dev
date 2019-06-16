@@ -11,3 +11,11 @@
   height: 50vh;
   overflow: hidden;
 }
+
+.hero-image img {
+  object-fit: contain
+}
+
+.button.is-medium-mobile {
+  font-size: 1rem;
+}
