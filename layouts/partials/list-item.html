@@ -1,5 +1,5 @@
 <div class="column">
-    <div class="box item">
+    <div class="box blog-post">
         <!-- <div class="card-content"> -->
             {{ $.Scratch.Set "link" .RelPermalink }}
             {{ with .Params.repo }}
@@ -18,7 +18,10 @@
             {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
 
             <h3 class="title is-4"><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h3>
-            <h4 class="subtitle is-6">{{ $.Scratch.Get "subtitle" }}</h4>
+            <div class="date">
+
+            <span class="tag">{{ $.Scratch.Get "subtitle" }}</span>
+            </div>
             {{ range .Params.tags }}
             <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
         {{ end }}

@@ -35,9 +35,15 @@ html.calendly-page-scroll-locked {
   width: 100vw;
 }
 
-.box.item {
+.box.blog-post {
   height: 100%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.box.blog-post .date {
+  margin-top: auto !important;
 }
 
 .box,
