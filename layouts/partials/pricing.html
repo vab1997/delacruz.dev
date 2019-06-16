@@ -103,14 +103,26 @@
           buscando.
         </h2>
         <a
+          data-cta="free"
           class="button is-primary is-medium"
           href=""
           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danidelacruz/1hour-free'});return false;"
         >
-          Solicita una
-          sesión gratuita
+          Solicita una sesión gratuita
         </a>
       </div>
     </div>
   </div>
 </section>
+<script type="text/javascript">
+  document
+    .querySelector("[data-cta='free']")
+    .addEventListener("click", function() {
+      ga("send", {
+        hitType: "event",
+        eventCategory: "Call to Action",
+        eventAction: "click",
+        eventLabel: "Free session"
+      });
+    });
+</script>
