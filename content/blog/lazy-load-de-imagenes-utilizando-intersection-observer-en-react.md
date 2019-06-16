@@ -144,7 +144,7 @@ menos de 2KB de media, provocan un efecto devastador en la carga total de la
 página, **postergando el evento window.load más de 5s después del
 DOMContentLoaded** según mis condiciones de prueba, ancho de banda… etc.
 
-<span class="figcaption_hack">HAR de las peticiones de imágenes que se hacen si no hacemos Lazy loading</span>
+![HAR de las peticiones de imágenes que se hacen si no hacemos Lazy loading](https://cdn-images-1.medium.com/max/2600/1*tPQjlONq1hRIJF_24jw1Ng.png)
 
 ### Implementar Intersection Observer en una lista de imágenes
 
@@ -333,7 +333,7 @@ dimensiones por CSS o directamente en el tag **<img>**:
 ¡Y ya está! Podemos ejecutar la aplicación para ver el efecto de nuestros
 cambios en el tiempo de carga de la página:
 
-<span class="figcaption_hack">Carga de imágenes tras implementar lazy-load con Intersection Observer</span>
+![Carga de imágenes tras implementar lazy-load con Intersection Observer](https://cdn-images-1.medium.com/max/1600/1*dfbqNWavkknuR4GCiib_dg.gif)
 
 Como verás, el tiempo disparo del evento **window.load** ha bajado
 dramáticamente a un valor mucho más aceptable. Y todo con una sencilla función.
@@ -368,14 +368,9 @@ imports_. Pero esto será para un futuro artículo.
   API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - [Repositorio de GitHub con el código del
   ejemplo](https://github.com/danderu/lazy-loading-pokemons)
-
 - [React](https://medium.com/tag/react?source=post)
 - [Intersection
   Observer](https://medium.com/tag/intersection-observer?source=post)
 - [JavaScript](https://medium.com/tag/javascript?source=post)
 - [Ecmascript 6](https://medium.com/tag/ecmascript-6?source=post)
 - [Web Development](https://medium.com/tag/web-development?source=post)
-
-### [danidev](https://medium.com/@danidev)
-
-Front End Engineer and problem solver.
