@@ -27,7 +27,8 @@
               <li>Code review</li>
             </ul>
             <a
-              href="#contacto"
+              data-tracking="mentoring-puntual-cta"
+              title="Contactar para una hora de mentoring puntual sin compromiso"
               class="button is-medium is-primary"
               href=""
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danidelacruz/mentoring-puntual'});return false;"
@@ -59,7 +60,11 @@
               <li>Ayuda en resolución de conflictos</li>
               <li>Descubrir la mejor forma de ayudar a tu equipo</li>
             </ul>
-            <a href="#contacto" class="button is-medium is-primary"
+            <a
+              href="#contacto"
+              class="button is-medium is-primary"
+              data-tracking="coaching-cta"
+              title="Contactar para un coaching profesional"
               >Trabajemos juntos</a
             >
           </div>
@@ -87,7 +92,11 @@
               <li>Aprender una tecnología</li>
               <li>Completar tu formación universitaria o en un Bootcamp</li>
             </ul>
-            <a href="#contacto" class="button is-medium is-primary"
+            <a
+              href="#contacto"
+              class="button is-medium is-primary"
+              data-tracking="tailored-cta"
+              title="Contactar para un aprendizaje a medida"
               >Sube de nivel</a
             >
           </div>
@@ -103,7 +112,8 @@
           buscando.
         </h2>
         <a
-          data-cta="free"
+          title="Solicita una sesión gratuita"
+          data-tracking="free-session-cta"
           class="button is-primary is-medium"
           href=""
           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danidelacruz/1hour-free'});return false;"
@@ -114,15 +124,3 @@
     </div>
   </div>
 </section>
-<script type="text/javascript">
-  document
-    .querySelector("[data-cta='free']")
-    .addEventListener("click", function() {
-      ga("send", {
-        hitType: "event",
-        eventCategory: "Call to Action",
-        eventAction: "click",
-        eventLabel: "Free session"
-      });
-    });
-</script>
