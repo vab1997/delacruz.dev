@@ -25,3 +25,7 @@
 .mentorship-style .column {
   padding: 60px 35px;
 }
+
+.hero .scroll-down-icon {
+  display: none;
+}
