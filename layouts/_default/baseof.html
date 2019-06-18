@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="has-navbar-fixed-top">
   {{- partial "head.html" . -}}
   <body>
-    {{- partial "header.html" . -}}
+    {{- partial "navbar.html" . -}}
     <div id="content">{{- block "main" . }}{{ end }}</div>
     {{- partial "footer.html" . -}}
     <script type="text/javascript" src="/js/scripts.js"></script>
