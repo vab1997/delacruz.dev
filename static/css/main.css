@@ -1,6 +1,7 @@
 /* Calendly widget fix */
 html {
   height: auto !important; /* reset default to allow scroll navigation */
+  scroll-behavior: smooth;
 }
 
 html.calendly-page-scroll-locked {
@@ -154,6 +155,12 @@ html.calendly-page-scroll-locked {
   padding: 60px;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
+}
+
+.skills-intro {
+  background-image: url(/images/background.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes floating {
