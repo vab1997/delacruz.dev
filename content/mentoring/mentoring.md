@@ -1,5 +1,5 @@
 ---
-title: "Mentorship"
+title: "Mentoring"
 draft: false
 hide: true
 ---
