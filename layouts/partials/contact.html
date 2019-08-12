@@ -1,27 +1,15 @@
-<section class="section has-background-white-bis">
+<section class="section has-background-light is-medium">
   <div class="container is-narrow">
-    <h1 id="contacto" class="title is-spaced has-text-centered">Contacto</h1>
-    <form
-      id="form"
-      accept-charset="UTF-8"
-      action="https://www.usebasin.com/f/2e7223846893"
-      method="POST"
-    >
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label for="name" class="label">De</label>
-        </div>
-        <div class="field-body">
+    <h1 id="contact" class="title is-spaced has-text-centered">Contactar</h1>
+    <form id="form" accept-charset="UTF-8" action="https://www.usebasin.com/f/2e7223846893" method="POST">
+      <div class="field">
+
+        <label for="name" class="label is-large">De</label>
+
+        <div class="control">
           <div class="field">
             <p class="control is-expanded has-icons-left">
-              <input
-                id="name"
-                name="name"
-                class="input"
-                type="text"
-                placeholder="Nombre"
-                required
-              />
+              <input id="name" name="name" class="input is-large" type="text" placeholder="Nombre" required />
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -29,13 +17,7 @@
           </div>
           <div class="field">
             <p class="control is-expanded has-icons-left has-icons-right">
-              <input
-                id="email"
-                class="input"
-                type="email"
-                name="email"
-                placeholder="Email"
-              />
+              <input id="email" class="input is-large" type="email" name="email" placeholder="Email" />
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -44,61 +26,32 @@
         </div>
       </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label for="subject" class="label">Asunto</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input
-                id="subject"
-                name="subject"
-                class="input"
-                type="text"
-                placeholder="ej. Mentoring puntual"
-              />
-            </div>
-          </div>
+      <div class="field">
+
+        <label for="subject" class="label is-large">Asunto</label>
+
+        <div class="control">
+              <input id="subject" name="subject" class="input is-large" type="text"
+                placeholder="ej. Mentoring puntual" />
         </div>
       </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label for="body" class="label">Mensaje</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea
-                id="body"
-                name="body"
-                class="textarea"
-                placeholder="Explícame cómo puedo empezar a ayudarte"
-              ></textarea>
-            </div>
-          </div>
+      <div class="field">
+
+        <label for="body" class="label is-large">Mensaje</label>
+
+        <div class="control">
+              <textarea id="body" name="body" class="textarea is-large"
+                placeholder="Explícame cómo puedo empezar a ayudarte"></textarea>
+            
         </div>
       </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <!-- Left empty for spacing -->
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <button
-                id="submit"
-                type="submit"
-                class="button is-primary is-medium"
-                data-tracking="contact-cta"
-              >
-                Enviar mensaje
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="field">
+        <button id="submit" type="submit" class="button is-primary is-large" data-tracking="contact-cta">
+          Enviar mensaje
+        </button>
+
       </div>
     </form>
   </div>
