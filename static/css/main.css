@@ -158,8 +158,12 @@ html.calendly-page-scroll-locked {
   border-bottom: 1px solid #e6ecf8;
 }
 
-.skills-intro {
-  background-image: url(/images/background.jpeg);
+.mentoring-intro {
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url(/images/unsplash-002.jfif);
   background-size: cover;
   background-position: center;
 }
