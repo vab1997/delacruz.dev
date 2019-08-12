@@ -3,9 +3,14 @@
   {{- partial "head.html" . -}}
   <body>
     {{- partial "navbar.html" . -}}
-    <div id="content">{{- block "main" . }}{{ end }}</div>
+    <div id="content">
+
+      <!-- {{- partial "pricing.html" . -}} -->
+      
+      {{- partial "contact.html" . -}}
+    </div>
+
     {{- partial "footer.html" . -}}
-    <script type="text/javascript" src="/js/scripts.js"></script>
     <script type="text/javascript" src="/js/analytics.js"></script>
   </body>
 </html>

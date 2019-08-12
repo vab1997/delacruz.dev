@@ -17,11 +17,10 @@
   object-fit: contain
 }
 
-.button.is-medium-mobile {
-  font-size: 1rem;
-}
-
-
 .mentorship-style .column {
   padding: 60px 35px;
+}
+
+.hero .scroll-down-icon {
+  display: none;
 }

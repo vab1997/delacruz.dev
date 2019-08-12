@@ -1,4 +1,5 @@
 var mobileBreakpoint = 768;
+
 var applyResponsiveChanges = debounce(function() {
   var timeline = window.document.querySelector(".timeline");
   if (window.innerWidth <= mobileBreakpoint) {

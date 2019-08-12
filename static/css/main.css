@@ -1,10 +1,11 @@
 /* Calendly widget fix */
 html {
   height: auto !important; /* reset default to allow scroll navigation */
+  scroll-behavior: smooth;
 }
 
 html.calendly-page-scroll-locked {
-  height: 100% !important;  /* set height when popup is active */
+  height: 100% !important; /* set height when popup is active */
 }
 
 .hero-picture {
@@ -97,6 +98,13 @@ html.calendly-page-scroll-locked {
   height: 100vh;
 }
 
+.hero .scroll-down-icon {
+  margin: auto;
+  position: relative;
+  bottom: 5rem;
+  animation: floating 2.5s infinite;
+}
+
 .navbar-end {
   justify-content: flex-end;
   margin-left: auto;
@@ -116,11 +124,12 @@ html.calendly-page-scroll-locked {
 
 .benefits-grid {
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .benefits-grid .icon {
-    height: auto;
-    margin: 0px auto 1.5em;
+  height: auto;
+  margin: 0px auto 1.5em;
 }
 
 .tags {
@@ -128,10 +137,10 @@ html.calendly-page-scroll-locked {
 }
 
 .image-box img {
-    border-radius: .3rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    width: 100%;
+  border-radius: 0.3rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
 }
 
 .section.mentorship-style .box {
@@ -145,6 +154,26 @@ html.calendly-page-scroll-locked {
 .section.mentorship-style .column {
   margin: 0;
   padding: 60px;
-  border-right: 1px solid #E6ECF8;
-  border-bottom: 1px solid #E6ECF8;
+  border-right: 1px solid #e6ecf8;
+  border-bottom: 1px solid #e6ecf8;
+}
+
+.mentoring-intro {
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url(/images/unsplash-002.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
