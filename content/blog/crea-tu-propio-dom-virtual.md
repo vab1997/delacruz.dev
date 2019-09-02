@@ -2,7 +2,7 @@
 title: "Crea tu propio DOM Virtual"
 date: 2017-12-29
 draft: false
-frontImage: https://cdn-images-1.medium.com/max/2600/1*99CQo2N3CFPavP7EPibBig.jpeg
+frontImage: /images/blog-images/virtual-dom-header.jpeg
 ---
 
 Hace poco me pidieron en una entrevista que hiciese una prueba técnica
@@ -10,7 +10,7 @@ aparentemente sencilla: apenas un par de páginas y una llamada a una API. La
 dificultad estaba en que todo el código debía ser _vanilla JS_. Es decir,
 JavaScript puro y duro, sin utilizar Frameworks ni librerías.
 
-<!-- more -->
+<!--more-->
 
 Como estoy bastante acostumbrado a desarrollar interfaces de usuario por
 componentes, en su momento me dio bastante palo currármelo tanto para una prueba
@@ -19,7 +19,7 @@ de que sería bastante más fácil de lo que puede parecer al principio. Así qu
 como el reto es interesante, he pensado en escribir una serie de posts
 documentando los conceptos que hay detrás de una librería de DOM virtual.
 
-#### ¿Cómo representamos el DOM?
+## ¿Cómo representamos el DOM?
 
 Imaginemos que queremos representar un elemento sencillo del DOM, como por
 ejemplo:
@@ -59,7 +59,7 @@ Quedaría:
       }]
     }
 
-#### Escribamos una función que nos ayude a representar el DOM
+## Escribamos una función que nos ayude a representar el DOM
 
 Escribir una vista completa o incluso un componente de este modo es bastante
 engorroso, así que hagamos una función que nos facilite un poco el trabajo:
@@ -83,7 +83,7 @@ anterior, ahora podemos representar el DOM así:
 Fíjate que utilizo **className** porque **class** es una palabra reservada del
 lenguaje.
 
-#### Utilicemos JSX
+## Utilicemos JSX
 
 Reconozco que estoy muy acostumbrado a utilizar la sintaxis tipo XML que
 proporciona JSX para definir vistas, gracias a (o por culpa de) React. Pero al
@@ -135,7 +135,7 @@ Babel tampoco es trampa.
 Puedes probar el [siguiente código en JSFiddle](https://jsfiddle.net/58pmedyd/)
 para ver el resultado de aplicar los pasos realizados hasta ahora.
 
-#### Renderizando elementos en el DOM
+## Renderizando elementos en el DOM
 
 Ya hemos visto que representar elementos de DOM virtual en combinación con JSX
 es bastante sencillo, así nos queda la parte de implementar cómo renderizar esos
@@ -188,7 +188,7 @@ Y luego, añadimos un simple script que añada el componente al _root:_
 
 Aquí tienes el enlace al ejemplo completo funcionando en [JSFiddle](https://jsfiddle.net/oL0bmwg7/).
 
-#### Conclusiones
+## Conclusiones
 
 A veces nos acostumbramos tanto a utilizar una librería o framework que se nos
 olvida cómo funciona por debajo. En este artículo hemos visto que representar un
@@ -200,15 +200,14 @@ Si el artículo tiene buena aceptación, me gustaría escribir sobre cómo se ha
 el _diffing_, para comprobar qué elementos han cambiado y también cómo
 implementar las _props_ y los eventos.
 
-#### Referencias
+## Referencias
 
 - [WTF is JSX](https://jasonformat.com/wtf-is-jsx/), por Jason Miller
 - [How to write your own Virtual
   DOM](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060),
   por deathmood
-- [hnpwa-vanilla/dom-api](https://github.com/cristianbote/hnpwa-vanilla/blob/master/src/core/dom-api.js)
-  — El código que me inspiró para escribir este artículo
+- [hnpwa-vanilla/dom-api](https://github.com/cristianbote/hnpwa-vanilla/blob/master/src/core/dom-api.js). El código que me inspiró para escribir este artículo
 
-- [Jsx](https://medium.com/tag/jsx?source=post)
-- [JavaScript](https://medium.com/tag/javascript?source=post)
-- [Reactjs](https://medium.com/tag/reactjs?source=post)
+---
+
+¿Quieres saber cómo empezar a aprender los fundamentos de librerías de interfaz de usuario como [React.JS](https://reactjs.org/)? ¿Te gustaría practicar técnicas de ingeniería inversa como la que he utilizado para escribir este artículo?. Si necesitas un **mentor** que te ayude a dar un salto en tu carrera profesional, echa un vistazo a mis planes de [mentoring](/mentoring).

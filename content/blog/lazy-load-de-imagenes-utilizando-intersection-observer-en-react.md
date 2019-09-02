@@ -2,7 +2,7 @@
 title: "Lazy load de imágenes utilizando Intersection Observer API en React"
 date: 2018-01-07
 draft: false
-frontImage: https://cdn-images-1.medium.com/max/2600/1*8sL3-kK9ti4uASw9cofewA.png
+frontImage: /images/blog-images/lazy-load-header.png
 ---
 
 Hace poco buscaba una forma de hacer carga perezosa ([lazy
@@ -10,7 +10,7 @@ loading](https://en.wikipedia.org/wiki/Lazy_loading)) de imágenes en una
 aplicación hecha en React, y descubrí la [API de Intersection
 Observer](https://w3c.github.io/IntersectionObserver/).
 
-<!-- more -->
+<!--more-->
 
 Antaño, calcular la visibilidad de un componente objetivo respecto a otro
 relativo era bastante engorroso de implementar. Tenías que escuchar eventos del
@@ -26,13 +26,13 @@ visibilidad.
 En este post compartiré cómo funciona Intersection Observer y cómo utilizarlo en
 una aplicación en la que quieras hacer _lazy loading_ de imágenes.
 
-### Creando la aplicación
+## Creando la aplicación
 
-_TL;DR: En esta sección explicaré qué tipo de aplicación voy a utilizar de
+> TL;DR: En esta sección explicaré qué tipo de aplicación voy a utilizar de
 ejemplo y cómo crearla, para dar un poco de contexto. Si solo te interesa cómo
 implementar Intersection Observer, pasa a la siguiente sección. O si lo
 prefieres, ve directamente al _[repositorio con el código del
-ejemplo](https://github.com/danderu/lazy-loading-pokemons)_._
+ejemplo](https://github.com/delacruz-dev/lazy-loading-pokemons)_.
 
 Vamos a crear una lista de elementos que contienen imágenes. Para conseguir una
 buena lista de imágenes, voy a utilizar una de mis APIs públicas de Internet
@@ -45,7 +45,7 @@ no perder el tiempo con configuraciones:
 
     $ create-react-app lazy-loading-pokemons
 
-#### Obtener las imágenes
+### Obtener las imágenes
 
 En este punto vamos a hacer un poco de trampa, ya que si estuviésemos usando una
 API REST convencional, debería obtener la lista de _/pokemons_ y luego obtener
@@ -71,7 +71,7 @@ el id del Pokémon y el enlace al _sprite_:
         })
     }
 
-#### Crear los componentes de React necesarios
+### Crear los componentes de React necesarios
 
 Lo primero que haré será modificar el nodo raíz de la aplicación generada por
 create-react-app: **App.js**, para que solo obtenga los Pokémon y muestre una
@@ -135,7 +135,7 @@ necesitaré un componente **ListItem.js**. De momento también es muy sencillo:
 
     export default List
 
-#### Árbol de peticiones HTTP sin Lazy-loading
+### Árbol de peticiones HTTP sin Lazy-loading
 
 Un rápido vistazo a la pestaña _Network_ de las herramientas de desarrollo de
 Chrome muestra un [HAR](https://en.wikipedia.org/wiki/.har) con 151 peticiones a
@@ -144,7 +144,7 @@ menos de 2KB de media, provocan un efecto devastador en la carga total de la
 página, **postergando el evento window.load más de 5s después del
 DOMContentLoaded** según mis condiciones de prueba, ancho de banda… etc.
 
-![HAR de las peticiones de imágenes que se hacen si no hacemos Lazy loading](https://cdn-images-1.medium.com/max/2600/1*tPQjlONq1hRIJF_24jw1Ng.png)
+![HAR de las peticiones de imágenes que se hacen si no hacemos Lazy loading](/images/blog-images/lazy-load-without.png)
 
 ### Implementar Intersection Observer en una lista de imágenes
 
@@ -153,7 +153,7 @@ debajo del *viewport *pero, al mismo tiempo, conseguir una experiencia de
 usuario fluida para que no se note que se está haciendo esta descarga de
 imágenes en diferido.
 
-#### Crear una instancia de Intersection Observer para la aplicación
+### Crear una instancia de Intersection Observer para la aplicación
 
 Para poder observar intersecciones en nuestra aplicación, primero hay que crear
 una instancia del **IntersectionObserver**. No es necesario crear uno por cada
@@ -179,7 +179,7 @@ porcentaje de la intersección cambie un incremento definido. Este _callback_ se
 proporciona como **primer argumento** del constructor. En mi ejemplo lo he
 llamado **lazyLoadImageCallback**.
 
-#### Configuración para el constructor del Intersection Observer
+### Configuración para el constructor del Intersection Observer
 
 Ignoremos el callback, de momento. Lo implementaremos después. El **segundo
 argumento** del constructor es la configuración para el Intersection Observer.
@@ -211,7 +211,7 @@ margen inferior del _viewport_:
 > viewport haciendo scroll, así que 96 \* 3 = 288. Considera cambiar dinámicamente
 > este número en función de la resolución.
 
-#### Asignar un observer a cada imagen de la lista
+### Asignar un observer a cada imagen de la lista
 
 Lo siguiente que hay que hacer es elegir los elementos a observar. En el caso de
 nuestra lista de _sprites_ de Pokémon, será la imagen que tenemos en el
@@ -253,7 +253,7 @@ hacerlo allí donde tengas acceso a los ListItem’s). En mi ejemplo, es en
      />
     )
 
-#### Implementación de la función callback
+### Implementación de la función callback
 
 Ya sólo nos falta implementar la función callback que le pasamos al constructor
 de IntersectionObserver. En esta función deberemos:
@@ -333,7 +333,7 @@ dimensiones por CSS o directamente en el tag **<img>**:
 ¡Y ya está! Podemos ejecutar la aplicación para ver el efecto de nuestros
 cambios en el tiempo de carga de la página:
 
-![Carga de imágenes tras implementar lazy-load con Intersection Observer](https://cdn-images-1.medium.com/max/1600/1*dfbqNWavkknuR4GCiib_dg.gif)
+![Carga de imágenes tras implementar lazy-load con Intersection Observer](/images/blog-images/lazy-load-with.gif)
 
 Como verás, el tiempo disparo del evento **window.load** ha bajado
 dramáticamente a un valor mucho más aceptable. Y todo con una sencilla función.
@@ -349,7 +349,7 @@ entrada, aunque yo creo que es más que seguro utilizarlo. Afortunadamente, el
 instalar con npm y funciona a las mil maravillas. Solo asegúrate de requerirlo
 lo antes posible en tu aplicación y ya está.
 
-### Conclusiones
+## Conclusiones
 
 En este ejemplo he querido explicar con un ejemplo cómo resolver de forma muy
 sencilla uno de los problemas clásicos del desarrollo de aplicaciones web: la de
@@ -362,15 +362,16 @@ imports_. Pero esto será para un futuro artículo.
 
 ¡Espero que te haya gustado! :)
 
-### Referencias
+## Referencias
 
 - [Intersection Observer
   API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - [Repositorio de GitHub con el código del
-  ejemplo](https://github.com/danderu/lazy-loading-pokemons)
+  ejemplo](https://github.com/delacruz-dev/lazy-loading-pokemons)
 - [React](https://medium.com/tag/react?source=post)
 - [Intersection
   Observer](https://medium.com/tag/intersection-observer?source=post)
-- [JavaScript](https://medium.com/tag/javascript?source=post)
-- [Ecmascript 6](https://medium.com/tag/ecmascript-6?source=post)
-- [Web Development](https://medium.com/tag/web-development?source=post)
+
+---
+
+Me gustaría compartir mi experiencia como **programador de Front-End** contigo y convertirme en tu **mentor**. Si crees que puede interesarte, echa un vistazo a mis planes de [mentoring](/mentoring).

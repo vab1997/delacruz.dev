@@ -9,6 +9,8 @@ frontImage: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo.jpg'
 
 He escrito este artículo con **preguntas frecuentes** cue puede hacerse alguien como tú antes de dar el paso.
 
+<!--more-->
+
 ## Cómo establecemos objetivos
 Puede que acudas a mi con un objetivo muy concreto y ya madurado, o que tengas varias ideas y necesites algo de ayuda para concretarlas. En cualquier caso, trabajaremos con objetivos a dos niveles:
 

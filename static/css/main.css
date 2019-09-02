@@ -143,15 +143,15 @@ html.calendly-page-scroll-locked {
   width: 100%;
 }
 
-.section.mentorship-style .box {
+.section.mentoring-style .box {
   padding: 0;
 }
 
-.section.mentorship-style .columns {
+.section.mentoring-style .columns {
   margin: 0;
 }
 
-.section.mentorship-style .column {
+.section.mentoring-style .column {
   margin: 0;
   padding: 60px;
   border-right: 1px solid #e6ecf8;

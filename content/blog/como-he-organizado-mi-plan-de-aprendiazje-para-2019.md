@@ -2,7 +2,7 @@
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
 date: 2019-01-20
 draft: false
-frontImage: 'https://cdn-images-1.medium.com/max/2600/1*uiuPchdXurPxy6A0P-SRXA.jpeg'
+frontImage: '/images/blog-images/learning-plan-header.jpeg'
 ---
 
 En el momento de escribir estas líneas [ya ha transcurrido el 5% del año
@@ -12,12 +12,12 @@ personas que te rodean pero, a medida que te haces mayor, tendrás la sensación
 de que [el tiempo pasa más
 deprisa](https://www.bbc.com/mundo/noticias-44439683).
 
-<!-- more -->
-
 Pero no estoy escribiendo para hablar de la [Ley de
 Weber-Fechner](https://es.wikipedia.org/wiki/Ley_de_Weber-Fechner), sino para
 compartir las acciones que he decidido tomar este año para organizar mi plan de
 aprendizaje.
+
+<!--more-->
 
 ### ¿Por qué necesitas un plan de aprendizaje?
 
@@ -44,7 +44,7 @@ al sueño para poder estudiar algo. Pero el cansancio hace que tenga menos
 energía y fuerza de voluntad para cumplir el resto de mis obligaciones, así que
 es algo a lo que esta vez no quería renunciar.
 
-![Mi agenda semanal](https://cdn-images-1.medium.com/max/2400/1*RTwls7eKx_BV0sgKL_RbzA.png)
+![Mi agenda semanal](/images/blog-images/learning-plan-calendar.png)
 
 Dar visibilidad a mi uso del tiempo me ayudó a quitarme un peso de encima.
 Aunque yo tenga la sensación de que puedo hacer más, la realidad es que entre
@@ -87,7 +87,7 @@ En tu caso, pregúntate: ¿Qué cambiaría? ¿Qué podrías hacer que ahora no h
 ¿Qué dejarías de hacer? Anota las respuestas y eso te ayudará a saber cuáles son
 tus objetivos.
 
-![Haz una lista pensando en tu crecimiento, no en los resultados](https://cdn-images-1.medium.com/max/2400/0*Nb-K9lRz1AT7mM7z.jpg)
+![Haz una lista pensando en tu crecimiento, no en los resultados](/images/blog-images/learning-plan-task-list.jpg)
 
 Por último, a la hora de escribir tus objetivos procura mantener una [mentalidad
 enfocada en el
@@ -138,7 +138,7 @@ ver el panel de [Trello](https://trello.com/) que me he hecho. Este panel me
 sirve una vez más para visualizar, pero también para apuntar enlaces útiles,
 comentarios de aprendizaje y listas de tareas para cada tema específico.
 
-![Mi plan de aprendizaje anual](https://cdn-images-1.medium.com/max/2400/1*quSbFJJtt9UXeOSB4jI-Aw.png)
+![Mi plan de aprendizaje anual](/images/blog-images/learning-plan-trello.png)
 
 Cuando termine el mes, pueden pasar tres cosas:
 
@@ -174,4 +174,4 @@ funcionado y qué debo cambiar para el año siguiente.
 ---
 
 Si has leído esto y **quieres que te ayude a elaborar tu propio plan de
-aprendizaje**, no dudes en ponerte en contacto conmigo. Échale un vistazo a mis planes de [mentoring](/mentorship).
+aprendizaje**, no dudes en ponerte en [contacto conmigo](/contacto). O si lo prefieres, échale un vistazo a mis planes de [mentoring](/mentoring).
