@@ -161,9 +161,9 @@ html.calendly-page-scroll-locked {
 .mentoring-intro {
   position: relative;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)
-  ), url(/images/unsplash-002.jfif);
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+  ), url(/images/mentoring.jpg);
   background-size: cover;
   background-position: center;
 }
