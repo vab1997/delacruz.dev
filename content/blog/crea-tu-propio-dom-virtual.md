@@ -2,7 +2,7 @@
 title: "Crea tu propio DOM Virtual"
 date: 2017-12-29
 draft: false
-frontImage: /images/blog-images/virtual-dom-header.jpeg
+frontImageSrc: /images/blog-images/virtual-dom-header.jpeg
 ---
 
 Hace poco me pidieron en una entrevista que hiciese una prueba técnica

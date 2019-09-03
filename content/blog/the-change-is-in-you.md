@@ -3,7 +3,7 @@ title: "The change is in you"
 date: 2016-12-27
 draft: false
 hide: true
-frontImage: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
+frontImageSrc: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
 ---
 
 I’ve been working for years at different companies with legacy

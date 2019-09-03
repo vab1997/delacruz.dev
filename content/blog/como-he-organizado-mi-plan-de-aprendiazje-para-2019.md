@@ -2,7 +2,19 @@
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
 date: 2019-01-20
 draft: false
-frontImage: '/images/blog-images/learning-plan-header.jpeg'
+frontImageSrcSet: '/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_200.jpg 200w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_434.jpg 434w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_606.jpg 606w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_750.jpg 750w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_873.jpg 873w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_973.jpg 973w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1072.jpg 1072w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1165.jpg 1165w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1244.jpg 1244w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1312.jpg 1312w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1391.jpg 1391w,
+/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1400.jpg 1400w'
+frontImageSrc: '/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1400.jpg'
 ---
 
 En el momento de escribir estas líneas [ya ha transcurrido el 5% del año
@@ -44,7 +56,7 @@ al sueño para poder estudiar algo. Pero el cansancio hace que tenga menos
 energía y fuerza de voluntad para cumplir el resto de mis obligaciones, así que
 es algo a lo que esta vez no quería renunciar.
 
-![Mi agenda semanal](/images/blog-images/learning-plan-calendar.png)
+![Mi agenda semanal](/images/blog-images/learning-plan-calendar/learning-plan-calendar_xp29zs_c_scale,w_1400.png)
 
 Dar visibilidad a mi uso del tiempo me ayudó a quitarme un peso de encima.
 Aunque yo tenga la sensación de que puedo hacer más, la realidad es que entre
@@ -87,7 +99,7 @@ En tu caso, pregúntate: ¿Qué cambiaría? ¿Qué podrías hacer que ahora no h
 ¿Qué dejarías de hacer? Anota las respuestas y eso te ayudará a saber cuáles son
 tus objetivos.
 
-![Haz una lista pensando en tu crecimiento, no en los resultados](/images/blog-images/learning-plan-task-list.jpg)
+![Haz una lista pensando en tu crecimiento, no en los resultados](/images/blog-images/learning-plan-task-list/learning-plan-task-list_rgoyfb_c_scale,w_1400.jpg)
 
 Por último, a la hora de escribir tus objetivos procura mantener una [mentalidad
 enfocada en el
@@ -138,7 +150,7 @@ ver el panel de [Trello](https://trello.com/) que me he hecho. Este panel me
 sirve una vez más para visualizar, pero también para apuntar enlaces útiles,
 comentarios de aprendizaje y listas de tareas para cada tema específico.
 
-![Mi plan de aprendizaje anual](/images/blog-images/learning-plan-trello.png)
+![Mi plan de aprendizaje anual](/images/blog-images/learning-plan-trello/learning-plan-trello_z3vwqq_c_scale,w_1400.png)
 
 Cuando termine el mes, pueden pasar tres cosas:
 

@@ -1,9 +1,17 @@
 {{ define "main" }}
 <section class="section">
   <div class="container is-narrow">
-      <img src="{{ .Params.frontImage }}" class="blogFrontImage is-spaced" />
+    <picture>
+      <img
+        class="blogFrontImage is-spaced"
+        sizes="(max-width: 1400px) 100vw, 1400px"
+        srcset="{{ .Params.frontImageSrcSet }}"
+        src="{{ .Params.frontImageSrc }}"
+        alt="{{ .Title }}"
+      />
+    </picture>
     <h1 class="title is-1 is-spaced">{{ .Title }}</h1>
-      <div class="content is-medium">
+    <div class="content is-medium">
       {{ .Content }}
     </div>
   </div>
