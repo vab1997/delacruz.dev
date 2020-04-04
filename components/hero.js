@@ -22,8 +22,8 @@ function Hero() {
           <h2 className="subtitle is-size-3 is-size-4-mobile has-text-grey">
             He trabajado como <strong>ingeniero de software</strong> durante más
             de una década y quiero ser tu{" "}
-            <strong className="has-text-primary">mentor</strong> para ayudarte a dar
-            un <strong>salto en tu carrera</strong>.
+            <strong className="has-text-primary">mentor</strong> para ayudarte a
+            dar un <strong>salto en tu carrera</strong>.
           </h2>
           <div className="buttons">
             <a

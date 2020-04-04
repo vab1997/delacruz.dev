@@ -2,7 +2,7 @@ import Head from "next/head";
 
 function Layout({
   children,
-  title = "Mentoring para programadores - Dani de la Cruz"
+  title = "Mentoring para programadores - Dani de la Cruz",
 }) {
   return (
     <>

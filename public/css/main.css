@@ -9,7 +9,7 @@ html.calendly-page-scroll-locked {
 }
 
 .hero-picture {
-  height: calc(100vh - 3.25rem);
+  height: 100vh;
   width: 100%;
   max-width: 50%;
 }

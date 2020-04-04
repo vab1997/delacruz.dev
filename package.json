@@ -7,8 +7,8 @@
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
-    "next": "^9.1.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
