@@ -1,13 +1,16 @@
 {
+  "name": "delacruz-dev",
+  "private": true,
   "scripts": {
-    "build": "npx hugo-cli --minify",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "now-build": "npm run build",
-    "start": "hugo server -D",
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
