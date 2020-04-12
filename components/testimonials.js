@@ -25,7 +25,7 @@ function Testimonials() {
           <div className="media-content">
             <div className="content">
               <p>
-                <strong>David García</strong>
+                <strong>David García</strong>&nbsp;
                 <small>
                   <a
                     title="David García"
@@ -62,7 +62,7 @@ function Testimonials() {
           <div className="media-content">
             <div className="content">
               <p>
-                <strong>Miguel Ángel Durán</strong>
+                <strong>Miguel Ángel Durán</strong>&nbsp;
                 <small>
                   <a
                     title="Miguel Ángel Durán"
@@ -98,7 +98,7 @@ function Testimonials() {
           <div className="media-content">
             <div className="content">
               <p>
-                <strong>Rubén Sáez</strong>
+                <strong>Rubén Sáez</strong>&nbsp;
                 <small>
                   <a
                     title="Rubén Sáez Beltrán"

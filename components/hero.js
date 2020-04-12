@@ -4,14 +4,18 @@ function Hero() {
       <div className="hero-image">
         <img
           sizes="(max-width: 1400px) 100vw, 1400px"
-          srcSet="
-        daniel-de-la-cruz_e68nib_c_scale_w_200.jpeg   200w,
-        daniel-de-la-cruz_e68nib_c_scale_w_613.jpeg   613w,
-        daniel-de-la-cruz_e68nib_c_scale_w_946.jpeg   946w,
-        daniel-de-la-cruz_e68nib_c_scale_w_1213.jpeg 1213w,
-        daniel-de-la-cruz_e68nib_c_scale_w_1400.jpeg 1400w
-      "
-          src="daniel-de-la-cruz_e68nib_c_scale_w_1400.jpeg"
+          srcset="
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_200.jpg 200w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_416.jpg 416w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_585.jpg 585w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_866.jpg 866w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_986.jpg 986w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1094.jpg 1094w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1200.jpg 1200w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1319.jpg 1319w,
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400w"
+          src="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg"
           alt="Daniel de la Cruz"
         />
       </div>
