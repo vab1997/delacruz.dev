@@ -1,4 +1,6 @@
 {
+  "name": "delacruz-dev",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
