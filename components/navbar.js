@@ -38,9 +38,9 @@ function NavBar() {
 
       <div id="navBar" className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item" href="/blog" data-tracking="navbar-blog">
+          {/* <a className="navbar-item" href="/blog" data-tracking="navbar-blog">
             Blog
-          </a>
+          </a> */}
           <a
             className="navbar-item"
             href="/#skills"

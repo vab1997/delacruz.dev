@@ -29,6 +29,7 @@ function Skills() {
                       <span className="tag">JS</span>
                       <span className="tag">Typescript</span>
                       <span className="tag">ReactJS</span>
+                      <span className="tag">React Native</span>
                     </div>
                   </div>
                   <div className="panel-block">
@@ -39,6 +40,7 @@ function Skills() {
                     <div className="tags">
                       <span className="tag">REST</span>
                       <span className="tag">NodeJS</span>
+                      <span className="tag">NestJS</span>
                       <span className="tag">SQL</span>
                       <span className="tag">MongoDB</span>
                     </div>

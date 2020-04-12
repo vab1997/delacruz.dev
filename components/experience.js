@@ -85,12 +85,103 @@ function Experience() {
                       width="263"
                       height="67"
                       alt="King Logo"
+                      src="./images/tempus-logo.png"
+                    />
+                  </a>
+                </div>
+                <div className="experience-box">
+                  <p className="heading">Desde octubre 2019</p>
+                  <p>
+                    <strong>Senior Fullstack Engineer en Tempus Labs</strong>
+                  </p>
+                  <ul className="responsibilities-list">
+                    <li>
+                      Desarrollo de aplicaciones web con&nbsp;
+                      <a
+                        title="React"
+                        rel="nofollow noopener"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                      >
+                        React
+                      </a>
+                    </li>
+                    <li>
+                      Desarrollo de aplicaciones móviles con&nbsp;
+                      <a
+                        title="React Native"
+                        rel="nofollow noopener"
+                        href="https://reactnative.dev/"
+                        target="_blank"
+                      >
+                        React Native
+                      </a>
+                    </li>
+                    <li>
+                      Desarrollo de servicios y microservicios con&nbsp;
+                      <a
+                        title="NestJS"
+                        rel="nofollow noopener"
+                        href="https://nestjs.com/"
+                        target="_blank"
+                      >
+                        NestJS
+                      </a>
+                      ,&nbsp;
+                      <a
+                        title="PostgreSQL"
+                        rel="nofollow noopener"
+                        href="https://www.postgresql.org/"
+                        target="_blank"
+                      >
+                        PostgreSQL
+                      </a>
+                      ,&nbsp;
+                      <a
+                        title="Terraform"
+                        rel="nofollow noopener"
+                        href="https://www.terraform.io/"
+                        target="_blank"
+                      >
+                        Terraform
+                      </a>
+                      &nbsp;y&nbsp;
+                      <a
+                        title="Google Cloud Platform"
+                        rel="nofollow noopener"
+                        href="https://cloud.google.com/"
+                        target="_blank"
+                      >
+                        Google Cloud Platform
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="timeline-item is-primary">
+            <div className="timeline-marker is-primary"></div>
+            <div className="timeline-content">
+              <div className="box">
+                <div className="image-box">
+                  <a
+                    title="King"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    href="https://king.com"
+                  >
+                    <img
+                      loading="lazy"
+                      width="263"
+                      height="67"
+                      alt="King Logo"
                       src="./images/king-logo.png"
                     />
                   </a>
                 </div>
                 <div className="experience-box">
-                  <p className="heading">Desde marzo 2018</p>
+                  <p className="heading">De marzo 2018 a julio 2019</p>
                   <p>
                     <strong>Senior JavaScript Engineer en King</strong>
                   </p>
@@ -101,7 +192,7 @@ function Experience() {
                       crecer asumiendo otras competencias
                     </li>
                     <li>
-                      Desarrollo de aplicaciones web con
+                      Desarrollo de aplicaciones web con&nbsp;
                       <a
                         title="React"
                         rel="nofollow noopener"
@@ -116,7 +207,7 @@ function Experience() {
                       Front-End
                     </li>
                     <li>
-                      Pruebas unitarias con
+                      Pruebas unitarias con&nbsp;
                       <a
                         title="Jest"
                         rel="nofollow noopener"
@@ -127,7 +218,7 @@ function Experience() {
                       </a>
                     </li>
                     <li>
-                      Implementación de interfaz de usuario con
+                      Implementación de interfaz de usuario con&nbsp;
                       <a
                         title="Ant Design"
                         rel="nofollow noopener"
@@ -242,7 +333,7 @@ function Experience() {
                       basada en el aprendizaje y en compartir el conocimiento
                     </li>
                     <li>
-                      Desarrollo de aplicaciones web con React y
+                      Desarrollo de aplicaciones web con React y&nbsp;
                       <a
                         title="Redux"
                         target="_blank"
@@ -254,7 +345,7 @@ function Experience() {
                     </li>
                     <li>
                       Automatización de pruebas unitarias, integración y
-                      aceptación con
+                      aceptación con&nbsp;
                       <a
                         href="https://mochajs.org/"
                         title="Mocha"
@@ -263,14 +354,14 @@ function Experience() {
                       >
                         Mocha
                       </a>
-                      y
+                      &nbsp;y&nbsp;
                       <a
                         href="https://cucumber.io/"
                         title="Cucumber"
                         target="_blank"
                         rel="nofollow noopener"
                       >
-                        Cucumber
+                        Cucumber&nbsp;
                       </a>
                     </li>
                   </ul>
@@ -317,7 +408,7 @@ function Experience() {
                       Liderazgo y ejecución de la transformación del Front-End
                       de la compañía, de una plataforma monolítica en .NET hacia
                       una Single-Page Application desacoplada del Back-End
-                      implementada con React y basada en
+                      implementada con React y basada en&nbsp;
                       <a
                         href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
                         title="Arquitectura Hexagonal"
@@ -365,7 +456,7 @@ function Experience() {
                   </p>
                   <ul className="responsibilities-list">
                     <li>
-                      Desarrollo de
+                      Desarrollo de&nbsp;
                       <a
                         href="https://www.inmofactory.com/"
                         title="Inmofactory"
@@ -378,7 +469,7 @@ function Experience() {
                     </li>
                     <li>
                       Diseño e implementación de búsquedas Near Real Time (NRT)
-                      con
+                      con&nbsp;
                       <a
                         href="https://lucene.apache.org/core/"
                         title="Lucene"
@@ -389,7 +480,7 @@ function Experience() {
                       </a>
                     </li>
                     <li>
-                      Desarrollo con
+                      Desarrollo con&nbsp;
                       <a
                         href="https://dotnet.microsoft.com/apps/aspnet"
                         title="ASP.NET"
@@ -435,7 +526,7 @@ function Experience() {
                     <strong>Consultor especializado en .NET Framework</strong>
                   </p>
                   <p>
-                    Trabajé en consultorías como
+                    Trabajé en consultorías como&nbsp;
                     <a
                       href="https://www.everis.com/spain/es/home-1"
                       rel="noopener nofollow"
@@ -443,7 +534,7 @@ function Experience() {
                     >
                       everis
                     </a>
-                    o
+                    &nbsp;o&nbsp;
                     <a
                       title="ATOS"
                       href="https://atos.net/es/spain"
