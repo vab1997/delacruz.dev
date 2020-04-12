@@ -168,6 +168,10 @@ html.calendly-page-scroll-locked {
   background-position: top;
 }
 
+.section.contact {
+  padding-top: 120px;
+}
+
 @keyframes floating {
   0%,
   100% {

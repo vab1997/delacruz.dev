@@ -103,6 +103,7 @@ function Layout({
         ></script>
       </Head>
       {children}
+      <script type="text/javascript" src="/js/analytics.js"></script>
     </>
   );
 }

@@ -1,4 +1,10 @@
 function NavBar() {
+  function handleClick(evt) {
+    const navBar = document.getElementById(evt.target.dataset.target);
+    evt.target.classList.toggle("is-active");
+    navBar.classList.toggle("is-active");
+  }
+
   return (
     <nav
       className="navbar is-fixed-top"
@@ -22,6 +28,7 @@ function NavBar() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navBar"
+          onClick={handleClick}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -32,35 +39,35 @@ function NavBar() {
       <div id="navBar" className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item" href="/blog" data-tracking="navbar-blog">
-            blog
+            Blog
           </a>
           <a
             className="navbar-item"
             href="/#skills"
             data-tracking="navbar-skills"
           >
-            mis habilidades
+            Mis habilidades
           </a>
           <a
             className="navbar-item"
             href="/#experience"
             data-tracking="navbar-experience"
           >
-            mi experiencia
+            Mi experiencia
           </a>
           <a
             className="navbar-item"
             href="/#testimonials"
             data-tracking="navbar-testimonials"
           >
-            referencias
+            Referencias
           </a>
           <a
             className="navbar-item"
             href="/mentoring"
             data-tracking="navbar-mentoring"
           >
-            mentoring
+            Mentoring
           </a>
         </div>
 
@@ -76,7 +83,7 @@ function NavBar() {
                 <span className="icon">
                   <i className="far fa-envelope"></i>
                 </span>
-                <strong>contactar</strong>
+                <strong>Contactar</strong>
               </a>
             </div>
           </div>
