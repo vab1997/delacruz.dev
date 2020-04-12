@@ -1,6 +1,0 @@
-baseURL = "https://delacruz.dev/"
-languageCode = "es-es"
-title = "Dani de la Cruz"
-
-[permalinks]
-	mentoring = "/:filename/"

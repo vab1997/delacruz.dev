@@ -75,16 +75,16 @@ function Experience() {
               <div className="box">
                 <div className="image-box">
                   <a
-                    title="King"
+                    title="Tempus Labs"
                     target="_blank"
                     rel="nofollow noopener"
-                    href="https://king.com"
+                    href="https://tempus.com"
                   >
                     <img
                       loading="lazy"
                       width="263"
                       height="67"
-                      alt="King Logo"
+                      alt="Tempus Logo"
                       src="./images/tempus-logo.png"
                     />
                   </a>
