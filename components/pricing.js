@@ -1,7 +1,7 @@
 function Pricing() {
   return (
     <>
-      <section className="section has-text-centered pricing">
+      <section className="section has-text-centered pricing has-background-light">
         <div className="container">
           <div className="pricing-grid">
             <div className="columns is-centered">

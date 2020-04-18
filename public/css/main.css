@@ -152,24 +152,26 @@ html.calendly-page-scroll-locked {
 }
 
 .section.mentoring-style .column {
-  margin: 0;
   padding: 60px;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
 }
 
 .mentoring-intro {
+  margin-top: 50px;
   position: relative;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.3)
-  ), url(/images/mentoring/mentoring_cdqegw_c_scale,w_1400.jpg);
-  background-size: cover;
-  background-position: top;
 }
 
 .section.contact {
   padding-top: 120px;
+}
+
+.avatar {
+  margin: 0 auto 3rem;
+}
+
+.hero-body.mentoring {
+  margin-top: 52px;
 }
 
 @keyframes floating {

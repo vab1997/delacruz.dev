@@ -26,6 +26,6 @@
   display: none;
 }
 
-.hero-body {
+.hero-body.home {
   padding: 1rem 1.5rem;
 }

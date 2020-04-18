@@ -6,11 +6,11 @@
   margin-bottom: 6rem;
 }
 
-.hero-body {
+.hero-body.home {
   height: 100vh;
 }
 
-.hero-body .subtitle {
+.hero-body.home .subtitle {
   width: 50%;
   padding-right: 1em;
 }

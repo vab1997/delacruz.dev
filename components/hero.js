@@ -19,7 +19,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
           alt="Daniel de la Cruz"
         />
       </div>
-      <div className="hero-body">
+      <div className="hero-body home">
         <div className="container">
           <p className="subtitle is-size-3 is-size-4-mobile">¡Hola! 👋</p>
           <h1 className="title is-size-1 is-size-3-mobile">Soy Dani.</h1>
