@@ -60,11 +60,11 @@ function Experience() {
         </h2>
         <div className="timeline is-centered">
           <header className="timeline-header">
-            <span className="tag is-medium is-primary">Hoy</span>
+            <span className="tag is-medium is-dark">Hoy</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -118,8 +118,13 @@ function Experience() {
               </div>
             </div>
           </div>
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+
+          <header className="timeline-header">
+            <span className="tag is-dark">2018</span>
+          </header>
+
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -163,11 +168,11 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-primary">2018</span>
+            <span className="tag is-dark">2017</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -200,11 +205,11 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-primary">2017</span>
+            <span className="tag is-dark">2016</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -259,11 +264,11 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-primary">2016</span>
+            <span className="tag is-dark">2013</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -299,11 +304,11 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-primary">2013</span>
+            <span className="tag is-dark">2010</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -359,11 +364,11 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-primary">2010</span>
+            <span className="tag is-dark">2006</span>
           </header>
 
-          <div className="timeline-item is-primary">
-            <div className="timeline-marker is-primary"></div>
+          <div className="timeline-item is-dark">
+            <div className="timeline-marker is-dark"></div>
             <div className="timeline-content">
               <div className="box">
                 <div className="image-box">
@@ -399,7 +404,7 @@ function Experience() {
           </div>
 
           <header className="timeline-header">
-            <span className="tag is-medium is-primary">Inicio</span>
+            <span className="tag is-medium is-dark">Inicio</span>
           </header>
         </div>
       </div>
