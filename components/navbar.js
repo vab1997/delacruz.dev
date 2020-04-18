@@ -1,8 +1,11 @@
+import { useRef } from "react";
+
 function NavBar() {
+  const navBar = useRef();
+  
   function handleClick(evt) {
-    const navBar = document.getElementById(evt.target.dataset.target);
     evt.target.classList.toggle("is-active");
-    navBar.classList.toggle("is-active");
+    navBar.current.classList.toggle("is-active");
   }
 
   return (
@@ -36,7 +39,7 @@ function NavBar() {
         </a>
       </div>
 
-      <div id="navBar" className="navbar-menu">
+      <div id="navBar" ref={navBar} className="navbar-menu">
         <div className="navbar-start">
           {/* <a className="navbar-item" href="/blog" data-tracking="navbar-blog">
             Blog

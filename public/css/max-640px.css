@@ -9,8 +9,9 @@
 }
 
 .hero-image {
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
+  margin-top: 52px;
 }
 
 .hero-image img {
@@ -23,4 +24,8 @@
 
 .hero .scroll-down-icon {
   display: none;
+}
+
+.hero-body {
+  padding: 1rem 1.5rem;
 }

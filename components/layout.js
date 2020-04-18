@@ -72,6 +72,12 @@ function Layout({
         <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
         <link
           rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+          integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4="
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
           media="(max-width: 640px)"
           href="/css/max-640px.css"
         />
@@ -84,12 +90,6 @@ function Layout({
           rel="stylesheet"
           media="(min-width: 1088px)"
           href="/css/min-1088px.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-          integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4="
-          crossOrigin="anonymous"
         />
         <script
           defer

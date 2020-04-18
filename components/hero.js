@@ -4,7 +4,7 @@ function Hero() {
       <div className="hero-image">
         <img
           sizes="(max-width: 1400px) 100vw, 1400px"
-          srcset="
+          srcSet="
 images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_200.jpg 200w,
 images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_416.jpg 416w,
 images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_585.jpg 585w,
@@ -24,10 +24,9 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
           <p className="subtitle is-size-3 is-size-4-mobile">¡Hola! 👋</p>
           <h1 className="title is-size-1 is-size-3-mobile">Soy Dani.</h1>
           <h2 className="subtitle is-size-3 is-size-4-mobile has-text-grey">
-            He trabajado como <strong>ingeniero de software</strong> durante más
-            de una década y quiero ser tu{" "}
-            <strong className="has-text-primary">mentor</strong> para ayudarte a
-            dar un <strong>salto en tu carrera</strong>.
+            He trabajado como <strong>ingeniero de software</strong> durante más de una década y quiero ser tu{" "}
+            <strong className="has-text-primary">mentor</strong> para ayudarte a dar un{" "}
+            <strong>salto en tu carrera</strong>.
           </h2>
           <div className="buttons">
             <a
