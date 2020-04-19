@@ -8,7 +8,7 @@ function MentoringIntro() {
             Para programadores y programadoras que quieran dar un salto en su carrera desarrollando software.
           </h2>
           <figure className="image is-128x128 avatar">
-            <img className="is-rounded" src="/images/mypic/badge.jpg" />
+            <img className="is-rounded" src="/images/mypic/badge.jpg" alt="dani de la cruz" />
           </figure>
         </div>
       </div>

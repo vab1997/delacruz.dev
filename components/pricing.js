@@ -17,7 +17,7 @@ function Pricing() {
                     Elige este plan si lo que necesitas es un compañero de vuelo
                     que te ayude a mejorar técnicamente.
                   </p>
-                  <p className="list-title has-text-primary has-text-weight-normal is-spaced">
+                  <p className="list-title has-text-info has-text-weight-normal is-spaced">
                     Aquí tienes algunas actividades en las que podemos emplear
                     nuestro tiempo:
                   </p>
@@ -40,7 +40,7 @@ function Pricing() {
                     ayudar mejor a tu equipo o conseguir un ascenso, este es el
                     plan que estás buscando.
                   </p>
-                  <p className="list-title has-text-primary has-text-weight-normal is-spaced">
+                  <p className="list-title has-text-info has-text-weight-normal is-spaced">
                     Algunas ideas para inspirarte:
                   </p>
                   <ul className="is-spaced">
@@ -64,7 +64,7 @@ function Pricing() {
                     ayuda para prepararlos? Déjame acompañarte durante el
                     proceso.
                   </p>
-                  <p className="list-title has-text-primary has-text-weight-normal is-spaced">
+                  <p className="list-title has-text-info has-text-weight-normal is-spaced">
                     Cómo puedo ayudarte:
                   </p>
                   <ul className="is-spaced">
@@ -85,14 +85,14 @@ function Pricing() {
       <section className="section has-text-centered is-spaced">
         <div className="container is-narrow">
           <h1 className="title is-spaced">
-            Contrata 10 sesiones* por&nbsp;
+            Contrata 10 sesiones* por{" "}
             <span className="has-text-primary">300€</span>
           </h1>
           <h3 className="subtitle is-size-5-desktop">
-            O si lo prefieres, escríbeme para hacer una&nbsp;
+            O si lo prefieres, escríbeme para hacer una{" "}
             <u>
               <strong>primera consultoría gratuita</strong>
-            </u>&nbsp;
+            </u>{" "}
             para hacerme preguntas, discutir detalles y decidir si soy la
             persona que estás buscando.
           </h3>
