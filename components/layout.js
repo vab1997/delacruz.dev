@@ -72,9 +72,7 @@ function Layout({
         <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-          integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4="
-          crossOrigin="anonymous"
+          href="/css/bulma.min.css"
         />
         <link
           rel="stylesheet"
