@@ -39,15 +39,6 @@ export default function Meta(props) {
             text-decoration-color: inherit;
           }
 
-          a > article {
-            transition: transform 0.6s ease;
-            transform: translateX(0px);
-          }
-
-          a:hover > article {
-            transition: transform 0.6s ease;
-            transform: translateX(10px);
-          }
 
           article a {
             text-decoration: underline;

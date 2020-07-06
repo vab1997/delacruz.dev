@@ -2,6 +2,7 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import css from "styled-jsx/css";
 import BlogDate from "./blog-date";
+import colors from "./colors";
 
 const BlogList = ({ allBlogs }) => {
   return (
@@ -31,7 +32,6 @@ const styles = css`
     flex-grow: 1;
     padding-right: 2rem;
     padding-left: 1rem;
-    pargin-top: ;
   }
 
   .title {
@@ -49,6 +49,24 @@ const styles = css`
     margin: 0 auto 1em;
     width: 100%;
     object-fit: scale-down;
+  }
+
+  article {
+    transition: transform 0.6s ease;
+    transform: translateX(0px);
+  }
+
+  article:hover {
+    transition: transform 0.6s ease;
+    transform: translateX(10px);
+  }
+
+  article h1 {
+    transition: color 0.6s ease;
+  }
+
+  article:hover h1 {
+    color: ${colors.primary};
   }
 
   @media (min-width: 768px) {
