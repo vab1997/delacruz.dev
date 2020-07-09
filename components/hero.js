@@ -1,4 +1,5 @@
 import css from "styled-jsx/css";
+import colors from "./colors";
 
 function Hero() {
   return (
@@ -30,12 +31,12 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
             <h1 className="title is-size-1 is-size-3-mobile">Soy Dani.</h1>
             <h2 className="subtitle is-size-3 is-size-4-mobile has-text-grey">
               He trabajado como <strong>ingeniero de software</strong> durante más de una década y quiero ser tu{" "}
-              <strong className="has-text-primary">mentor</strong> para ayudarte a dar un{" "}
+              <strong className="is-text-primary">mentor</strong> para ayudarte a dar un{" "}
               <strong>salto en tu carrera</strong>.
             </h2>
             <div className="buttons">
               <a
-                className="button is-large is-medium-mobile is-dark is-outlined"
+                className="button is-large is-medium-mobile is-primary is-outlined"
                 alt="Mentoring a medida para programadores de Front-End"
                 href="/#skills"
                 data-tracking="about-me-hero-cta"
@@ -43,7 +44,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
                 Sobre mí
               </a>
               <a
-                className="button is-large is-medium-mobile is-dark"
+                className="button is-large is-medium-mobile is-primary"
                 alt="Mentoring a medida para programadores de Front-End"
                 href="/mentoring"
                 data-tracking="hero-cta"
@@ -60,6 +61,33 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
 }
 
 const styles = css`
+  .is-text-primary {
+    color: ${colors.primary};
+  }
+
+  .is-primary {
+    color: ${colors.white};
+    background: ${colors.primary};
+    border: 1px solid ${colors.primary};
+  }
+
+  .is-primary:hover,
+  .is-primary:active {
+    background: ${colors.primaryHover};
+  }
+
+  .is-primary.is-outlined {
+    border: 1px solid ${colors.primary};
+    color: ${colors.primary};
+    background: ${colors.transparent};
+  }
+
+  .is-primary.is-outlined:hover {
+    border: 1px solid ${colors.primary};
+    color: ${colors.white};
+    background: ${colors.primary};
+  }
+
   @keyframes wave {
     0% {
       transform: rotate(0deg);

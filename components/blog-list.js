@@ -47,7 +47,6 @@ const styles = css`
 
   .article > img {
     margin: 0 auto 1em;
-    width: 100%;
     object-fit: scale-down;
   }
 
