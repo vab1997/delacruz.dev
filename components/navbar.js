@@ -65,6 +65,7 @@ const styles = css`
   .navbar-sections {
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
   }
 
   .navbar-sections a {
@@ -81,6 +82,7 @@ const styles = css`
   .logo {
     opacity: 1;
     transition: opacity .2s ease;
+    min-width: 20px;
   }
 
   .logo:hover {
