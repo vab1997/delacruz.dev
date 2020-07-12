@@ -8,18 +8,18 @@ function NavBar() {
     <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-left">
-          <Link href="/" title="Dani de la Cruz">
-            <div className="logo">
+          <Link href="/">
+            <a className="logo" title="Dani de la Cruz">
               <img src="/danidev.svg" alt="Dani de la Cruz" width="30" height="30" />
-            </div>
+            </a>
           </Link>
 
           <div className="navbar-sections">
-            <Link href="/blog" data-tracking="navbar-blog">
-              <a>Blog</a>
+            <Link href="/blog">
+              <a data-tracking="navbar-blog">Blog</a>
             </Link>
-            <Link href="/#skills" data-tracking="navbar-skills">
-              <a>Sobre mí</a>
+            <Link href="/#skills">
+              <a data-tracking="navbar-skills">Sobre mí</a>
             </Link>
           </div>
         </div>
@@ -82,7 +82,7 @@ const styles = css`
 
   .logo {
     opacity: 1;
-    transition: opacity .2s ease;
+    transition: opacity 0.2s ease;
     min-width: 20px;
   }
 

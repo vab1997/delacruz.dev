@@ -4,6 +4,7 @@ import BlogLayout from "../../components/blog-layout";
 import BlogList from "../../components/blog-list";
 import Meta from "../../components/meta";
 import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const Index = ({ posts }) => {
   return (
@@ -12,7 +13,7 @@ const Index = ({ posts }) => {
       <NavBar />
       <BlogHeader />
       <BlogList allBlogs={posts} />
-      {/* <Footer /> */}
+      <Footer />
     </BlogLayout>
   );
 };
