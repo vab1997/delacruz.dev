@@ -49,6 +49,7 @@ const styles = css`
     background-color: ${colors.white};
     border-bottom: 1px solid #edf2f7;
     display: flex;
+    height: 50px;
     justify-content: space-between;
     left: 0;
     position: fixed;

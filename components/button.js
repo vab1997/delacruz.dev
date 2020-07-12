@@ -26,61 +26,31 @@ function Button({ children, href, title, withAnimation = true, ...props }) {
 
 const styles = css`
   a {
+    border-radius: 4px;
     border: 1px solid ${colors.primary};
-    color: ${colors.primary};
+    background: ${colors.primary};
+    color: ${colors.white};
     display: block;
-    font-size: 0.625rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: 0.01em;
-    line-height: 223.4%;
     padding: 5px 15px;
     position: relative;
-    text-transform: uppercase;
     transition: all 0.3s ease-out;
   }
 
-  a:before {
-    background: ${colors.primary};
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: 50% 100%;
-    transform: scaleY(0);
-    transition: transform 0.4s ease-out;
-    z-index: -1;
-  }
-
-  a:hover:before {
-    transform: scaleY(1);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  a:hover {
-    color: ${colors.white};
-    opacity: 1;
+  a:hover,
+  a:active {
+    background: ${colors.primaryHover};
   }
 
   a svg {
     animation: arrow 2.5s infinite;
     display: inline-block;
-    fill: ${colors.primary};
+    fill: ${colors.white};
     margin-left: 0.9375rem;
     vertical-align: middle;
     width: 0.5rem;
-  }
-
-  a:hover svg {
-    fill: ${colors.white};
   }
 
   @keyframes arrow {
