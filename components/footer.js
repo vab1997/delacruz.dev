@@ -6,7 +6,16 @@ function Footer() {
       <footer className="footer">
         <div className="content">
           <p>
-            hecho a mano con ❤️ por <a href="https://delacruz.dev">Daniel de la Cruz</a>. Sígueme en:{" "}
+            hecho a mano con
+            <span className="heart-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 392">
+                <path
+                  fill="#d7443e"
+                  d="M285 36c59 0 107 47 107 106 0 108-196 214-196 214S0 248 0 142C0 83 48 36 107 36c36-1 69 17 89 48 20-30 53-49 89-48z"
+                />
+              </svg>
+            </span>
+            por <a href="https://delacruz.dev">Daniel de la Cruz</a>. Sígueme en:{" "}
             <a
               title="Twitter"
               href="https://twitter.com/intent/follow?original_referer=https://delacruz.dev&ref_src=twsrc%5Etfw&region=follow_link&screen_name=d4nidev&tw_p=followbutton"
@@ -85,7 +94,7 @@ const styles = css`
 
   .footer-icon {
     margin: 3px;
-    vertical-align: text-top;
+    vertical-align: middle;
     transition: opacity 0.2s ease;
   }
 
@@ -95,6 +104,14 @@ const styles = css`
 
   .footer-icon svg {
     height: 15px;
+  }
+
+  .heart-icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    vertical-align: middle;
   }
 `;
 
