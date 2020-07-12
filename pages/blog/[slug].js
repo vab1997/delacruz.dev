@@ -5,6 +5,8 @@ import BlogPost from "../../components/blog-post";
 import Layout from "../../components/layout";
 import Meta from "../../components/meta";
 import NavBar from "../../components/navbar";
+import Footer from "../../components/footer";
+
 const glob = require("glob");
 
 export default function Post(props) {
@@ -14,6 +16,7 @@ export default function Post(props) {
       <NavBar />
       <BlogHeader />
       <BlogPost {...props} />
+      <Footer />
     </Layout>
   );
 }
