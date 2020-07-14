@@ -42,7 +42,7 @@ function NavBar() {
 const styles = css`
   .navbar-right {
     margin: auto 10px;
-    min-width: 120px;
+    min-width: 115px;
   }
 
   .navbar {

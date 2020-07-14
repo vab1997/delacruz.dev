@@ -10,11 +10,11 @@ function Home() {
   return (
     <Layout>
       <NavBar />
-        <Hero />
-        <Skills />
-        <Experience />
-        <Testimonials />
-        <Footer />
+      <Hero />
+      <Skills />
+      <Experience />
+      <Testimonials />
+      <Footer />
     </Layout>
   );
 }

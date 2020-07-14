@@ -31,7 +31,7 @@ const styles = css`
     background: ${colors.primary};
     color: ${colors.white};
     display: block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 600;
     padding: 5px 15px;
@@ -48,15 +48,25 @@ const styles = css`
     animation: arrow 2.5s infinite;
     display: inline-block;
     fill: ${colors.white};
-    margin-left: 0.9375rem;
+    margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    a {
+      font-size: 1rem;
+    }
+
+    a svg {
+      margin-left: 0.9375rem;
+    }
   }
 
   @keyframes arrow {
     0%,
     100% {
-      transform: translateX(-5px);
+      transform: translateX(5px);
     }
     50% {
       transform: translateX(0px);

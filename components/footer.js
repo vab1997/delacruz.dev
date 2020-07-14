@@ -15,7 +15,7 @@ function Footer() {
                 />
               </svg>
             </span>
-            por <a href="https://delacruz.dev">Daniel de la Cruz</a>. Sígueme en:{" "}
+            por <a href="https://delacruz.dev">Daniel de la Cruz</a>. Sígueme en:
             <a
               title="Twitter"
               href="https://twitter.com/intent/follow?original_referer=https://delacruz.dev&ref_src=twsrc%5Etfw&region=follow_link&screen_name=d4nidev&tw_p=followbutton"
