@@ -6,7 +6,7 @@ function Layout({
   title = "Mentoring para programadores",
   description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
   image = "/favicon/apple-touch-icon.png",
-  url,
+  url
 }) {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -22,7 +22,6 @@ function Layout({
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
         <title>{title} - Dani de la Cruz</title>
@@ -30,7 +29,9 @@ function Layout({
         <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        <link rel="canonical" href={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
 
+        <meta name="author" content="Dani de la Cruz" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@d4nidev" />
         <meta name="twitter:domain" content="delacruz.dev" />
@@ -39,9 +40,9 @@ function Layout({
         <meta property="og:url" content={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
         <meta property="og:locale" content="es-ES" />
         <meta property="og:site_name" content="delacruz.dev" />
-        <meta property="og:title" content={`${title} - Dani de la Cruz`} />
-        <meta property="og:image" content={`https://delacruz.dev${image}`} />
-        <meta property="og:description" content={description} />
+        <meta name="title" property="og:title" content={`${title} - Dani de la Cruz`} />
+        <meta name="image" property="og:image" content={`https://delacruz.dev${image}`} />
+        <meta name="description" property="og:description" content={description} />
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
         <link rel="stylesheet" href="/css/bulma.min.css" />
