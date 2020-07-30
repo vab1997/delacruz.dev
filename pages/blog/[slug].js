@@ -41,6 +41,7 @@ export async function getStaticProps({ params }) {
     props: {
       frontmatter: data.data,
       markdownBody: data.content,
+      slug,
     },
   };
 }
