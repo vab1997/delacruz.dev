@@ -37,11 +37,11 @@ function Layout({
         <meta name="twitter:image" content={`https://delacruz.dev${image}`} />
         <meta name="twitter:site" content="@d4nidev" />
         <meta property="og:url" content={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
-        <meta name="og:locale" content="es-ES" />
-        <meta name="og:title" content={`${title} - Dani de la Cruz`} />
-        <meta name="og:image" content={`https://delacruz.dev${image}`} />
-        <meta name="og:description" content={description} />
-        <meta name="og:site_name" content="delacruz.dev" />
+        <meta property="og:locale" content="es-ES" />
+        <meta property="og:site_name" content="delacruz.dev" />
+        <meta property="og:title" content={`${title} - Dani de la Cruz`} />
+        <meta property="og:image" content={`https://delacruz.dev${image}`} />
+        <meta property="og:description" content={description} />
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
         <link rel="stylesheet" href="/css/bulma.min.css" />
