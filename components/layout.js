@@ -24,11 +24,10 @@ function Layout({
     <>
       <Head>
         <meta charSet="UTF-8" />
+        <title>{title} - Dani de la Cruz</title>
+        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
-        <title>{title} - Dani de la Cruz</title>
-
         <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com" />
@@ -45,12 +44,14 @@ function Layout({
         <meta name="twitter:domain" content="delacruz.dev" />
         <meta name="twitter:image" content={`https://delacruz.dev${image}`} />
         <meta name="twitter:site" content="@d4nidev" />
+        <meta name="twitter:title" content={`${title} - Dani de la Cruz`} />
         <meta property="og:url" content={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
         <meta property="og:locale" content="es-ES" />
         <meta property="og:site_name" content="delacruz.dev" />
-        <meta name="title" property="og:title" content={`${title} - Dani de la Cruz`} />
-        <meta name="image" property="og:image" content={`https://delacruz.dev${image}`} />
-        <meta name="description" property="og:description" content={description} />
+        <meta property="og:title" content={`${title} - Dani de la Cruz`} />
+        <meta property="og:image" content={`https://delacruz.dev${image}`} />
+        <meta property="og:description" content={description} />
+        <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
       </Head>
       <NavBar />
       <main>{children}</main>
