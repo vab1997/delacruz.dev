@@ -51,13 +51,12 @@ function Layout({
         <meta name="title" property="og:title" content={`${title} - Dani de la Cruz`} />
         <meta name="image" property="og:image" content={`https://delacruz.dev${image}`} />
         <meta name="description" property="og:description" content={description} />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
       <NavBar />
       <main>{children}</main>
-      <script type="text/javascript" src="/js/analytics.js"></script>
       <Footer />
+      <script type="text/javascript" src="/js/analytics.js"></script>
       <style jsx global>{globalStyles}</style>
     </>
   );
