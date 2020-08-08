@@ -1,4 +1,5 @@
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 
 function reformatDate(fullDate) {
   const date = new Date(fullDate);
@@ -20,9 +21,9 @@ export default function BlogDate(props) {
 const styles = css`
   .date {
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: ${theme.colors.dateBg};
     border-radius: 4px;
-    color: #4a4a4a;
+    color: ${theme.colors.text};
     display: inline-flex;
     font-size: 0.75rem;
     height: 2em;

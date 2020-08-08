@@ -3,10 +3,7 @@ import Head from "next/head";
 import React from "react";
 import BlogHeader from "../../components/blog-header";
 import BlogPost from "../../components/blog-post";
-import Footer from "../../components/footer";
 import Layout from "../../components/layout";
-import GlobalStyles from "../../components/global-styles";
-import NavBar from "../../components/navbar";
 
 const glob = require("glob");
 
@@ -23,11 +20,8 @@ export default function Post(props) {
           <script async={true} src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
         )}
       </Head>
-      <GlobalStyles />
-      <NavBar />
       <BlogHeader />
       <BlogPost {...props} />
-      <Footer />
     </Layout>
   );
 }

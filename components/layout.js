@@ -1,12 +1,15 @@
 import Head from "next/head";
 import { useEffect } from "react";
+import globalStyles from '../styles/global';
+import Footer from "./footer";
+import NavBar from "./navbar";
 
 function Layout({
   children,
   title = "Mentoring para programadores",
   description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
-  image = "/favicon/apple-touch-icon.png",
-  url
+  image = "/apple-touch-icon.png",
+  url,
 }) {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -29,6 +32,11 @@ function Layout({
         <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        <link rel="preconnect dns-prefetch" href="https://www.google.es" />
+        <link rel="preconnect dns-prefetch" href="https://stats.g.doubleclick.net" />
+        <link rel="preconnect dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin />
         <link rel="canonical" href={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
 
         <meta name="author" content="Dani de la Cruz" />
@@ -43,16 +51,14 @@ function Layout({
         <meta name="title" property="og:title" content={`${title} - Dani de la Cruz`} />
         <meta name="image" property="og:image" content={`https://delacruz.dev${image}`} />
         <meta name="description" property="og:description" content={description} />
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
-        <link rel="stylesheet" href="/css/bulma.min.css" />
-        <link rel="stylesheet" media="(max-width: 640px)" href="/css/max-640px.css" />
-        <link rel="stylesheet" media="(min-width: 640px)" href="/css/min-640px.css" />
-        <link rel="stylesheet" media="(min-width: 1088px)" href="/css/min-1088px.css" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      {children}
+      <NavBar />
+      <main>{children}</main>
       <script type="text/javascript" src="/js/analytics.js"></script>
+      <Footer />
+      <style jsx global>{globalStyles}</style>
     </>
   );
 }

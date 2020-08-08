@@ -1,4 +1,6 @@
 import css from "styled-jsx/css";
+import spacing, { unit } from "./spacing";
+import { theme } from "../styles/theme";
 
 function Footer() {
   return (
@@ -10,7 +12,7 @@ function Footer() {
             <span className="heart-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 392">
                 <path
-                  fill="#d7443e"
+                  fill={theme.colors.primary}
                   d="M285 36c59 0 107 47 107 106 0 108-196 214-196 214S0 248 0 142C0 83 48 36 107 36c36-1 69 17 89 48 20-30 53-49 89-48z"
                 />
               </svg>
@@ -25,6 +27,7 @@ function Footer() {
               aria-label="Sigue a @d4nidev en Twitter"
             >
               <svg
+                alt="Twitter"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 273.5 222.3"
                 className="d-block"
@@ -39,7 +42,7 @@ function Footer() {
             </a>
             <a
               title="GitHub"
-              href="https://github.com/d4nidev"
+              href="https://github.com/delacruz-dev"
               target="_blank"
               rel="noopener nofollow"
               aria-label="Mis contribuciones de código abierto en GitHub"
@@ -62,6 +65,7 @@ function Footer() {
               className="footer-icon"
             >
               <svg
+                alt="LinkedIn"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 19 18"
                 className="d-block"
@@ -84,16 +88,21 @@ function Footer() {
 
 const styles = css`
   .footer {
+    align-items: center;
     display: flex;
+    height: 200px;
+    margin-top: ${10 * spacing.unit}px;
     justify-content: center;
+    background-color: ${theme.colors.footerBg};
   }
 
   .footer p {
+    color: ${theme.colors.footerText};
     font-size: 0.8rem;
   }
 
   .footer-icon {
-    margin: 3px;
+    margin-left: ${2 * unit}px;
     vertical-align: middle;
     transition: opacity 0.2s ease;
   }
@@ -112,6 +121,10 @@ const styles = css`
     width: 15px;
     margin: 0 5px;
     vertical-align: middle;
+  }
+
+  .content {
+    max-width: 80%;
   }
 `;
 

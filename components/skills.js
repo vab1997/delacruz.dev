@@ -1,96 +1,75 @@
+import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
+import Box from "./box";
+import spacing from "./spacing";
+
 function Skills() {
   return (
-    <section
-      id="skills"
-      className="section has-text-centered has-background-light is-medium"
-    >
-      <div className="container is-narrow">
-        <div className="content">
-          <div className="tile is-ancestor">
-            <div className="tile is-4 is-vertical is-parent">
-              <article className="tile is-child has-background-warning section">
-                <p className="title has-text-grey-dark">Mis habilidades</p>
-                <p className="subtitle has-text-grey-dark">
-                  Las cosas que se me dan mejor
-                </p>
-              </article>
-            </div>
-            <div className="tile is-parent">
-              <div className="tile is-child">
-                <nav className="panel">
-                  <div className="panel-block">
-                    <span className="panel-icon">
-                      ⚛️
-                    </span>
-                    Front end development
-                    <div className="tags">
-                      <span className="tag">HTML</span>
-                      <span className="tag">CSS</span>
-                      <span className="tag">JS</span>
-                      <span className="tag">Typescript</span>
-                      <span className="tag">ReactJS</span>
-                      <span className="tag">React Native</span>
-                    </div>
-                  </div>
-                  <div className="panel-block">
-                    <span className="panel-icon">
-                      💻
-                    </span>
-                    Back end development
-                    <div className="tags">
-                      <span className="tag">REST</span>
-                      <span className="tag">NodeJS</span>
-                      <span className="tag">NestJS</span>
-                      <span className="tag">SQL</span>
-                      <span className="tag">MongoDB</span>
-                    </div>
-                  </div>
-                  <div className="panel-block">
-                    <span className="panel-icon">
-                      ⟲
-                    </span>
-                    Agile mindset
-                    <div className="tags">
-                      <span className="tag">XP</span>
-                      <span className="tag">Scrum</span>
-                      <span className="tag">Kanban</span>
-                      <span className="tag">Lean</span>
-                      <span className="tag">TDD</span>
-                    </div>
-                  </div>
-                  <div className="panel-block">
-                    <span className="panel-icon">
-                      🤖
-                    </span>
-                    Testing Automation
-                    <div className="tags">
-                      <span className="tag">Mocha</span>
-                      <span className="tag">Jest</span>
-                      <span className="tag">Puppeteer</span>
-                      <span className="tag">CI</span>
-                      <span className="tag">CD</span>
-                    </div>
-                  </div>
-                  <div className="panel-block">
-                    <span className="panel-icon">
-                      💬
-                    </span>
-                    Behavioural skills
-                    <div className="tags">
-                      <span className="tag">Feedback</span>
-                      <span className="tag">Emotional Intelligence</span>
-                      <span className="tag">Public Speaking</span>
-                      <span className="tag">Coaching</span>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+      <aside>
+        <h1 className="is-medium">Mis habilidades</h1>
+        <Box>
+          <h3>⚛️ Front end development</h3>
+          <p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>Typescript</span>
+            <span>ReactJS</span>
+            <span>React Native</span>
+          </p>
+          <h3>💻 Back end development</h3>
+          <p>
+            <span>REST</span>
+            <span>NodeJS</span>
+            <span>NestJS</span>
+            <span>SQL</span>
+            <span>Google Cloud Platform (GCP)</span>
+          </p>
+          <h3>⟲ Agile mindset</h3>
+          <p>
+            <span>XP</span>
+            <span>Scrum</span>
+            <span>Kanban</span>
+            <span>Lean Software Development</span>
+            <span>Test-Driven Development (TDD)</span>
+          </p>
+          <h3>🤖 Testing Automation</h3>
+          <p>
+            <span>Mocha</span>
+            <span>Jest</span>
+            <span>Puppeteer</span>
+            <span>CI</span>
+            <span>CD</span>
+          </p>
+          <h3>💬 Behavioural skills</h3>
+          <p>
+            <span>Feedback</span>
+            <span>Emotional Intelligence</span>
+            <span>Public Speaking</span>
+            <span>Coaching</span>
+          </p>
+        </Box>
+      </aside>
+      <style jsx>{styles}</style>
+    </>
   );
 }
+
+const styles = css`
+  aside {
+    min-width: 25vw;
+  }
+
+  span {
+    background: ${theme.colors.skillsBg};
+    border-radius: 4px;
+    display: inline-block;
+    margin: ${spacing.unit}px;
+    padding: ${spacing.unit}px ${2 * spacing.unit}px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+`;
 
 export default Skills;

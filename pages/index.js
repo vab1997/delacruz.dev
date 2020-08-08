@@ -1,20 +1,17 @@
 import Hero from "../components/hero";
 import Layout from "../components/layout";
-import NavBar from "../components/navbar";
-import Skills from "../components/skills";
-import Experience from "../components/experience";
+import MentoringService from "../components/mentoring-service";
 import Testimonials from "../components/testimonials";
-import Footer from "../components/footer";
+import Companies from "../components/companies";
 
 function Home() {
   return (
     <Layout>
-      <NavBar />
       <Hero />
-      <Skills />
-      <Experience />
+      <MentoringService />
+      {/* <ConsultancyService /> */}
       <Testimonials />
-      <Footer />
+      <Companies />
     </Layout>
   );
 }

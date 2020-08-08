@@ -1,7 +1,8 @@
 import Link from "next/link";
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 
-export default function BlogHeader(props) {
+export default function BlogHeader() {
   return (
     <header className="header">
       <nav className="nav" role="navigation" aria-label="main navigation">
@@ -26,7 +27,7 @@ const styles = css`
 
   nav {
     align-items: center;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid ${theme.colors.border};
     display: flex;
     flex-direction: row;
     justify-content: space-between;

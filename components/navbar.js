@@ -1,7 +1,8 @@
 import Link from "next/link";
 import css from "styled-jsx/css";
+import Logo from "./assets/logo";
 import Button from "./button";
-import colors from "./colors";
+import { theme } from "../styles/theme";
 
 function NavBar() {
   return (
@@ -10,7 +11,7 @@ function NavBar() {
         <div className="navbar-left">
           <Link href="/">
             <a className="logo" title="Dani de la Cruz">
-              <img src="/danidev.svg" alt="Dani de la Cruz" width="30" height="30" />
+              <Logo fill={theme.colors.primary} />
             </a>
           </Link>
 
@@ -18,7 +19,7 @@ function NavBar() {
             <Link href="/blog">
               <a data-tracking="navbar-blog">Blog</a>
             </Link>
-            <Link href="/#skills">
+            <Link href="/me">
               <a data-tracking="navbar-skills">Sobre mí</a>
             </Link>
           </div>
@@ -27,8 +28,10 @@ function NavBar() {
         <div className="navbar-right">
           <Button
             title="Mentoring a medida para programadores de Front-End"
-            href="/contactar"
+            href="/contact"
             data-tracking="navbar-cta"
+            withAnimation
+            size="small"
           >
             Contactar
           </Button>
@@ -46,16 +49,16 @@ const styles = css`
   }
 
   .navbar {
-    background-color: ${colors.white};
-    border-bottom: 1px solid #edf2f7;
+    background-color: ${theme.colors.background};
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
     display: flex;
-    height: 50px;
+    height: 55px;
     justify-content: space-between;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .navbar-left {
@@ -66,34 +69,31 @@ const styles = css`
   .navbar-sections {
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
   }
 
   .navbar-sections a {
     display: block;
-    color: ${colors.primaryText};
+    color: ${theme.colors.text};
     margin: auto 10px;
     white-space: nowrap;
   }
 
   .navbar-sections a:hover {
-    color: ${colors.primary};
+    color: ${theme.colors.linkHover};
   }
 
   .logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 30px;
+    min-width: 30px;
     opacity: 1;
     transition: opacity 0.2s ease;
-    min-width: 20px;
   }
 
   .logo:hover {
     opacity: 0.5;
     cursor: pointer;
-  }
-
-  img {
-    margin-bottom: 0;
-    vertical-align: text-top;
   }
 
   a {
