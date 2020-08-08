@@ -4,7 +4,7 @@ import King from "./assets/logos/king";
 import Tempus from "./assets/logos/tempus";
 import Typeform from "./assets/logos/typeform";
 import Section from "./section";
-import { theme } from '../styles/theme'
+import { theme } from "../styles/theme";
 
 const logoProps = { fill: theme.colors.text, style: { margin: "0 8px" }, width: "150px" };
 

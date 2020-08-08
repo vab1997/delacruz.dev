@@ -109,7 +109,6 @@ const styles = css`
     margin-left: 5px;
   }
 
-
   @media (max-width: 767px) {
     .hero-container {
       flex-direction: column;
@@ -129,7 +128,6 @@ const styles = css`
     .hero-image,
     .hero-image img {
       height: 47vh;
-
     }
     .hero-image img {
       object-fit: contain;

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect } from "react";
-import globalStyles from '../styles/global';
+import globalStyles from "../styles/global";
 import Footer from "./footer";
 import NavBar from "./navbar";
 
@@ -57,7 +57,9 @@ function Layout({
       <main>{children}</main>
       <Footer />
       <script type="text/javascript" src="/js/scripts.js"></script>
-      <style jsx global>{globalStyles}</style>
+      <style jsx global>
+        {globalStyles}
+      </style>
     </>
   );
 }

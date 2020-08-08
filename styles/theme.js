@@ -11,7 +11,7 @@ export const theme = {
   fontFamily: {
     sansSerif: '"Open Sans", "Helvetica Neue", Helvetica, sans-serif',
     serif: '"PT Serif", serif',
-    mono: 'Menlo, Monaco, monospace'
+    mono: "Menlo, Monaco, monospace",
   },
   colors: {
     background: white,
@@ -36,5 +36,5 @@ export const theme = {
     text: spaceCadet,
     textPrimary: amaranthRed,
     textWithDarkBg: platinum,
-  }
-}
+  },
+};

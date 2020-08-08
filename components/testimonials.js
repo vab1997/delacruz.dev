@@ -3,7 +3,7 @@ import { theme } from "../styles/theme";
 import Box from "./box";
 import Section from "./section";
 import spacing from "./spacing";
-import QuotationMark from './assets/quotation-mark';
+import QuotationMark from "./assets/quotation-mark";
 
 function Testimonials() {
   return (
@@ -31,7 +31,10 @@ function Testimonials() {
                 ayudó a superar entrevistas de trabajo, motivación personal incluso mejorar mis habilidades de
                 comunicación y liderazgo, con su ayuda he podido dar un salto de calidad como profesional."
               </blockquote>
-              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
+              <QuotationMark
+                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                fill={theme.colors.dateBg}
+              />
             </Box>
 
             <Box media={<img src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
@@ -44,12 +47,15 @@ function Testimonials() {
                 </small>
               </div>
               <blockquote>
-                "Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies y a
-                modificar el DOM con jQuery. En dos años trabajando juntos Dani supo transmitirme los fundamentos del
+                "Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies y
+                a modificar el DOM con jQuery. En dos años trabajando juntos Dani supo transmitirme los fundamentos del
                 desarrollo de software, técnicas y patrones de diseño avanzados que hoy son imprescindibles en mi
                 trabajo actual."
               </blockquote>
-              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
+              <QuotationMark
+                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                fill={theme.colors.dateBg}
+              />
             </Box>
 
             <Box
@@ -68,7 +74,10 @@ function Testimonials() {
                 que afronta. Entre sus grandes virtudes se cuentan la máxima optimización de sus soluciones y un extremo
                 cuidado por hacer sus proyectos mantenibles por él y todo el equipo."
               </blockquote>
-              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
+              <QuotationMark
+                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                fill={theme.colors.dateBg}
+              />
             </Box>
 
             <Box
@@ -87,7 +96,10 @@ function Testimonials() {
                 innata para aprender nuevas tecnologías y/o metodologías poniéndolas en práctica con resultados
                 excelentes."
               </blockquote>
-              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
+              <QuotationMark
+                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                fill={theme.colors.dateBg}
+              />
             </Box>
           </div>
         </div>
