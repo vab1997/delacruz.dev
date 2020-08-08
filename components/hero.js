@@ -8,9 +8,9 @@ function Hero() {
         <div className="hero-container">
           <div className="hero-image">
             <picture>
-              <source type="image/webp" media="(min-width: 440px)" srcset="images/profile/dani-desktop.webp" />
-              <source type="image/jpg" media="(min-width: 440px)" srcset="images/profile/dani-desktop.jpg" />
-              <source type="image/webp" srcset="images/profile/dani-mobile.webp" />
+              <source type="image/webp" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.webp" />
+              <source type="image/jpg" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.jpg" />
+              <source type="image/webp" srcSet="images/profile/dani-mobile.webp" />
               <img src="images/profile/dani-mobile.jpg" alt="Daniel de la Cruz" />
             </picture>
           </div>
