@@ -9,9 +9,9 @@ function Hero() {
           <div className="hero-image">
             <picture>
               <source type="image/webp" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.webp" />
-              <source type="image/jpg" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.jpg" />
-              <source type="image/webp" srcSet="images/profile/dani-mobile.webp" />
-              <img src="images/profile/dani-mobile.jpg" alt="Daniel de la Cruz" />
+              <source type="image/jpg" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.png" />
+              <source type="image/webp" srcSet="images/profile/dani-mobile-flat.webp" />
+              <img src="images/profile/dani-mobile-flat.jpg" alt="Daniel de la Cruz" />
             </picture>
           </div>
           <div className="hero-body">

@@ -8,7 +8,7 @@ function Layout({
   children,
   title = "Mentoring para programadores",
   description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
-  image = "/apple-touch-icon.png",
+  image = "/images/profile/dani-mobile-flat.jpg",
   url,
 }) {
   useEffect(() => {
