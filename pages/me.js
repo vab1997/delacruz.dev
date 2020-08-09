@@ -45,7 +45,7 @@ function Home() {
             King
           </a>
           , desempeñando diferentes roles en cada una de ellas. Actualmente trabajo para{" "}
-          <a href="https://www.fotocasa.es/" title="Tempus" target="_blank" rel="nofollow noopener">
+          <a href="https://www.tempus.com/" title="Tempus" target="_blank" rel="nofollow noopener">
             Tempus
           </a>
           : una empresa de Chicago cuya misión es proporcionar una atención personalizada a pacientes con cáncer,
@@ -125,13 +125,15 @@ const styles = css`
     grid-template-columns: 1fr 1fr;
     grid-gap: ${5 * spacing.unit}px;
   }
+
   .video {
     height: 0;
     overflow: hidden;
     padding-bottom: 56.25%;
-    padding-top: 30px;
+    padding-top: ${10 * spacing.unit}px;
     position: relative;
   }
+
   .video iframe,
   .video object,
   .video embed {
@@ -154,6 +156,10 @@ const styles = css`
     .talks {
       display: flex;
       flex-direction: column;
+    }
+
+    .video {
+      margin-bottom: ${7 * spacing.unit}px;
     }
   }
 `;

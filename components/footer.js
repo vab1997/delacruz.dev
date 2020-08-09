@@ -126,6 +126,18 @@ const styles = css`
   .content {
     max-width: 80%;
   }
+
+  @media (max-width: 492px) {
+    p {
+      width: 245px;
+      text-align: center;
+      line-height: 2rem;
+    }
+
+    .heart-icon {
+      height: 30px;
+    }
+  }
 `;
 
 export default Footer;
