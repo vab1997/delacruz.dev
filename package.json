@@ -3,14 +3,16 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
     "start": "next start",
     "now-build": "npm run build",
+    "build": "next build && npm run build:rss",
+    "build:rss": "node ./scripts/generate-rss.js",
     "prettier": "prettier --write .",
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "fast-glob": "^3.2.4",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
     "next": "^9.5.0",
@@ -19,7 +21,8 @@
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^13.3.1",
-    "remark": "^12.0.1"
+    "remark": "^12.0.1",
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
