@@ -38,6 +38,7 @@ function Layout({
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="true" />
         <link rel="canonical" href={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
 
+        <link rel="alternate" type="application/rss+xml" title="Dani de la Cruz" href="https://delacruz.dev/feed.xml" />
         <meta name="author" content="Dani de la Cruz" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@d4nidev" />
