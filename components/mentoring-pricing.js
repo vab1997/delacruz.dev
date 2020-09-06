@@ -1,5 +1,4 @@
 import css from "styled-jsx/css";
-import Button from "./button";
 import Section from "./section";
 
 function MentoringPricing() {
@@ -28,14 +27,8 @@ function MentoringPricing() {
             </a>{" "}
             con algunas <strong>preguntas frecuentes</strong>.
           </p>
-          <div>
-            <Button title="Solicita una sesión gratuita" data-tracking="free-session-cta" outlined href="/contact">
-              Prueba gratuita
-            </Button>
-            <Button title="Contratar" data-tracking="hire-cta" href="/contact">
-              Contratar
-            </Button>
-          </div>
+          <div className="calendly-inline-widget" data-url="https://calendly.com/danidelacruz/mentoring" style={{ minWidth: '320px', height: '630px' }}></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         </div>
       </Section>
       <style jsx>{styles}</style>
