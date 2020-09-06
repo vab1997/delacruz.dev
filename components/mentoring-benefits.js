@@ -1,7 +1,7 @@
 import css from "styled-jsx/css";
 import ProudGuy from "./assets/proud-guy";
 import Box from "./box";
-import Button from "./button";
+import HireButton from "./hire-button";
 import Section from "./section";
 import spacing from "./spacing";
 
@@ -26,13 +26,7 @@ function MentoringBenefits() {
                       <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
                     </p>
                     <div className="has-text-centered">
-                      <Button
-                        title="Mentoring a medida para programadores de Front-End"
-                        href="/contact"
-                        data-tracking="benefits-cta"
-                      >
-                        Hablemos
-                      </Button>
+                      <HireButton text="Contrátame" />
                     </div>
                   </div>
                 </Box>

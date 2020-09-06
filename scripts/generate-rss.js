@@ -13,7 +13,8 @@ function dateSortDesc(a, b) {
 function generate() {
   const previewItems = getPostsSync(false, null, "content/blog");
   const feed = new RSS({
-    title: "Dani de la Cruz | Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
+    title:
+      "Dani de la Cruz | Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
     site_url: "https://delacruz.dev",
     feed_url: "https://delacruz.dev/feed.xml",
   });

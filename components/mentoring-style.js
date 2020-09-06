@@ -1,6 +1,7 @@
 import css from "styled-jsx/css";
 import Button from "./button";
 import Section from "./section";
+import HireButton from "./hire-button";
 
 function MentoringStyle() {
   return (
@@ -55,13 +56,7 @@ function MentoringStyle() {
         </div>
 
         <div className="has-text-centered">
-          <Button
-            title="Mentoring a medida para programadores de Front-End"
-            href="/contact"
-            data-tracking="mentoring-style-cta"
-          >
-            Contacta Conmigo
-          </Button>
+          <HireButton text="Cuenta conmigo" />
         </div>
       </Section>
       <style jsx>{styles}</style>

@@ -1,4 +1,5 @@
 import css from "styled-jsx/css";
+import HireButton from "./hire-button";
 import Section from "./section";
 
 function MentoringPricing() {
@@ -10,9 +11,11 @@ function MentoringPricing() {
             Contrata tu mentoría por <span className="has-text-primary">49€</span>
           </h1>
           <h2 className="subtitle">
-            O si lo prefieres, escríbeme para hacer una{" "}
-            <span className="has-text-primary">primera consultoría gratuita</span> para hacerme preguntas, discutir
-            detalles y decidir si soy la persona que estás buscando.
+            O si lo prefieres,{" "}
+            <a className="has-text-primary" href="/contact">
+              escríbeme
+            </a>{" "}
+            para hacerme preguntas, discutir detalles y decidir si soy la persona que estás buscando.
           </h2>
           <p>
             El precio corresponde a una sesión de una hora de duración. El horario lo decidiremos según nuestra mutua
@@ -27,8 +30,9 @@ function MentoringPricing() {
             </a>{" "}
             con algunas <strong>preguntas frecuentes</strong>.
           </p>
-          <div className="calendly-inline-widget" data-url="https://calendly.com/danidelacruz/mentoring" style={{ minWidth: '320px', height: '630px' }}></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+          <div>
+            <HireButton text="Contratar mentoría" />
+          </div>
         </div>
       </Section>
       <style jsx>{styles}</style>
