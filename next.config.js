@@ -1,15 +1,11 @@
 module.exports = {
-  target: "serverless",
-  experimental: {
-    modern: true,
-    rewrites() {
-      return [
-        {
-          source: "/feed.xml",
-          destination: "/_next/static/feed.xml",
-        },
-      ];
-    },
+  rewrites() {
+    return [
+      {
+        source: '/feed.xml',
+        destination: '/_next/static/feed.xml'
+      }
+    ]
   },
   webpack: function (config, { isServer, dev }) {
     config.module.rules.push({
