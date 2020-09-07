@@ -61,7 +61,7 @@ console.log(nuevaLista); // [ 2, 3, 4, 5, 6 ]
 
 Como ves, sigue funcionando. No importa dónde declares la función que se le pasa a map, no tienes por qué hacerlo en el momento de utilizarla. Conocer esto es bastante útil por varios motivos:
 
-- Puedes reutilizar el código de la función de transformación o incluso levarte la función a otro archivo.
+- Puedes reutilizar el código de la función de transformación o incluso llevarte la función a otro archivo.
 - Puedes pasarle a `map()` cualquier función, aunque no sea tuya. Por ejemplo, una función de una librería o nativa de JavaScript. Prueba con `listaOriginal.map(console.log)`.
 - Si le das nombres descriptivos a tus funciones, el código queda más legible.
 
