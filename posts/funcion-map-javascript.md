@@ -25,7 +25,7 @@ Déjame explicártelo por partes:
 - El array devuelto por `.map()` se almacena en la variable `nuevaLista`.
 - La función `callback` que `.map()` recibe por parámetro se llamará por cada elemento de `listaOriginal`.
 - `callback` recibe dos parámetros (ignoremos el tercero, que puedes ver [en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map#Syntax)). El primero es el valor actual del elemento que se está consultando, `elementoActual`. El segundo, el índice que indica la posición dentro de `listaOriginal`.
-- La función `callback` \*_siempre debe devolver un valor_. De lo contrario, `nuevaLista` tendrá valores `null`. Tengo que reconocer que a menudo se me olvida hacer ese `return` 😳.
+- La función `callback` _siempre debe devolver un valor_. De lo contrario, `nuevaLista` tendrá valores `null`. Tengo que reconocer que a menudo se me olvida hacer ese `return` 😳.
 
 Échale un vistazo a este ejemplo práctico:
 
@@ -36,7 +36,7 @@ const nuevaLista = listaOriginal.map(function sumaUno(elementoActual) {
   return elementoActual + 1;
 });
 
-console.log(listaOriginal); // [ 2, 3, 4, 5, 6 ]
+console.log(nuevaLista); // [ 2, 3, 4, 5, 6 ]
 ```
 
 La lista original es un `Array` que contiene números del 1 al 6. Al hacer un `map()`, se aplica la función `sumaUno()` a cada uno de los elementos. `map()` devuelve un nuevo `Array` con los resultados de aplicar `sumaUno()` en todas las posiciones. Por eso al hacer `console.log` se imprime por consola un listado nuevo con los resultados de sumar 1 a los elementos del listado original.
@@ -56,7 +56,7 @@ const listaOriginal = [1, 2, 3, 4, 5];
 
 const nuevaLista = listaOriginal.map(sumaUno);
 
-console.log(listaOriginal); // [ 2, 3, 4, 5, 6 ]
+console.log(nuevaLista); // [ 2, 3, 4, 5, 6 ]
 ```
 
 Como ves, sigue funcionando. No importa dónde declares la función que se le pasa a map, no tienes por qué hacerlo en el momento de utilizarla. Conocer esto es bastante útil por varios motivos:
@@ -72,7 +72,7 @@ const listaOriginal = [1, 2, 3, 4, 5];
 
 const nuevaLista = listaOriginal.map((valor) => valor + 1);
 
-console.log(listaOriginal); // [ 2, 3, 4, 5, 6 ]
+console.log(nuevaLista); // [ 2, 3, 4, 5, 6 ]
 ```
 
 O extraer el código de transformación a una variable:
@@ -84,7 +84,7 @@ const listaOriginal = [1, 2, 3, 4, 5];
 
 const nuevaLista = listaOriginal.map(sumaUno);
 
-console.log(listaOriginal); // [ 2, 3, 4, 5, 6 ]
+console.log(nuevaLista); // [ 2, 3, 4, 5, 6 ]
 ```
 
 ## Puedes transformar cualquier cosa
