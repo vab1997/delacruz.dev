@@ -61,7 +61,7 @@ function (valorAnterior /* "Mi coche tiene: asientos " */, valorActual /* "volan
 
 Y así hasta llegar al último elemento. ¿Puedes ejecutar mentalmente todos los elementos de la lsita? ¿Da el resultado que esperabas?
 
-El valor final que se devolverá y se almacenará en la variable `coche` es: `"Mi coche tiene: puertas, ruedas, pintura metalizada, volante, asientos,"`.
+El valor final que se devolverá y se almacenará en la variable `coche` es: `"Mi coche tiene: asientos, volante, puertas, ruedas, pintura metalizada,"`.
 
 <small>**Nota:** Tal vez te preguntes cómo puedes eliminar esa última coma. Hay varias maneras: puedes hacer un [substring](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/substring), por ejemplo. Aunque para algo así yo ni siquiera usaría un `.reduce()`, sino un [join](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/join). Pero quería utilizar el ejemplo de la cadena de montaje, así que sígueme el rollo 😉</small>
 
