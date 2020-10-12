@@ -7,15 +7,16 @@ const getPostsSync = () => {
   const posts = files.map((file) => {
     const content = fs.readFileSync(`${file}`, "utf8");
     const data = matter(content);
+
     return {
       fileName: file.substring(contentDir.length + 1, file.length - 3),
       fileRelativePath: file,
       data: {
         frontmatter: {
-          description: data.data.description || "",
+          description: data.data.summary || "",
           title: data.data.title,
           date: data.data.date || "",
-          author: data.data.author || "",
+          author: 'Dani de la Cruz',
         },
         markdownBody: data.content,
       },
