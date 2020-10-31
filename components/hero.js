@@ -134,7 +134,7 @@ const styles = css`
     }
 
     .hero-image {
-      height: 47vh;
+      max-height: 40vh;
       display: flex;
       align-items: center;
       justify-content: center;

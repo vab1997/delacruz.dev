@@ -300,11 +300,19 @@ export default css.global`
 
   @media (max-width: 767px) {
     .profile-picture {
-      max-height: 40vh;
-      max-width: 40vh;
+      display: block !important;
+      height: 40vh !important;
+      margin: 0 auto !important;
+      max-height: 40vh !important;
+      max-width: 40vh !important;
       position: relative !important;
-      margin: 50px auto;
-      display: block;
+    }
+
+    .hero-image div {
+      max-height: 40vh; 
+      display: box;
+      align-items: center;
+      justify-content: center;
     }
   }
 
