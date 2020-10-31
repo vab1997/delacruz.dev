@@ -19,8 +19,8 @@ function Hero() {
               src="/images/profile/me.jpg"
               className='profile-picture'
               alt="Dani de la Cruz"
-              width='1050'
-              height='1050'
+              width='500'
+              height='500'
             />
           </div>
           <div className="hero-body">
@@ -139,7 +139,7 @@ const styles = css`
       align-items: 'center';
       justify-content: 'center';
     }
-    
+
     .title,
     .subtitle {
       margin-bottom: 15px;
