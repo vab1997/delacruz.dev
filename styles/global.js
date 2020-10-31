@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
-import { theme } from "./theme";
 import spacing from "../components/spacing";
+import { theme } from "./theme";
 import typography from "./typography";
 
 export default css.global`
@@ -294,6 +294,20 @@ export default css.global`
     margin-top: 55px;
   }
 
+  .profile-picture {
+    clip-path: url(#blob);
+  }
+
+  @media (max-width: 767px) {
+    .profile-picture {
+      max-height: 40vh;
+      max-width: 40vh;
+      position: relative !important;
+      margin: 50px auto;
+      display: block;
+    }
+  }
+
   @media (max-width: 414px) {
     h1 {
       font-size: 2.2rem;
@@ -323,6 +337,7 @@ export default css.global`
     p {
       line-height: 1.4375;
     }
+
   }
 
   blockquote.twitter-tweet {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import css from "styled-jsx/css";
 import Button from "./button";
 
@@ -7,12 +8,20 @@ function Hero() {
       <section id="home" className="hero">
         <div className="hero-container">
           <div className="hero-image">
-            <picture>
-              <source type="image/webp" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.webp" />
-              <source type="image/jpg" media="(min-width: 440px)" srcSet="images/profile/dani-desktop.png" />
-              <source type="image/webp" srcSet="images/profile/dani-mobile-flat.webp" />
-              <img src="images/profile/dani-mobile-flat.jpg" alt="Daniel de la Cruz" />
-            </picture>
+            <svg height="0" width="0">
+              <defs>
+                <clipPath id="blob" clipPathUnits="objectBoundingBox">
+                  <path d="M0.75815095,0.0579477769 C0.879893708,0.187288937 0.902165272,0.677587654 0.799370955,0.785996249 C0.627963035,0.966765889 0.26163708,0.91434951 0.111342491,0.755791573 C-0.0332137967,0.603287436 -0.035795248,0.382887577 0.0965066612,0.173955315 C0.200239457,0.0101396315 0.648923894,-0.0580965318 0.75815095,0.0579477769 Z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+            <Image
+              src="/images/profile/me.jpg"
+              className='profile-picture'
+              alt="Dani de la Cruz"
+              width='1050'
+              height='1050'
+            />
           </div>
           <div className="hero-body">
             <div className="hero-content">
@@ -112,7 +121,6 @@ const styles = css`
   @media (max-width: 767px) {
     .hero-container {
       flex-direction: column;
-      margin-top: 50px;
       height: auto;
     }
 
@@ -125,16 +133,13 @@ const styles = css`
       padding: 20px;
     }
 
-    .hero-image,
-    .hero-image img {
+    .hero-image {
       height: 47vh;
+      display: flex;
+      align-items: 'center';
+      justify-content: 'center';
     }
-    .hero-image img {
-      object-fit: contain;
-      display: block;
-      width: 100vw;
-    }
-
+    
     .title,
     .subtitle {
       margin-bottom: 15px;
