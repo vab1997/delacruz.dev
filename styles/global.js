@@ -302,7 +302,7 @@ export default css.global`
     .profile-picture {
       display: block !important;
       height: 40vh !important;
-      margin: 0 auto !important;
+      margin: 20px auto 0 !important;
       max-height: 40vh !important;
       max-width: 40vh !important;
       position: relative !important;
