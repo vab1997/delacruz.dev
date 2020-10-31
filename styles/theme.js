@@ -7,6 +7,7 @@ export const platinum = "#E5E5E5";
 export const spaceCadet = "#2B2D42";
 export const white = "#FFFFFF";
 export const cream = "#F5F2F0";
+export const limeGreen = '#32CD32'
 
 export const theme = {
   fontFamily: {
@@ -38,5 +39,7 @@ export const theme = {
     text: spaceCadet,
     textPrimary: amaranthRed,
     textWithDarkBg: platinum,
+    success: limeGreen,
+    error: imperialRed,
   },
 };

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Section from "./section";
@@ -5,13 +6,40 @@ import { unit } from "./spacing";
 import Title from "./title";
 
 function Contact() {
+  const [status, setStatus] = useState('');
+
+  function submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  }
+
   return (
     <>
       <Section centered>
         <div className="title">
           <Title id="contact">Contactar</Title>
         </div>
-        <form id="form" acceptCharset="utf-8" action="https://www.usebasin.com/f/2e7223846893" method="post">
+        <form
+          id="form"
+          acceptCharset="utf-8"
+          onSubmit={submitForm}
+          action="https://formspree.io/f/mjvprwaz"
+          method="POST"
+        >
           <div className="field">
             <div className="control">
               <label htmlFor="name">Tus datos</label>
@@ -36,9 +64,10 @@ function Contact() {
           </div>
 
           <div className="field">
-            <button id="submit" type="submit" data-tracking="contact-cta">
+            {status === "SUCCESS" ? <p className='success'>¡Gracias! Te responderé lo antes posible</p> : <button id="submit" type="submit" data-tracking="contact-cta">
               Enviar mensaje
-            </button>
+            </button>}
+            {status === "ERROR" && <p className='error'>¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail.com.</p>}
           </div>
         </form>
       </Section>
@@ -95,6 +124,14 @@ const styles = css`
 
   .control {
     margin-top: ${4 * unit}px;
+  }
+
+  .success {
+    color: ${theme.colors.success}
+  }
+  
+  .error {
+    color: ${theme.colors.error}
   }
 
   button {
