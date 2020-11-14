@@ -20,7 +20,6 @@ function Home() {
         <div className='container'>
           <h1 className="title">Soy Dani de la Cruz</h1>
           <h2>Ingeniero de Software y mentor profesional</h2>
-          <h3 className="is-medium">Sobre mí</h3>
           <p>
             He estado desarrollando productos con tecnologías web desde 2006. Cuando finalicé mis estudios de Ingeniería
             de Telecomunicaciones descubrí que lo que más me había gustado de la carrera eran las asignaturas de
