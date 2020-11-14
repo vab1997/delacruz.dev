@@ -21,6 +21,7 @@ function Hero() {
               alt="Dani de la Cruz"
               width='500'
               height='500'
+              loading='eager'
             />
           </div>
           <div className="hero-body">
