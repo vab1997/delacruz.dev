@@ -17,7 +17,7 @@ function Mentoring() {
       <Head>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       </Head>
-      <script defer src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     </Layout>
   );
 }
