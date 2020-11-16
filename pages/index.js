@@ -9,7 +9,6 @@ function Home() {
     <Layout>
       <Hero />
       <MentoringService />
-      {/* <ConsultancyService /> */}
       <Testimonials />
       <Companies />
     </Layout>

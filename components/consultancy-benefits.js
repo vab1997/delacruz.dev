@@ -1,28 +1,27 @@
 import css from "styled-jsx/css";
-import ProudGuy from "./assets/proud-guy";
+import ThinkingInCode from "./assets/thinking-in-code";
+import Collaboration from "./assets/collaboration";
+import PairProgramming from "./assets/pair-programming";
 import Box from "./box";
 import HireButton from "./hire-button";
 import Section from "./section";
 import spacing from "./spacing";
 
-function MentoringBenefits() {
+function ConsultancyBenefits() {
   return (
     <>
-      <Section diagonal gradient="blue" id="mentoring-benefits">
+      <Section diagonal gradient="dusty-cactus" id="consultancy-benefits">
         <div className="container">
           <div className="stackable">
             <div className="row">
               <div className="column">
                 <Box>
-                  <h1 className="box-title">¿Cómo puede ayudarte tener un mentor?</h1>
+                  <h1 className="box-title">¿Cómo puedo ayudar a tu equipo?</h1>
                   <p>
-                    He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a
-                    hacer el mejor uso de ese conocimiento compartiéndolo contigo.
-                    </p>
+                    Soy un ingeniero de software con <strong>15 años de experiencia</strong> a mis espaldas. He trabajado tanto en grandes empresas como en start-ups y he liderado con éxito proyectos de <strong>alto impacto</strong>.
+                  </p>
                   <p>
-                    Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
-                    <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
-                    <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
+                    Puedo ayudar a tu equipo a <strong>tomar mejores decisiones</strong> poniendo mi experiencia al servicio de tu producto. Consigue el conocimiento de un <strong>profesional experto</strong> para dar juntos un <strong>impulso de calidad</strong> a tus desarrollos de Frontend.
                   </p>
                   <div className="has-text-centered">
                     <HireButton text="Contrátame" />
@@ -31,7 +30,7 @@ function MentoringBenefits() {
               </div>
               <div className="column">
                 <div className="picture">
-                  <ProudGuy width="90%" height="100%" />
+                  <PairProgramming width="90%" height="100%" />
                 </div>
               </div>
             </div>
@@ -94,4 +93,4 @@ const styles = css`
   }
 `;
 
-export default MentoringBenefits;
+export default ConsultancyBenefits;
