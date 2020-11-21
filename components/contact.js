@@ -140,13 +140,21 @@ const styles = css`
   }
 
   .success {
-    color: ${theme.colors.success}
+    background-color: ${theme.colors.success};
   }
   
   .error {
-    color: ${theme.colors.error}
+    background-color: ${theme.colors.error};
   }
 
+  .error,
+  .success {
+    text-align: center;
+    font-weight: 600;
+    padding: ${unit}px;
+    color: ${theme.colors.textWhite}
+  }
+  
   button {
     align-items: center;
     background: ${theme.colors.buttonPrimary};
