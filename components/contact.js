@@ -78,7 +78,7 @@ function Contact() {
 
           <div className="field">
             {status === "SUCCESS" ? <p className='success'>¡Gracias! Te responderé lo antes posible</p> : <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === 'LOADING'} >
-              Enviar mensaje
+              {status === 'LOADING' ? 'Enviando...' : 'Enviar mensaje'}
             </button>}
             {status === "ERROR" && <p className='error'>¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail [punto] com.</p>}
           </div>
