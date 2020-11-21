@@ -5,27 +5,33 @@ import Section from "./section";
 import { unit } from "./spacing";
 import Title from "./title";
 
+const FORMSPARK_ACTION_URL = "https://submit-form.com/Enp0wn17";
+
 function Contact() {
   const [status, setStatus] = useState('');
 
-  function submitForm(ev) {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        setStatus("SUCCESS");
-      } else {
-        setStatus("ERROR");
-      }
-    };
-    xhr.send(data);
-  }
+  const handleSubmit = async (evt) => {
+    evt.preventDefault();
+    try {
+      const form = evt.target;
+      const data = Array.from(new FormData(form).entries()).reduce((p, [key, value]) => ({ ...p, [key]: value }), {});
+
+      setStatus('LOADING');
+
+      await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      setStatus('SUCCESS');
+      form.reset();
+    } catch (err) {
+      setStatus('ERROR');
+    }
+  };
 
   return (
     <>
@@ -36,9 +42,8 @@ function Contact() {
         <form
           id="form"
           acceptCharset="utf-8"
-          onSubmit={submitForm}
-          action="https://formspree.io/f/mjvprwaz"
-          method="POST"
+          action={FORMSPARK_ACTION_URL}
+          onSubmit={handleSubmit}
         >
           <div className="field">
             <div className="control">
@@ -63,11 +68,19 @@ function Contact() {
             <textarea id="body" name="body" placeholder="Explícame cómo puedo empezar a ayudarte"></textarea>
           </div>
 
+          <input
+            type="checkbox"
+            name="bucanero"
+            style={{ display: 'none' }}
+            tabIndex="-1"
+            autoComplete="off"
+          />
+
           <div className="field">
-            {status === "SUCCESS" ? <p className='success'>¡Gracias! Te responderé lo antes posible</p> : <button id="submit" type="submit" data-tracking="contact-cta">
+            {status === "SUCCESS" ? <p className='success'>¡Gracias! Te responderé lo antes posible</p> : <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === 'LOADING'} >
               Enviar mensaje
             </button>}
-            {status === "ERROR" && <p className='error'>¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail.com.</p>}
+            {status === "ERROR" && <p className='error'>¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail [punto] com.</p>}
           </div>
         </form>
       </Section>
