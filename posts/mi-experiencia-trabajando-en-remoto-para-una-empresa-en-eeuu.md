@@ -17,7 +17,7 @@ Quiero responder algunas de las preguntas que me habéis hecho en Twitter, desde
 
 En este caso el trabajo me encontró a mí, a través de [mi perfil de LinkedIn](https://www.linkedin.com/in/danieldelacruz/). Procuro mantener mi perfil actualizado y en inglés, para que no suponga ninguna barrera. Puedes echarle un vistazo a [mi perfil](https://www.linkedin.com/in/danieldelacruz/) si quieres, para coger ideas de cómo organizarlo o qué tipo de experiencia y proyectos incluir. También puedes [escribirme](/contact) si necesitas consejos para crear un perfil atractivo para empresas que estén contratando.
 
-La otra fuente que utilizo para acceder a ofertas de empleo interesantes es suscribirme a algunas webs, como [Remote.OK](https://remoteok.io/), [Remotive](https://remotive.io/) o [We Work Remotely](https://weworkremotely.com/). Aunque no esté buscando nada en ese momento, me guardo en un documento de [Notion](https://notion.co) las empresas que despiertan mi interés para aplicar en las épocas en las que estoy en búsqueda activa.
+La otra fuente que utilizo para acceder a ofertas de empleo interesantes es suscribirme a algunas webs, como [Remote.OK](https://remoteok.io/), [Remotive](https://remotive.io/) o [We Work Remotely](https://weworkremotely.com/). Aunque no esté buscando nada en ese momento, me guardo en un documento de [Notion](https://notion.so) las empresas que despiertan mi interés para aplicar en las épocas en las que estoy en búsqueda activa.
 
 Otro recurso interesante es utilizar [Glassdoor](https://glassdoor.es), no solo para encontrar buenas ofertas sino para ver las valoraciones de los empleados de la empresa, ex-empleados y candidatos dando alguna pista sobre cómo es el proceso de selección.
 
