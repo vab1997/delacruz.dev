@@ -9,7 +9,7 @@ hasTweets: true
 
 ¿Alguna vez te has preguntado cómo sería trabajar en remoto para una empresa de otro país? En este artículo te explico mi experiencia tras un año trabajando para una empresa de Estados Unidos.
 
-Quiero responder algunas de las preguntas que me habéis hecho en Twitter, desde un punto de vista personal. Si al final del artículo echas de menos alguna, no dudes en unirte a la conversación o [contactar conmigo](/contact).
+Quiero responder algunas de las preguntas que me habéis hecho en Twitter, desde un punto de vista personal. Si al final del artículo echas de menos alguna, no dudes en [unirte a la conversación](https://twitter.com/d4nidev/status/1330447320291401730?s=20) o [contactar conmigo](/contact).
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Estoy preparando un artículo sobre mi experiencia tras un año trabajando en remoto para una empresa de EEUU.<br><br>¿Hay algo que queráis saber?</p>&mdash; Dani de la Cruz (@d4nidev) <a href="https://twitter.com/d4nidev/status/1319474990723551232?ref_src=twsrc%5Etfw">October 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
