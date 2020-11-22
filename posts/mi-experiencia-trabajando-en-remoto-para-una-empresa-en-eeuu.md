@@ -65,7 +65,7 @@ Yo tenía mucho síndrome del impostor con esto, porque pensaba que pronunciaba 
 
 Si trabajas en una empresa en el que tus compañeros están en zonas horarias diferentes, puede suponer una barrera. Aquí pueden pasar dos cosas: que la empresa tenga una cultura de trabajo en remoto bien adaptada a trabajar de forma asíncrona... o no tanto. Según el rango del espectro en el que se encuentre, pueden pedirte que estés disponible un mínimo de horas con ellos o no.
 
-Hazte a la idea de que trabajar para EEUU es un mínimo de 7 horas de diferencia con la costa este y el número se incrementa a medida que avanzas hacia el oeste. Puede que tengas que hacer reuniones a las 18:00 de la tarde o incluso a las 21:00. A cambio, tendrás las mañanas libres y nada de interrupciones, con mayor flexibilidad para gestionar tu propio tiempo. En todo caso, es algo a lo que tendrás que adaptarte.
+Hazte a la idea de que trabajar para EEUU es un mínimo de 6 horas de diferencia con la costa este y el número se incrementa a medida que avanzas hacia el oeste. Puede que tengas que hacer reuniones a las 18:00 de la tarde o incluso a las 21:00. A cambio, tendrás las mañanas libres y nada de interrupciones, con mayor flexibilidad para gestionar tu propio tiempo. En todo caso, es algo a lo que tendrás que adaptarte.
 
 Pregunta en tus entrevistas sobre el tiempo mínimo de solapamiento que esperan y cómo funcionan las comunicaciones durante las horas en las que no estáis disponibles.
 
