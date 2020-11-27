@@ -42,8 +42,6 @@ const styles = css`
     height: 3rem;
     justify-content: center;
     line-height: 1.2;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
     min-width: 3rem;
     padding: 0 1.5rem;
     position: relative;

@@ -46,8 +46,10 @@ function NavBar() {
 
 const styles = css`
   .navbar-right {
-    margin: auto 10px;
     min-width: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .navbar {

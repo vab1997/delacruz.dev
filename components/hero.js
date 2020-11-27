@@ -1,5 +1,6 @@
 import css from "styled-jsx/css";
 import Button from "./button";
+import ButtonGroup from "./button-group";
 import ProfilePicture from "./profile-picture";
 import Section from "./section";
 
@@ -22,14 +23,14 @@ function Hero() {
                 <strong className="has-text-primary">mentor</strong> para ayudarte a dar un{" "}
                 <strong>salto en tu carrera</strong>.
               </h2>
-              <div className="buttons">
+              <ButtonGroup justify='flex-start'>
                 <Button href="/me" className="button" outlined>
                   Sobre mí
                 </Button>
                 <Button href="/mentoring" className="button">
                   Mentoring
                 </Button>
-              </div>
+              </ButtonGroup>
             </div>
           </div>
         </div>
@@ -55,17 +56,8 @@ const styles = css`
     display: block;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: row;
-  }
-
   .hero-picture {
     width: 30vw;
-  }
-
-  .buttons {
-    margin: 20px 0;
   }
 
   .greet {
@@ -130,7 +122,7 @@ const styles = css`
 
     .title,
     .subtitle {
-      margin-bottom: 15px;
+      margin-bottom: 24px;
     }
   }
 
