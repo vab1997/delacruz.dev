@@ -45,7 +45,7 @@ function getProductById(id) {
    * Obtiene un producto de una API por su id.
    * La API es lentilla 🐢.
    * Una vez tengamos el producto, podemos 
-   * recordarlo para tener que volver a pedírselo a la API.
+   * recordarlo para no tener que volver a pedírselo a la API.
    */
 }
 ```
