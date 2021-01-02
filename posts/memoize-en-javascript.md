@@ -2,7 +2,7 @@
 title: "Qué es un memoize, para qué sirve y cómo se implementa en JavaScript"
 date: "2021-01-02"
 draft: false
-imageSrc: "/images/blog-images/fredy-jacob-t0SlmanfFcg-unsplash.jpg"
+imageSrc: "/images/blog-images/fredy-jacob-t0SlmanfFcg-unsplash.jpg?q=1"
 summary: "Si has oído hablar de la técnica de **memoize** o **memoization** en programación y quieres saber en qué consiste, para qué sirve y cómo implementarla, este es tu artículo. Voy a intentar explicártelo y darte algunos casos de uso en los que puede ser interesante aplicarla."
 hasTweets: false
 ---
