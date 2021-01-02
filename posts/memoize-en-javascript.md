@@ -232,7 +232,7 @@ function sumaConMemoria() {
      * Si el diccionario no tiene un valor definido en la clave generada,
      * se realiza el cálculo
      */
-    if (clave in diccionario) {
+    if (!clave in diccionario) {
       console.log(`calcula la suma de ${a} y ${b}`);
 
       /**
