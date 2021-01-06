@@ -21,7 +21,7 @@ export default function Post(props) {
         )}
       </Head>
       <BlogPost {...props} />
-      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="danidelacruz" data-color="#FF5F5F" data-emoji="" data-font="Cookie" data-text="Invítame a un café" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+      <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="danidelacruz" data-description="¡Invítame a un café!" data-message="¡Gracias por leer mi blog! Si te ha gustado el contenido, puedes invitarme a un café." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     </Layout>
   );
 }
