@@ -3,7 +3,7 @@ title: "Los 4 mayores errores que he cometido durante mi carrera como programado
 date: "2021-01-10"
 draft: false
 summary: "Comparto contigo los mayores errores que he cometido durante mis quince años de carrera como programador y qué he aprendido de ellos."
-imageSrc: /images/blog-images/daniela-holzer-u_3rD02dmkw-unsplash.jpg
+imageSrc: /images/blog-images/daniela-holzer-u_3rD02dmkw-unsplash.jpg?q=1
 ---
 
 Uno tiene ya una edad y cuando miro atrás pienso: "mira que he llegado a ser gilipollas". No me cae muy bien el Dani del pasado. Si lo tuviera delante, le diría cuatro cosas. Pero como eso no puede ser, al menos quiero reflexionar sobre los que considero que han sido los mayores errores de mi carrera como programador.
