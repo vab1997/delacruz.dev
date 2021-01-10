@@ -28,7 +28,7 @@ Tanto si te acabas de graduar como si vienes de un Bootcamp, **asegúrate de que
 
 En un proyecto me encargué de una parte bastante delicada y compleja de implementar, que me llevó varios meses de trabajo tener funcionando. No es necesario entrar en detalles, pero era una funcionalidad que permitía realizar búsquedas cruzadas a partir de los datos de cualquier otra entidad. Mi implementación funcionaba, pero era frágil y estaba acoplada a la estructura de datos de todas las entidades por las que se permitía buscar.
 
-Eran los años anteriores a las metodologías ágiles, Extreme Programming y todos estos conceptos que hoy entendemos como naturales. Así que en mi equipo todo el mundo trabajaba solo y se responsabilizaba de las tareas de principio a fin. Así que poca gente conocía cómo funcionaba lo que yo hice y además era complicado. El código y los requerimientos.
+Eran los años anteriores a las metodologías ágiles, Extreme Programming y todos estos conceptos que hoy entendemos como naturales. Así que en mi equipo todo el mundo trabajaba solo y se responsabilizaba de las tareas de principio a fin. Poca gente conocía cómo funcionaba lo que yo hice y además era complicado. El código y los requerimientos.
 
 Los problemas comenzaron en cuanto se puso en producción. Funcionaba, pero a la que alguien cambiaba algo en otra parte del código, al estar mi parte conectada a las demás, se rompía. Y me pasé meses frustrado **echándole la culpa a los demás por no probar manualmente esa funcionalidad antes de tocar nada**. Ese fue mi error.
 
@@ -44,7 +44,7 @@ Lección aprendida: desarrollar tu código con calidad no sólo es hacerlo bonit
 
 Esto ha sido una de las lecciones más duras que he aprendido y sin duda la que más problemas ha causado a los que me rodeaban. Soy una persona que, por mi carácter, evito el conflicto de forma natural. Afirmar esto sobre uno mismo es mucho más complicado de lo que parece, porque primero necesitas reconocerlo y luego tomar conciencia de ello. No ha sido fácil y me ha llevado años darme cuenta. Pero saberlo fue un gran paso. Ojalá lo hubiese sabido antes.
 
-Desarrollar software es una actividad social. Se trabaja en equipo, así que pasas la mayoría del tiempo tratando con personas, no con máquinas. Tus compañeros, managers, responsables de producto... no importa. Pero el trabajo de todo el mundo influye en los demás. Y se producen conflictos. Es inevitable.
+Desarrollar software es una actividad social. Se trabaja en equipo y pasas la mayoría del tiempo tratando con personas, no con máquinas. Tus compañeros, managers, responsables de producto... no importa. Pero el trabajo de todo el mundo influye en los demás. Y se producen conflictos. Es inevitable.
 
 Existen diferentes [estilos para gestionar conflictos](https://en.wikipedia.org/wiki/Conflict_management_style) y cada tiene el suyo de forma natural. El mío es _Avoidance_. Lo evito y lo pospongo, o incluso niego que exista. Este estilo puede ser beneficioso en algunas situaciones y en el corto plazo, pero a largo plazo solo hace que las situaciones sean mucho peores por no haberlo gestionado a tiempo.
 
@@ -54,7 +54,7 @@ He sufrido mucho por estar siempre aplazando gestionar conflictos. Porque siempr
 
 Aprendí a **dar feedback** y también a **pedirlo regularmente**. He estado años trabajando en mejorar esta parte de mi carácter de forma activa. Leyendo, formándome y estando atento a cualquier oportunidad para ponerlo en práctica. Lo he comunicado abiertamente al surgir la oportunidad. Incluso lo comento en entrevistas de trabajo. Abrirme así no fue fácil, pero hace que las personas que tienen mayor empatía me ayuden.
 
-Creo que trabajar esta parte de mi carácter ha ido dando sus frutos. Cuando he pedido feedback durante los últimos años, la gente no me percibe como alguien que evita el conflicto, sino que lo afronta. Así que aunque yo sé que el monstruito sigue ahí dentro, parece que he conseguido domesticarlo.
+Creo que trabajar esta parte de mi carácter ha ido dando sus frutos. Cuando he pedido feedback durante los últimos años, la gente no me percibe como alguien que evita el conflicto, sino que lo afronta. Aunque yo sé que el monstruito sigue ahí dentro, parece que he conseguido domesticarlo.
 
 ## Pensar que mi forma de hacer las cosas es la única correcta
 
