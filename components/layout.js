@@ -53,23 +53,10 @@ function Layout({
         <meta property="og:image" content={`https://delacruz.dev${image}`} />
         <meta property="og:description" content={description} />
         <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
-        <script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="1d1e4027-d4cd-4451-8762-550f0b868b69"
-          data-blockingmode="auto"
-          type="text/javascript"
-        ></script>
       </Head>
       <NavBar />
       <main>{children}</main>
       <Footer />
-      <script
-        id="CookieDeclaration"
-        src="https://consent.cookiebot.com/1d1e4027-d4cd-4451-8762-550f0b868b69/cd.js"
-        type="text/javascript"
-        async
-      ></script>
       <script type="text/javascript" src="/js/scripts.js"></script>
       <style jsx global>
         {globalStyles}
