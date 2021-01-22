@@ -1,9 +1,11 @@
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
 function reformatDate(fullDate) {
   const date = new Date(fullDate);
-  return date.toDateString().slice(4);
+  return date.toLocaleDateString('es-ES', options);
 }
 
 export default function BlogDate(props) {
