@@ -20,7 +20,6 @@ export default function Post(props) {
         )}
       </Head>
       <BlogPost {...props} />
-      <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="danidelacruz" data-description="¡Invítame a un café!" data-message="¡Gracias por leer mi blog! Si te ha gustado el contenido, puedes invitarme a un café." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     </Layout>
   );
 }
