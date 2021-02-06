@@ -1,6 +1,6 @@
 export default function King({ fill, ...props }) {
   return (
-    <svg preserveAspectRatio="xMidYMid" viewBox="0 0 684.953 463.668" {...props}>
+    <svg preserveAspectRatio="xMidYMid" viewBox="0 0 684.953 463.668" {...props} style={{ height: "90px" }}>
       <defs>
         <linearGradient
           id="prefix__a"

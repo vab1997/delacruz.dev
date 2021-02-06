@@ -5,6 +5,7 @@ import Tempus from "./assets/logos/tempus";
 import Typeform from "./assets/logos/typeform";
 import Section from "./section";
 import { theme } from "../styles/theme";
+import Glovo from "./assets/logos/glovo";
 
 const logoProps = { fill: theme.colors.text, style: { margin: "0 8px" }, width: "150px" };
 
@@ -14,6 +15,7 @@ function Companies() {
       <div className="container has-text-centered">
         <h1 className="title">He trabajado para</h1>
         <div className="logos">
+          <Glovo {...logoProps} />
           <Tempus {...logoProps} />
           <Adevinta {...logoProps} />
           <King {...logoProps} width="100px" />
@@ -33,17 +35,14 @@ const styles = css`
     width: 70vw;
   }
 
-  .logos > * {
-    margin: 0 4px;
-  }
-
-  .logos svg {
-    max-width: 250px;
-  }
-
   @media screen and (max-width: 414px) {
     .logos {
       width: 90vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 500px;
     }
   }
 `;
