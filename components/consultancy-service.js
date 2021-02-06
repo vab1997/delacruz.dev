@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Button from "./button";
 import Section from "./section";
-import Iteration from './assets/iteration'
+import Iteration from "./assets/iteration";
 function ConsultancyService() {
   return (
     <>
@@ -13,9 +13,7 @@ function ConsultancyService() {
             Consultoría de software para empresas que necesitan ayuda con sus proyectos de desarrollo web y mobile.
           </h2>
           <div className="cta">
-            <Button href="/consultancy">
-              Contratar
-            </Button>
+            <Button href="https://clean.codes">Contratar</Button>
           </div>
         </div>
 
@@ -32,7 +30,7 @@ const styles = css`
   .cta {
     margin-top: 2rem;
   }
-  
+
   .picture {
     margin-top: 2rem;
     width: 30vw;
