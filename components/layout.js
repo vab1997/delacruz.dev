@@ -11,15 +11,6 @@ function Layout({
   image = "/images/profile/dani-mobile-flat.jpg",
   url,
 }) {
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
-    };
-    gtag("js", new Date());
-    gtag("config", "UA-141784503-1");
-  });
-
   return (
     <>
       <Head>
