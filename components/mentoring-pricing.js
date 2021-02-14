@@ -19,8 +19,7 @@ function MentoringPricing() {
           </h2>
           <p>
             El precio corresponde a una sesión de una hora de duración. El horario lo decidiremos según nuestra mutua
-            disponibilidad. Si quieres saber cómo funciona una
-            sesión de mentoría, puedes leer{" "}
+            disponibilidad. Si quieres saber cómo funciona una sesión de mentoría, puedes leer{" "}
             <a
               className="has-text-primary"
               href="/blog/como-es-una-sesion-de-mentoring-conmigo"

@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className='container navbar-container'>
+        <div className="container navbar-container">
           <div className="navbar-left">
             <Link href="/">
               <a className="logo" title="Dani de la Cruz">
@@ -35,7 +35,7 @@ function NavBar() {
               size="small"
             >
               Contactar
-          </Button>
+            </Button>
           </div>
         </div>
       </nav>

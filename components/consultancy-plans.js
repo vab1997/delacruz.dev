@@ -12,9 +12,7 @@ function ConsultancyPlans() {
             <Box>
               <span className="icon">👥</span>
               <h1 className="title">Acompañamiento técnico</h1>
-              <p>
-                Pon mi conocimiento técnico y mi experiencia al servicio de tu equipo, organizando sesiones de:
-              </p>
+              <p>Pon mi conocimiento técnico y mi experiencia al servicio de tu equipo, organizando sesiones de:</p>
               <ul>
                 <li>Pair programming</li>
                 <li>Mob programming</li>
@@ -27,9 +25,7 @@ function ConsultancyPlans() {
             <Box>
               <span className="icon">🚀</span>
               <h1 className="title">Lanza tu proyecto</h1>
-              <p>
-                Si tienes un proyecto en mente y necesitas a alguien que ponga en marcha el primer MVP, hablemos:
-              </p>
+              <p>Si tienes un proyecto en mente y necesitas a alguien que ponga en marcha el primer MVP, hablemos:</p>
               <ul>
                 <li>Desarrollo full stack de un prototipo o Minimum Viable Product (MVP)</li>
                 <li>Programación de aplicaciones web y mobile</li>
@@ -41,9 +37,7 @@ function ConsultancyPlans() {
             <Box>
               <span className="icon">🕵🏻</span>
               <h1 className="title">Selección y hiring</h1>
-              <p>
-                Déjame ayudarte a diseñar y llevar a cabo un proceso de selección.
-              </p>
+              <p>Déjame ayudarte a diseñar y llevar a cabo un proceso de selección.</p>
               <p className="list-title has-text-info has-text-weight-semibold ">Cómo trabajaremos:</p>
               <ul>
                 <li>Elaboración del perfil que más se ajuste a vuestras necesidades</li>

@@ -13,13 +13,8 @@ const BlogList = ({ posts }) => {
           <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
             <a>
               <article className="article">
-                <div className='post-image'>
-                  <Image
-                    src={post.frontmatter.imageSrc}
-                    alt={post.frontmatter.title}
-                    loading="lazy"
-                    unsized
-                  />
+                <div className="post-image">
+                  <Image src={post.frontmatter.imageSrc} alt={post.frontmatter.title} loading="lazy" unsized />
                 </div>
                 <div>
                   <BlogDate date={post.frontmatter.date} />

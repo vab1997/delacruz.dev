@@ -320,7 +320,7 @@ export default css.global`
   .avatar {
     border-radius: 290486px;
   }
-  
+
   .box-media img {
     max-width: 100%;
     object-fit: contain;
@@ -331,7 +331,7 @@ export default css.global`
       max-width: 210px;
     }
   }
-  
+
   main {
     min-height: 100vh;
     margin-top: 55px;
@@ -371,4 +371,3 @@ export default css.global`
     }
   }
 `;
-

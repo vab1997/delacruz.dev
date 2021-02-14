@@ -16,9 +16,9 @@ function MentoringBenefits() {
                 <Box>
                   <h1 className="box-title">¿Cómo puede ayudarte tener un mentor?</h1>
                   <p>
-                    He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a
-                    hacer el mejor uso de ese conocimiento compartiéndolo contigo.
-                    </p>
+                    He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a hacer
+                    el mejor uso de ese conocimiento compartiéndolo contigo.
+                  </p>
                   <p>
                     Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
                     <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}

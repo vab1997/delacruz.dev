@@ -17,7 +17,18 @@ function Testimonials() {
           </h2>
 
           <div className="grid">
-            <Box media={<Image className='avatar' src="/images/jesus.jpg" alt="Jesús Olazagoitia" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/jesus.jpg"
+                  alt="Jesús Olazagoitia"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
+            >
               <div className="name">
                 <strong>Jesús Olazagoitia</strong>
                 <small>
@@ -38,7 +49,18 @@ function Testimonials() {
               />
             </Box>
 
-            <Box media={<Image className='avatar' src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/david.jfif"
+                  alt="David García"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
+            >
               <div className="name">
                 <strong>David García</strong>
                 <small>
@@ -60,7 +82,16 @@ function Testimonials() {
             </Box>
 
             <Box
-              media={<Image className='avatar' src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/miguel.jfif"
+                  alt="Miguel Ángel Durán"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
             >
               <div className="name">
                 <strong>Miguel Ángel Durán</strong>
@@ -82,7 +113,16 @@ function Testimonials() {
             </Box>
 
             <Box
-              media={<Image className='avatar' src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/ruben.jfif"
+                  alt="Rubén Sáez Beltrán"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
             >
               <div className="name">
                 <strong>Rubén Sáez</strong>

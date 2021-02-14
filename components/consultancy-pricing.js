@@ -18,7 +18,12 @@ function ConsultancyPricing() {
             para hacerme preguntas, discutir detalles y decidir si soy la persona que estás buscando.
           </h2>
           <p>
-            El precio corresponde a mi tarifa de servicio por hora. No incluye impuestos ni materiales. Sujeto a disponibilidad. Si tienes dudas, <a className="has-text-primary" href="/contact">ponte en contacto conmigo</a> antes de contratar el servicio y hablemos sin compromiso.
+            El precio corresponde a mi tarifa de servicio por hora. No incluye impuestos ni materiales. Sujeto a
+            disponibilidad. Si tienes dudas,{" "}
+            <a className="has-text-primary" href="/contact">
+              ponte en contacto conmigo
+            </a>{" "}
+            antes de contratar el servicio y hablemos sin compromiso.
           </p>
           <div>
             <HireButton text="Contratar consultoría" />

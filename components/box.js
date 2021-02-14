@@ -35,13 +35,12 @@ const styles = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: '100%';
+    width: "100%";
   }
 
   .box-content {
     margin-top: 1em;
   }
-
 `;
 
 export default Box;
