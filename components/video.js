@@ -1,17 +1,21 @@
 import css from "styled-jsx/css";
 import spacing from "../components/spacing";
 
-function Video({ url }) {
+function Video({ url, title, description }) {
   return (
-    <div className="video">
-      <iframe
-        src={url}
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-      <style jsx>{styles}</style>
-    </div>
+    <article>
+      <h2>{title}</h2>
+      <h3>{description}</h3>
+      <div className="video">
+        <iframe
+          src={url}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <style jsx>{styles}</style>
+      </div>
+    </article>
   );
 }
 

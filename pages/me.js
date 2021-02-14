@@ -5,6 +5,7 @@ import ProfilePicture from "../components/profile-picture";
 import Section from "../components/section";
 import Skills from "../components/skills";
 import spacing from "../components/spacing";
+import Video from "../components/video";
 
 function Home() {
   return (
@@ -81,15 +82,36 @@ function Home() {
         </div>
       </div>
 
-      <article className="container">
+      <div className="container">
         <h1 className="is-medium">Charlas</h1>
         <div className="talks">
-          <Video url="https://www.youtube.com/watch?v=u7UzYB3PBD4" />
-          <Video url="https://www.youtube.com/embed/QHzu4hxAhrc" />
-          <Video url="https://www.youtube.com/embed/67D0eJ9oqfo" />
-          <Video url="https://www.youtube.com/embed/kRI4IjWHxxw" />
+          <Video
+            url="https://www.youtube.com/embed/u7UzYB3PBD4?start=840"
+            title="La leyenda de l@s fullstack developers"
+            description="Open Source Weekends, 13 de febrero de 2021"
+          />
+          <Video
+            url="https://www.youtube.com/embed/DPlUm5kL_8g"
+            title="Round table: Development in IT"
+            description="Docplanner tech, 16 de octubre de 2020"
+          />
+          <Video
+            url="https://www.youtube.com/embed/QHzu4hxAhrc"
+            title="React Hooks: 1 year later"
+            description="StayAtHomeConf, 29 de marzo de 2020"
+          />
+          <Video
+            url="https://www.youtube.com/embed/67D0eJ9oqfo"
+            title="Construye tu propio Virtual DOM"
+            description="Software Crafters BCN, 6 de octubre de 2019"
+          />
+          <Video
+            url="https://www.youtube.com/embed/kRI4IjWHxxw"
+            title="Promueve una comunidad de práctica en tu empresa"
+            description="Conferencia Agile Spain (CAS), 10 de noviembre de 2017"
+          />
         </div>
-      </article>
+      </div>
       <style jsx>{styles}</style>
     </Layout>
   );
