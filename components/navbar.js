@@ -29,12 +29,12 @@ function NavBar() {
           <div className="navbar-right">
             <Button
               title="Mentoring a medida para programadores de Front-End"
-              href="/contact"
+              href="/mentoring"
               data-tracking="navbar-cta"
               withAnimation
               size="small"
             >
-              Contactar
+              Mentoría
             </Button>
           </div>
         </div>
