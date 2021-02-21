@@ -16,6 +16,7 @@ function Skills() {
             <span>JS</span>
             <span>Typescript</span>
             <span>ReactJS</span>
+            <span>Vue.js</span>
             <span>React Native</span>
           </p>
           <h3>💻 Back end development</h3>

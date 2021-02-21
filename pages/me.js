@@ -34,15 +34,6 @@ function Home() {
               Typeform
             </a>
             ,{" "}
-            <a
-              href="https://www.litera.com/litera-and-workshare/"
-              title="Workshare"
-              target="_blank"
-              rel="nofollow noopener"
-            >
-              Workshare
-            </a>
-            ,{" "}
             <a href="https://king.com/es" title="King" target="_blank" rel="nofollow noopener">
               King
             </a>{" "}
