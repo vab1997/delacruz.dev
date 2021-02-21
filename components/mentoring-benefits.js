@@ -1,9 +1,9 @@
 import css from "styled-jsx/css";
+import { unit } from "../styles/spacing";
 import ProudGuy from "./assets/proud-guy";
 import Box from "./box";
 import HireButton from "./hire-button";
 import Section from "./section";
-import spacing from "./spacing";
 
 function MentoringBenefits() {
   return (
@@ -89,7 +89,7 @@ const styles = css`
     }
 
     .column:last-child {
-      margin-top: ${10 * spacing.unit}px;
+      margin-top: ${10 * unit}px;
     }
   }
 `;

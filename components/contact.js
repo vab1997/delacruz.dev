@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import css from "styled-jsx/css";
+import { unit } from "../styles/spacing";
 import { theme } from "../styles/theme";
 import Section from "./section";
-import { unit } from "./spacing";
 import Title from "./title";
 
 const FORM_ACTION_URL = "https://usebasin.com/f/2e7223846893";
@@ -81,10 +81,10 @@ function Contact() {
             {status === "SUCCESS" ? (
               <p className="success">¡Gracias! Te responderé lo antes posible</p>
             ) : (
-              <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === "LOADING"}>
-                {status === "LOADING" ? "Enviando..." : "Enviar mensaje"}
-              </button>
-            )}
+                <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === "LOADING"}>
+                  {status === "LOADING" ? "Enviando..." : "Enviar mensaje"}
+                </button>
+              )}
             {status === "ERROR" && (
               <p className="error">
                 ¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail [punto] com.

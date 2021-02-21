@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import ProfilePicture from "../components/profile-picture";
 import Section from "../components/section";
 import Skills from "../components/skills";
-import spacing from "../components/spacing";
+import spacing from "../styles/spacing";
 import Video from "../components/video";
+import { theme } from "../styles/theme";
 
 function Home() {
   return (
@@ -21,10 +22,10 @@ function Home() {
           <h1 className="title">Soy Dani de la Cruz</h1>
           <h2>Ingeniero de software y mentor profesional</h2>
           <p>
-            He estado desarrollando productos con tecnologías web desde 2006. Cuando finalicé mis estudios de Ingeniería
-            de Telecomunicaciones descubrí que lo que más me había gustado de la carrera eran las asignaturas de
-            programación. Así que busqué mi primera oportunidad profesional en el mundo de la consultoría. Años más
-            tarde, tuve el privilegio de poder trabajar en grandes empresas como{" "}
+            Llevo desarrollando productos con tecnologías web desde el 2006. Cuando finalicé mis estudios de ingeniería
+            de telecomunicaciones descubrí que lo que más me gustó de la carrera fueron las asignaturas de programación.
+            Así que busqué mi primera oportunidad profesional en el mundo de la consultoría. Años más tarde, tuve el
+            privilegio de poder trabajar en grandes empresas como{" "}
             <a href="https://www.adevinta.com/es/spain/" title="Adevinta Spain" target="_blank" rel="nofollow noopener">
               Adevinta
             </a>
@@ -40,17 +41,20 @@ function Home() {
               rel="nofollow noopener"
             >
               Workshare
-            </a>{" "}
-            o{" "}
+            </a>
+            ,{" "}
             <a href="https://king.com/es" title="King" target="_blank" rel="nofollow noopener">
               King
-            </a>
-            , desempeñando diferentes roles en cada una de ellas. Actualmente trabajo para{" "}
+            </a>{" "}
+            o{" "}
             <a href="https://www.tempus.com/" title="Tempus" target="_blank" rel="nofollow noopener">
               Tempus
             </a>
-            : una empresa de Chicago cuya misión es proporcionar una atención personalizada a pacientes con cáncer,
-            depresión o enfermedades infecciosas.
+            , desempeñando diferentes roles en cada una de ellas. Actualmente trabajo para{" "}
+            <a href="https://glovoapp.com" title="Glovo" target="_blank" rel="nofollow noopener">
+              Glovo
+            </a>
+            .
           </p>
 
           <p>
@@ -118,6 +122,10 @@ function Home() {
 }
 
 const styles = css`
+  a {
+    color: ${theme.colors.textPrimary};
+  }
+
   .hero {
     position: relative;
     display: flex;

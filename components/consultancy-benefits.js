@@ -1,11 +1,9 @@
 import css from "styled-jsx/css";
-import ThinkingInCode from "./assets/thinking-in-code";
-import Collaboration from "./assets/collaboration";
+import spacing from "../styles/spacing";
 import PairProgramming from "./assets/pair-programming";
 import Box from "./box";
 import HireButton from "./hire-button";
 import Section from "./section";
-import spacing from "./spacing";
 
 function ConsultancyBenefits() {
   return (

@@ -3,7 +3,7 @@ import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Box from "./box";
 import Section from "./section";
-import spacing from "./spacing";
+import spacing from "../styles/spacing";
 
 function Experience() {
   return (

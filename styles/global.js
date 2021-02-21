@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing from "../components/spacing";
+import { unit } from "./spacing";
 import { theme } from "./theme";
 import typography from "./typography";
 
@@ -180,7 +180,7 @@ export default css.global`
     display: inline-block;
     font-size: inherit;
     line-height: 1.45rem;
-    padding: 0 ${spacing.unit}px;
+    padding: 0 ${unit}px;
   }
 
   blockquote {

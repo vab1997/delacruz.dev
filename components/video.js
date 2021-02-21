@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing from "../components/spacing";
+import spacing from "../styles/spacing";
 
 function Video({ url, title, description }) {
   return (

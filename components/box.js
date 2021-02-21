@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing from "./spacing";
+import spacing from "../styles/spacing";
 import { theme } from "../styles/theme";
 
 function Box({ media, children }) {

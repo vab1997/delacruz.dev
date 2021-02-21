@@ -1,7 +1,7 @@
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Box from "./box";
-import spacing from "./spacing";
+import spacing from "../styles/spacing";
 
 function Skills() {
   return (
