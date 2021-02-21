@@ -18,8 +18,9 @@ function MentoringPricing() {
             para hacerme preguntas, discutir detalles y decidir si soy la persona que estás buscando.
           </h2>
           <p>
-            El precio corresponde a una sesión de una hora de duración. El horario lo decidiremos según nuestra mutua
-            disponibilidad. Si quieres saber cómo funciona una sesión de mentoría, puedes leer{" "}
+            El precio indicado corresponde a <strong>una sesión de una hora de duración</strong>. IVA y otros impuestos
+            aplicables no incluidos. El horario lo decidiremos según nuestra mutua disponibilidad. Si quieres saber cómo
+            funciona una sesión de mentoría, puedes leer{" "}
             <a
               className="has-text-primary"
               href="/blog/como-es-una-sesion-de-mentoring-conmigo"

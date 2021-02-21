@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Section from "./section";
@@ -9,6 +9,7 @@ const FORM_ACTION_URL = "https://usebasin.com/f/2e7223846893";
 
 function Contact() {
   const [status, setStatus] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
@@ -33,6 +34,11 @@ function Contact() {
     }
   };
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setSubject(params.get("subject"));
+  }, []);
+
   return (
     <>
       <Section centered>
@@ -54,7 +60,13 @@ function Contact() {
           <div className="field">
             <label htmlFor="subject">Asunto</label>
 
-            <input id="subject" name="subject" type="text" placeholder="ej. Información sobre mentoring" />
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="ej. Información sobre mentoring"
+              defaultValue={subject}
+            />
           </div>
 
           <div className="field">
