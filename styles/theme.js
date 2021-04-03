@@ -10,6 +10,7 @@ export const cream = "#F5F2F0";
 export const green = "#16c716";
 export const mustard = "#f9a826";
 export const electricBlue = "#4ecdc4";
+export const yellowWarning = "#f2c94c";
 
 export const theme = {
   fontFamily: {
@@ -45,5 +46,6 @@ export const theme = {
     textWhite: white,
     success: green,
     error: imperialRed,
+    warning: yellowWarning,
   },
 };
