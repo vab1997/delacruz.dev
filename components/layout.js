@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import globalStyles from "../styles/global";
 import Footer from "./footer";
 import NavBar from "./navbar";
+import ScrollToTop from "./scroll-to-top"
 
 function Layout({
   children,
@@ -40,7 +41,10 @@ function Layout({
         <meta property="og:description" content={description} />
       </Head>
       <NavBar />
-      <main>{children}</main>
+      <main>
+        {children}
+        <ScrollToTop showButtonAt={300} />
+      </main>
       <Footer />
       <style jsx global>
         {globalStyles}
