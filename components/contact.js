@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import css from "styled-jsx/css";
+import { unit } from "../styles/spacing";
 import { theme } from "../styles/theme";
 import Section from "./section";
-import { unit } from "./spacing";
 import Title from "./title";
 
 const FORM_ACTION_URL = "https://usebasin.com/f/2e7223846893";
 
 function Contact() {
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
@@ -16,7 +17,7 @@ function Contact() {
       const form = evt.target;
       const data = Array.from(new FormData(form).entries()).reduce((p, [key, value]) => ({ ...p, [key]: value }), {});
 
-      setStatus('LOADING');
+      setStatus("LOADING");
 
       await fetch(FORM_ACTION_URL, {
         method: "POST",
@@ -26,12 +27,17 @@ function Contact() {
         },
         body: JSON.stringify(data),
       });
-      setStatus('SUCCESS');
+      setStatus("SUCCESS");
       form.reset();
     } catch (err) {
-      setStatus('ERROR');
+      setStatus("ERROR");
     }
   };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setSubject(params.get("subject"));
+  }, []);
 
   return (
     <>
@@ -39,12 +45,7 @@ function Contact() {
         <div className="title">
           <Title id="contact">Contactar</Title>
         </div>
-        <form
-          id="form"
-          acceptCharset="utf-8"
-          action={FORM_ACTION_URL}
-          onSubmit={handleSubmit}
-        >
+        <form id="form" acceptCharset="utf-8" action={FORM_ACTION_URL} onSubmit={handleSubmit}>
           <div className="field">
             <div className="control">
               <label htmlFor="name">Tus datos</label>
@@ -59,7 +60,13 @@ function Contact() {
           <div className="field">
             <label htmlFor="subject">Asunto</label>
 
-            <input id="subject" name="subject" type="text" placeholder="ej. Información sobre mentoring" />
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="ej. Información sobre mentoring"
+              defaultValue={subject}
+            />
           </div>
 
           <div className="field">
@@ -68,19 +75,21 @@ function Contact() {
             <textarea id="body" name="body" placeholder="Explícame cómo puedo empezar a ayudarte"></textarea>
           </div>
 
-          <input
-            type="checkbox"
-            name="bucanero"
-            style={{ display: 'none' }}
-            tabIndex="-1"
-            autoComplete="off"
-          />
+          <input type="checkbox" name="bucanero" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
 
           <div className="field">
-            {status === "SUCCESS" ? <p className='success'>¡Gracias! Te responderé lo antes posible</p> : <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === 'LOADING'} >
-              {status === 'LOADING' ? 'Enviando...' : 'Enviar mensaje'}
-            </button>}
-            {status === "ERROR" && <p className='error'>¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail [punto] com.</p>}
+            {status === "SUCCESS" ? (
+              <p className="success">¡Gracias! Te responderé lo antes posible</p>
+            ) : (
+              <button id="submit" type="submit" data-tracking="contact-cta" disabled={status === "LOADING"}>
+                {status === "LOADING" ? "Enviando..." : "Enviar mensaje"}
+              </button>
+            )}
+            {status === "ERROR" && (
+              <p className="error">
+                ¡Vaya! Ha habido un error. Puedes contactarme en danidelacruz [at] gmail [punto] com.
+              </p>
+            )}
           </div>
         </form>
       </Section>
@@ -142,7 +151,7 @@ const styles = css`
   .success {
     background-color: ${theme.colors.success};
   }
-  
+
   .error {
     background-color: ${theme.colors.error};
   }
@@ -152,9 +161,9 @@ const styles = css`
     text-align: center;
     font-weight: 600;
     padding: ${unit}px;
-    color: ${theme.colors.textWhite}
+    color: ${theme.colors.textWhite};
   }
-  
+
   button {
     align-items: center;
     background: ${theme.colors.buttonPrimary};

@@ -11,13 +11,13 @@ function Mentoring() {
     <Layout>
       <MentoringHero />
       <MentoringBenefits />
-      <MentoringPricing />
       <MentoringPlans />
+      <MentoringPricing />
       <MentoringStyle />
       <Head>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
       </Head>
-      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     </Layout>
   );
 }

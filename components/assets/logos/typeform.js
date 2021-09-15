@@ -1,6 +1,6 @@
 export default function Typeform({ fill, ...props }) {
   return (
-    <svg viewBox="80 160 350 200" {...props}>
+    <svg viewBox="80 160 350 200" {...props} style={{ height: "90px" }}>
       <path
         fill="none"
         stroke={fill}

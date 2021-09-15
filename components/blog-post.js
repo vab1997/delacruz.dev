@@ -8,27 +8,28 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   if (!frontmatter) return null;
 
   return (
-    <article className='container'>
-      <div className='post-image'>
-        <Image
-          src={frontmatter.imageSrc}
-          alt={frontmatter.title}
-          loading='eager'
-          unsized
-        />
+    <article className="container post">
+      <div className="post-image">
+        <Image src={frontmatter.imageSrc} alt={frontmatter.title} loading="eager" unsized />
       </div>
       <BlogDate date={frontmatter.date} />
       <h1 className="title">{frontmatter.title}</h1>
       <ReactMarkdown source={markdownBody} escapeHtml={false} skipHtml={false} renderers={{ code: CodeBlock }} />
       <style jsx>{styles}</style>
-      <style global jsx>{twitter}</style>
+      <style global jsx>
+        {twitter}
+      </style>
     </article>
   );
 };
 
 const styles = css`
   .title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
+  }
+
+  .post {
+    max-width: 680px;
   }
 `;
 
@@ -72,5 +73,5 @@ const twitter = css.global`
     margin-left: auto;
     margin-right: auto;
   }
-  `
+`;
 export default BlogPost;

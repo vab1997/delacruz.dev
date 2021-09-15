@@ -2,6 +2,7 @@ import Button from "./button";
 
 export default function HireButton({ text }) {
   function openCalendly(evt) {
+    return;
     evt.preventDefault();
     evt.stopPropagation();
 
@@ -14,7 +15,7 @@ export default function HireButton({ text }) {
   }
 
   return (
-    <Button title="Contratar" data-tracking="hire-cta" href="/contact" onClick={openCalendly}>
+    <Button title="Contratar" data-tracking="hire-cta" href="#having-a-break" onClick={openCalendly}>
       {text}
     </Button>
   );

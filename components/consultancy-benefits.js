@@ -1,11 +1,9 @@
 import css from "styled-jsx/css";
-import ThinkingInCode from "./assets/thinking-in-code";
-import Collaboration from "./assets/collaboration";
+import spacing from "../styles/spacing";
 import PairProgramming from "./assets/pair-programming";
 import Box from "./box";
 import HireButton from "./hire-button";
 import Section from "./section";
-import spacing from "./spacing";
 
 function ConsultancyBenefits() {
   return (
@@ -18,10 +16,14 @@ function ConsultancyBenefits() {
                 <Box>
                   <h1 className="box-title">¿Cómo puedo ayudar a tu equipo?</h1>
                   <p>
-                    Soy un ingeniero de software con <strong>15 años de experiencia</strong> a mis espaldas. He trabajado tanto en grandes empresas como en start-ups y he liderado con éxito proyectos de <strong>alto impacto</strong>.
+                    Soy un ingeniero de software con <strong>15 años de experiencia</strong> a mis espaldas. He
+                    trabajado tanto en grandes empresas como en start-ups y he liderado con éxito proyectos de{" "}
+                    <strong>alto impacto</strong>.
                   </p>
                   <p>
-                    Puedo ayudar a tu equipo a <strong>tomar mejores decisiones</strong> poniendo mi experiencia al servicio de tu producto. Consigue el conocimiento de un <strong>profesional experto</strong> para dar juntos un <strong>impulso de calidad</strong> a tus desarrollos de Frontend.
+                    Puedo ayudar a tu equipo a <strong>tomar mejores decisiones</strong> poniendo mi experiencia al
+                    servicio de tu producto. Consigue el conocimiento de un <strong>profesional experto</strong> para
+                    dar juntos un <strong>impulso de calidad</strong> a tus desarrollos de Frontend.
                   </p>
                   <div className="has-text-centered">
                     <HireButton text="Contrátame" />

@@ -1,7 +1,7 @@
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Box from "./box";
-import spacing from "./spacing";
+import spacing from "../styles/spacing";
 
 function Skills() {
   return (
@@ -16,6 +16,7 @@ function Skills() {
             <span>JS</span>
             <span>Typescript</span>
             <span>ReactJS</span>
+            <span>Vue.js</span>
             <span>React Native</span>
           </p>
           <h3>💻 Back end development</h3>

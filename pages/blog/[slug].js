@@ -1,7 +1,6 @@
 import matter from "gray-matter";
 import Head from "next/head";
 import React from "react";
-import BlogHeader from "../../components/blog-header";
 import BlogPost from "../../components/blog-post";
 import Layout from "../../components/layout";
 

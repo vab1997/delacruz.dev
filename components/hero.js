@@ -23,7 +23,7 @@ function Hero() {
                 <strong className="has-text-primary">mentor</strong> para ayudarte a dar un{" "}
                 <strong>salto en tu carrera</strong>.
               </h2>
-              <ButtonGroup justify='flex-start'>
+              <ButtonGroup justify="flex-start">
                 <Button href="/me" className="button" outlined>
                   Sobre mí
                 </Button>
@@ -118,7 +118,6 @@ const styles = css`
       align-items: center;
       justify-content: center;
     }
-
 
     .title,
     .subtitle {

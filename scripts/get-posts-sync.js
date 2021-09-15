@@ -16,7 +16,7 @@ const getPostsSync = () => {
           description: data.data.summary || "",
           title: data.data.title,
           date: data.data.date || "",
-          author: 'Dani de la Cruz',
+          author: "Dani de la Cruz",
         },
         markdownBody: data.content,
       },

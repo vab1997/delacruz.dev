@@ -1,7 +1,7 @@
-function ButtonGroup({ children, justify = 'center' }) {
+function ButtonGroup({ children, justify = "center" }) {
   return (
     <>
-      <div className='button-group'>{children}</div>
+      <div className="button-group">{children}</div>
       <style jsx>
         {`
           .button-group {
@@ -14,17 +14,17 @@ function ButtonGroup({ children, justify = 'center' }) {
       </style>
       <style global jsx>
         {`
-            .button-group > *:not(:last-child) {
-              margin-right: .5rem;
-            }
+          .button-group > *:not(:last-child) {
+            margin-right: 0.5rem;
+          }
 
-            .button-group > * {
-              margin-bottom: .5rem;
-            }
-          `}
+          .button-group > * {
+            margin-bottom: 0.5rem;
+          }
+        `}
       </style>
     </>
-  )
+  );
 }
 
 export default ButtonGroup;

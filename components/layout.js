@@ -11,15 +11,6 @@ function Layout({
   image = "/images/profile/dani-mobile-flat.jpg",
   url,
 }) {
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
-    };
-    gtag("js", new Date());
-    gtag("config", "UA-141784503-1");
-  });
-
   return (
     <>
       <Head>
@@ -28,12 +19,7 @@ function Layout({
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        <link rel="preconnect dns-prefetch" href="https://www.google.es" />
-        <link rel="preconnect dns-prefetch" href="https://stats.g.doubleclick.net" />
-        <link rel="preconnect dns-prefetch" href="https://www.google.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="true" />
         <link rel="canonical" href={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
@@ -52,12 +38,10 @@ function Layout({
         <meta property="og:title" content={`${title} - Dani de la Cruz`} />
         <meta property="og:image" content={`https://delacruz.dev${image}`} />
         <meta property="og:description" content={description} />
-        <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
       </Head>
       <NavBar />
       <main>{children}</main>
       <Footer />
-      <script type="text/javascript" src="/js/scripts.js"></script>
       <style jsx global>
         {globalStyles}
       </style>

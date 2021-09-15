@@ -1,6 +1,6 @@
 export default function Adevinta({ fill, ...props }) {
   return (
-    <svg x={0} y={0} viewBox="0 0 429.97 96.83" xmlSpace="preserve" {...props}>
+    <svg x={0} y={0} viewBox="0 0 429.97 96.83" xmlSpace="preserve" {...props} style={{ height: "90px" }}>
       <g id="prefix__LOGO">
         <path
           fill={fill}

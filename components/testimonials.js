@@ -1,10 +1,10 @@
+import Image from "next/image";
 import css from "styled-jsx/css";
+import { unit } from "../styles/spacing";
 import { theme } from "../styles/theme";
+import QuotationMark from "./assets/quotation-mark";
 import Box from "./box";
 import Section from "./section";
-import spacing from "./spacing";
-import QuotationMark from "./assets/quotation-mark";
-import Image from "next/image";
 
 function Testimonials() {
   return (
@@ -17,7 +17,18 @@ function Testimonials() {
           </h2>
 
           <div className="grid">
-            <Box media={<Image className='avatar' src="/images/jesus.jpg" alt="Jesús Olazagoitia" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/jesus.jpg"
+                  alt="Jesús Olazagoitia"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
+            >
               <div className="name">
                 <strong>Jesús Olazagoitia</strong>
                 <small>
@@ -33,12 +44,23 @@ function Testimonials() {
                 comunicación y liderazgo, con su ayuda he podido dar un salto de calidad como profesional."
               </blockquote>
               <QuotationMark
-                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                style={{ position: "absolute", right: 4 * unit, bottom: 4 * unit }}
                 fill={theme.colors.dateBg}
               />
             </Box>
 
-            <Box media={<Image className='avatar' src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/david.jfif"
+                  alt="David García"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
+            >
               <div className="name">
                 <strong>David García</strong>
                 <small>
@@ -54,13 +76,22 @@ function Testimonials() {
                 trabajo actual."
               </blockquote>
               <QuotationMark
-                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                style={{ position: "absolute", right: 4 * unit, bottom: 4 * unit }}
                 fill={theme.colors.dateBg}
               />
             </Box>
 
             <Box
-              media={<Image className='avatar' src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/miguel.jfif"
+                  alt="Miguel Ángel Durán"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
             >
               <div className="name">
                 <strong>Miguel Ángel Durán</strong>
@@ -76,13 +107,22 @@ function Testimonials() {
                 cuidado por hacer sus proyectos mantenibles por él y todo el equipo."
               </blockquote>
               <QuotationMark
-                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                style={{ position: "absolute", right: 4 * unit, bottom: 4 * unit }}
                 fill={theme.colors.dateBg}
               />
             </Box>
 
             <Box
-              media={<Image className='avatar' src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}
+              media={
+                <Image
+                  className="avatar"
+                  src="/images/ruben.jfif"
+                  alt="Rubén Sáez Beltrán"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              }
             >
               <div className="name">
                 <strong>Rubén Sáez</strong>
@@ -98,7 +138,7 @@ function Testimonials() {
                 excelentes."
               </blockquote>
               <QuotationMark
-                style={{ position: "absolute", right: 4 * spacing.unit, bottom: 4 * spacing.unit }}
+                style={{ position: "absolute", right: 4 * unit, bottom: 4 * unit }}
                 fill={theme.colors.dateBg}
               />
             </Box>
@@ -132,13 +172,13 @@ const styles = css`
   .name {
     display: block;
     font-size: 1.2rem;
-    margin-bottom: ${spacing.unit * 2}px;
+    margin-bottom: ${unit * 2}px;
     text-align: center;
     width: 100%;
   }
 
   .name small {
-    margin-left: ${spacing.unit * 2}px;
+    margin-left: ${unit * 2}px;
   }
 
   @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing from "../components/spacing";
+import { unit } from "./spacing";
 import { theme } from "./theme";
 import typography from "./typography";
 
@@ -180,7 +180,7 @@ export default css.global`
     display: inline-block;
     font-size: inherit;
     line-height: 1.45rem;
-    padding: 0 ${spacing.unit}px;
+    padding: 0 ${unit}px;
   }
 
   blockquote {
@@ -320,7 +320,7 @@ export default css.global`
   .avatar {
     border-radius: 290486px;
   }
-  
+
   .box-media img {
     max-width: 100%;
     object-fit: contain;
@@ -331,7 +331,7 @@ export default css.global`
       max-width: 210px;
     }
   }
-  
+
   main {
     min-height: 100vh;
     margin-top: 55px;
@@ -371,4 +371,3 @@ export default css.global`
     }
   }
 `;
-

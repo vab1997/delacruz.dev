@@ -1,5 +1,4 @@
 import matter from "gray-matter";
-import BlogHeader from "../../components/blog-header";
 import BlogList from "../../components/blog-list";
 import Layout from "../../components/layout";
 

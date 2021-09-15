@@ -27,7 +27,7 @@ Mira estos ejemplos con algunos tipos de funciones a las que puedes aplicar la t
 function unCalculoMuyCostoso(parametros) {
   /**
    * Código que tarda mucho en ejecutarse 🕰.
-   * Una vez hecho el cálculo, podemos devolver 
+   * Una vez hecho el cálculo, podemos devolver
    * el resultado. ¿Por qué hacerlo otra vez?
    */
 }
@@ -35,16 +35,20 @@ function unCalculoMuyCostoso(parametros) {
 function ordenar(muchosDatos) {
   /**
    * Ordenar muchos datos puede llevar su tiempo ⏳.
-   * Una vez ordenados los datos, sería genial recordar 
+   * Una vez ordenados los datos, sería genial recordar
    * cómo se han ordenado para no tener que volverlo a hacer.
    */
 }
 
 function getProductById(id) {
-  /** 
+  /**
    * Obtiene un producto de una API por su id.
    * La API es lentilla 🐢.
+<<<<<<< HEAD
    * Una vez tengamos el producto, podemos 
+=======
+   * Una vez tengamos el producto, podemos
+>>>>>>> upstream/master
    * recordarlo para no tener que volver a pedírselo a la API.
    */
 }
@@ -83,13 +87,14 @@ console.log("resultado 2: " + resultado2);
 > resultado 2: 7
 */
 ```
+
 ## Primer paso: hacer que la función recuerde una ejecución anterior
 
 Vamos a ir poco a poco. Lo primero que haré será que la función suma sea capaz de recordar el valor de una ejecución anterior. Si ya se ha ejecutado, devolverá ese valor en lugar de calcular la suma. Este es el concepto fundamental del _memoize_. Para hacerlo sencillo, podemos empezar guardando el valor en una variable:
 
 ```js
 /**
- * Guardamos el resultado en una variable declarada fuera 
+ * Guardamos el resultado en una variable declarada fuera
  * de la función, para que se mantenga el valor entre ejecuciones.
  * Si se declarase dentro, se perdería el valor almacenado en cuanto
  * la ejecución terminase.
@@ -132,7 +137,7 @@ console.log("resultado 2: " + resultado2);
 
 ## Segundo paso: Encapsular la variable para almacenar la memoria
 
-El ejemplo anterior no es demasiado práctico. No tiene mucho sentido tener por ahí variables colgando para almacenar el resultado que corresponde al ámbito de la función suma. Lo ideal es que sea la propia función la que tenga memoria y no obligue al que la use a crear una variable para ello. Esto es lo que se conoce en programación como [encapsulamiento](https://es.wikipedia.org/wiki/Encapsulamiento_(inform%C3%A1tica)#:~:text=En%20programaci%C3%B3n%20modular%2C%20y%20m%C3%A1s,operaciones%20definidas%20para%20ese%20objeto.).
+El ejemplo anterior no es demasiado práctico. No tiene mucho sentido tener por ahí variables colgando para almacenar el resultado que corresponde al ámbito de la función suma. Lo ideal es que sea la propia función la que tenga memoria y no obligue al que la use a crear una variable para ello. Esto es lo que se conoce en programación como [encapsulamiento](<https://es.wikipedia.org/wiki/Encapsulamiento_(inform%C3%A1tica)#:~:text=En%20programaci%C3%B3n%20modular%2C%20y%20m%C3%A1s,operaciones%20definidas%20para%20ese%20objeto.>).
 
 El problema es que si se declara la variable `resultado` dentro de suma, ésta se volverá a crear cada vez que se ejecute y no lograremos lo que queremos. Tenemos que crear la función suma de forma que tenga acceso a esa variable y que se mantenga el valor entre diferentes ejecuciones.
 
@@ -229,18 +234,17 @@ function sumaConMemoria() {
     const clave = `${a}_${b}`;
 
     /**
-     * Si el diccionario no tiene un valor definido en la clave generada,
-     * se realiza el cálculo
+     * Si el diccionario tiene un valor definido en la clave generada,
+     * se devuelve el resultado almacenado y no se vuelve a calcular
      */
-    if (!clave in diccionario) {
-      console.log(`calcula la suma de ${a} y ${b}`);
-
-      /**
-       * Una vez realizado el cálculo por primera vez,
-       * se almacena el resultado
-       */
-      diccionario[clave] = a + b;
+    if (diccionario.hasOwnProperty(clave)) {
+      console.log("Devuelve resultado almacenado en el diccionario");
+      return diccionario[clave];
     }
+
+    // En caso contrario, la calcula y almacena el resultado.
+    console.log(`Calcula la suma de ${a} y ${b}`);
+    diccionario[clave] = a + b;
 
     // Finalmente se devuelve el valor almacenado en el diccionario
     return diccionario[clave];
@@ -264,8 +268,10 @@ console.log("resultado 3: " + resultado3);
 console.log("resultado 4: " + resultado4);
 
 /*
-> calcula la suma de 3 y 4 
-> calcula la suma de 2 y 1 
+> Calcula la suma de 3 y 4 
+> Devuelve resultado almacenado en el diccionario
+> Calcula la suma de 2 y 1 
+> Devuelve resultado almacenado en el diccionario
 > resultado 1: 7 
 > resultado 2: 7 
 > resultado 3: 3 
@@ -298,14 +304,13 @@ function memoize(fn) {
 
   /**
    * Se devuelve una función capaz de recoger cualquier
-   * número de parámetros gracias a la desestructuración 
+   * número de parámetros gracias a la desestructuración
    * (los tres puntos).
    */
   return function (...args) {
     // Si los argumentos existen en el diccionario, devolver el valor memorizado
-
     // Si no existen, ejecutar fn(), almacenar el resultado y devolverlo.
-  }
+  };
 }
 ```
 
@@ -315,10 +320,10 @@ Pasemos a la implementación completa:
 
 ```js
 // memoize.js
-function memoize (fn) {
+function memoize(fn) {
   let diccionario = {};
-  
-  return function(...args) {
+
+  return function (...args) {
     /**
      * Se genera la clave igual que en los pasos anteriores,
      * pero en este caso se soporta cualquier número de parámetros.
@@ -329,23 +334,23 @@ function memoize (fn) {
      * Si la clave se encuentra en el diccionario, devuelve el valor
      * de una ejecución anterior.
      */
-    if (clave in diccionario) {
+    if (diccionario.hasOwnProperty(clave)) {
       console.log("Devuelve resultado almacenado en el diccionario");
       return diccionario[clave];
-    } else {
-      /**
-       * Se ejecuta la función fn pasándole los parámetros
-       */
-      const result = fn(...args);
-
-      /**
-       * Se almacena el resultado en el diccionario
-       */
-      diccionario[clave] = result;
-      return result;
     }
+
+    /**
+     * En caso contrario, se ejecuta la función fn pasándole los parámetros
+     */
+    const result = fn(...args);
+
+    /**
+     * Se almacena el resultado en el diccionario
+     */
+    diccionario[clave] = result;
+    return result;
   };
-};
+}
 
 export default memoize;
 ```
@@ -354,11 +359,11 @@ Si escribes la implementación de memoize en un módulo, podrás utilizarlo en c
 
 ```js
 // suma.js
-import memoize from './memoize';
+import memoize from "./memoize";
 
 const suma = memoize(function suma(a, b) {
   return a + b;
-})
+});
 
 export default suma;
 ```
@@ -391,11 +396,11 @@ resultado 4: 3
 
 ## Aplicación práctica
 
-Vale, vamos a dejarnos de sumas y vamos a ver un caso real en el que podría serte útil utilizar una función com `memoize`. Imagina que en tu aplicación necesitas obtener los permisos de un usuario. Esto es algo que seguramente solo necesitarás pedir una vez por sesión, ya que no debería cambiar muy a menudo. Al menos, es aceptable que durante la vida de una sesión se mantengan. 
+Vale, vamos a dejarnos de sumas y vamos a ver un caso real en el que podría serte útil utilizar una función com `memoize`. Imagina que en tu aplicación necesitas obtener los permisos de un usuario. Esto es algo que seguramente solo necesitarás pedir una vez por sesión, ya que no debería cambiar muy a menudo. Al menos, es aceptable que durante la vida de una sesión se mantengan.
 
 ```js
 async function getPermissions(userId) {
-  const result = await fetch(`${host}/users/${userId}/permissions`)
+  const result = await fetch(`${host}/users/${userId}/permissions`);
   const permissions = await result.json();
   return permissions;
 }
@@ -406,11 +411,11 @@ export default getPermissions;
 En vez de hacer una petición a tu backend por cada consulta o navegación para comprobar si el usuario tiene permisos, puedes almacenarlo en memoria tras la primera ejecución.
 
 ```js
-const getPermissions = memoize(async function(userId) {
-  const result = await fetch(`${host}/users/${userId}/permissions`)
+const getPermissions = memoize(async function (userId) {
+  const result = await fetch(`${host}/users/${userId}/permissions`);
   const permissions = await result.json();
   return permissions;
-})
+});
 
 export default getPermissions;
 ```
@@ -431,7 +436,7 @@ getPermissions().then(console.log);
 
 Hemos visto cómo implementar algo que aparentemente es sencillo, pero que implica varios conocimientos sobre cómo funciona JavaScript. Las clausuras y el trato que le da el lenguaje a las funciones, considerándose ciudadanas de primera clase, permiten realizar patrones tan potentes como el _memoize_ que hemos visto en este artículo.
 
-He visto muchos proyectos en los que se utiliza una **librería de estado global** como **Redux** o **Vuex** para conseguir comportamientos como este. Si es tu caso, piensa dos veces si realmente la necesitas. En mi opinión, conseguir una caché en memoria no es suficiente motivo para instalar una dependencia, cuando se puede conseguir lo mismo con una simple función. 
+He visto muchos proyectos en los que se utiliza una **librería de estado global** como **Redux** o **Vuex** para conseguir comportamientos como este. Si es tu caso, piensa dos veces si realmente la necesitas. En mi opinión, conseguir una caché en memoria no es suficiente motivo para instalar una dependencia, cuando se puede conseguir lo mismo con una simple función.
 
 Por último, si consideras utilizar este patrón en tu código, **no te recomiendo utilizar mi implementación**. Aunque es suficiente a efectos didácticos, hay otras opciones mucho mejor testeadas, como [memoizee](https://github.com/medikoo/memoizee#readme) o la propia de [lodash](https://lodash.com/docs/#memoize).
 

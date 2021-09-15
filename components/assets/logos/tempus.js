@@ -1,6 +1,6 @@
 export default function Tempus({ fill, ...props }) {
   return (
-    <svg viewBox="0 0 141 21" {...props} fill={fill}>
+    <svg viewBox="0 0 141 21" {...props} fill={fill} style={{ height: "90px" }}>
       <defs>
         <path id="prefix__a" d="M86 50.27V55H69V35h16.83v4.7h-11.2v2.75h10.35v4.82H74.64v3H86" />
         <path

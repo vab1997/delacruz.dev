@@ -1,55 +1,128 @@
 import css from "styled-jsx/css";
 import Box from "./box";
+import Button from "./button";
 import Section from "./section";
 
 function MentoringPlans() {
   return (
     <>
       <Section>
-        <div className="container">
+        <div className="container has-text-centered">
+          <h1 className="title">Planes de mentoría</h1>
+          <h2 className="subtitle">
+            Estos son algunas de las consultas más demandadas por las personas que me piden ayuda.
+          </h2>
           <div className="grid">
             <Box>
               <span className="icon">👥</span>
-              <h1 className="title">Acompañamiento técnico</h1>
+              <h2 className="title">Acompañamiento técnico</h2>
               <p>
-                ¿Necesitas es un compañero de vuelo que te ayude a mejorar técnicamente? Aquí tienes algunas actividades
-                en las que podemos emplear nuestro tiempo:
+                ¿Necesitas es un compañero de vuelo que te ayude a mejorar técnicamente? ¿Quieres hacerme una{" "}
+                <strong>consulta puntual</strong>?
               </p>
+              <p>Así podemos invertir nuestro tiempo:</p>
               <ul>
-                <li>Pair programming</li>
-                <li>Code Walkthrough</li>
-                <li>Code Katas</li>
-                <li>Diseñar un plan de aprendizaje a medida</li>
+                <li>
+                  <strong>Pair programming</strong>. Programaremos un proyecto juntos.
+                </li>
+                <li>
+                  <strong>Revisión de código</strong>. Enséñame tu proyecto y veamos qué se puede mejorar.
+                </li>
+                <li>
+                  <strong>Code Katas</strong>. Practiquemos cómo resolver problemas.
+                </li>
               </ul>
+              <p>
+                <small>
+                  Este es el plan más flexible y el número de sesiones necesarias dependerá de la ayuda que necesites.
+                  Podemos comenzar
+                  <strong className="has-text-primary">a partir de una sesión</strong>.
+                </small>
+              </p>
+              <p className="has-text-centered">
+                <Button
+                  title="Consigue ayuda en tu ascenso a senior"
+                  href="/contact?subject=Necesito acompañamiento técnico"
+                  data-tracking="level-up-cta"
+                  size="small"
+                >
+                  Trabajemos juntos
+                </Button>
+              </p>
             </Box>
 
             <Box>
               <span className="icon">🚀</span>
-              <h1 className="title">Impulsa tu carrera</h1>
+              <h2 className="title">Impulsa tu carrera</h2>
               <p>
                 Si ya tienes trabajo pero quieres saber qué te falta para ayudar mejor a tu equipo o conseguir un
-                ascenso, déjame ayudarte. Algunas ideas para inspirarte:
+                ascenso, déjame ayudarte.
               </p>
+              <p>Algunas ideas para inspirarte:</p>
               <ul>
-                <li>Preparar un ascenso a senior</li>
-                <li>Técnicas de liderazgo</li>
-                <li>Cómo presentar propuestas de mejora a tus compañeras y compañeros</li>
+                <li>
+                  Saber <strong>qué se espera de un programador senior</strong> y cómo prepararte para serlo.
+                </li>
+                <li>
+                  Técnicas y herramientas de <strong>liderazgo</strong> para hacer crecer a tus compañeros.
+                </li>
+                <li>
+                  Cómo <strong>presentar propuestas de mejora</strong> al resto del equipo y a tus managers.
+                </li>
               </ul>
+              <p>
+                <small>
+                  El número de sesiones necesarias para ayudarte adecuadamente depende de cada caso, pero suele ser de{" "}
+                  <strong className="has-text-primary">dos a cinco sesiones</strong>.
+                </small>
+              </p>
+              <p className="has-text-centered">
+                <Button
+                  title="Consigue ayuda en tu ascenso a senior"
+                  href="/contact?subject=Quiero impulsar mi carrera"
+                  data-tracking="level-up-cta"
+                  size="small"
+                >
+                  Sube de nivel
+                </Button>
+              </p>
             </Box>
 
             <Box>
               <span className="icon">👩🏻‍💻</span>
-              <h1 className="title">Consigue el trabajo</h1>
+              <h2 className="title">Consigue el trabajo</h2>
               <p>
-                ¿Estás en uno o varios procesos de selección y necesitas ayuda para prepararlos? Déjame acompañarte
-                durante el proceso.
+                ¿Estás en uno o varios procesos de selección y necesitas ayuda para prepararlos? Déjame acompañarte.
               </p>
-              <p className="list-title has-text-info has-text-weight-semibold ">Cómo puedo ayudarte:</p>
+              <p>Qué haremos:</p>
               <ul>
-                <li>Practicar las preguntas típicas en entrevistas de Front-End</li>
-                <li>Feedback sobre pruebas técnicas</li>
-                <li>Optimización del CV y portfolio</li>
+                <li>
+                  Practicar las preguntas típicas en <strong>entrevistas de Front-End</strong>
+                </li>
+                <li>
+                  Programar y hablar de cómo encarar la <strong>prueba técnica</strong>
+                </li>
+                <li>
+                  <strong>Optimización del CV</strong> y portfolio en webs de empleo y redes sociales
+                </li>
               </ul>
+              <p>
+                <small>
+                  Ten en cuenta que normalmente necesito al menos{" "}
+                  <strong className="has-text-primary">tres sesiones</strong> para conocerte y darte un feedback
+                  adecuado.
+                </small>
+              </p>
+              <p className="has-text-centered">
+                <Button
+                  title="Contactar para ayudarte en tus entrevistas"
+                  href="/contact?subject=Ayuda con entrevistas"
+                  data-tracking="get-the-job-cta"
+                  size="small"
+                >
+                  Escríbeme
+                </Button>
+              </p>
             </Box>
           </div>
         </div>
@@ -60,10 +133,15 @@ function MentoringPlans() {
 }
 
 const styles = css`
-  h1 {
+  h2 {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     text-align: center;
+    font-weight: bold;
+  }
+
+  h2.subtitle {
+    font-weight: normal;
   }
 
   .icon {

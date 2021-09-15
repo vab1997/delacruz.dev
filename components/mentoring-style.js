@@ -30,8 +30,8 @@ function MentoringStyle() {
               <div className="has-text-centered icon">🙇🏻‍♂️</div>
               <h3>Humildad</h3>
               <p>
-                No pretendo aparentar ser un gurú, ni nada por el estilo. Yo también tengo aún un largo camino que
-                recorrer y me gusta mantenerme al día, así que nunca dejo de aprender.
+                No soy ningún gurú, ni tengo todas las respuestas. Tan solo comencé a recorrer mi camino hace ya unos
+                cuantos años y me gustaría compartir contigo lo que he aprendido durante mi viaje.
               </p>
             </div>
 
@@ -45,11 +45,11 @@ function MentoringStyle() {
             </div>
 
             <div className="column">
-              <div className="has-text-centered icon">🌊</div>
-              <h3>Transparencia</h3>
+              <div className="has-text-centered icon">🧘🏻</div>
+              <h3>Paciencia</h3>
               <p>
-                No tengo todas las respuestas, pero me encantaría ayudarte a encontrar la dirección correcta
-                compartiendo contigo lo que he aprendido durante mi viaje.
+                Nos tomaremos el tiempo que necesites para ayudarte a encontrar la dirección correcta. Tú marcas el
+                ritmo.
               </p>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing from "./spacing";
+import spacing from "../styles/spacing";
 import { theme } from "../styles/theme";
 
 function Box({ media, children }) {
@@ -35,13 +35,12 @@ const styles = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: '100%';
+    width: "100%";
   }
 
   .box-content {
     margin-top: 1em;
   }
-
 `;
 
 export default Box;

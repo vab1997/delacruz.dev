@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import spacing, { unit } from "./spacing";
+import spacing, { unit } from "../styles/spacing";
 import { theme } from "../styles/theme";
 
 function Footer() {
