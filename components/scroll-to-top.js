@@ -3,8 +3,8 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver'
 import { useRef } from 'react'
 
 export default function ScrollToTop ({ showButtonAt }) {
-  const chivatoRef = useRef()
-  const [isIntersecting] = useIntersectionObserver({ elementRef: chivatoRef })
+  const warnRef = useRef()
+  const [isIntersecting] = useIntersectionObserver({ elementRef: warnRef })
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -12,7 +12,7 @@ export default function ScrollToTop ({ showButtonAt }) {
 
   return (
     <>
-      <div ref={chivatoRef} />
+      <div ref={warnRef} />
       <ButtonToTop
         height={45}
         onClick={handleClick}
